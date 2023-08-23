@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Etusivu",
+    "path": "/"
+  },
+  {
+    "title": "Saavutettava lomake",
+    "path": "/general_info"
+  },
+  {
+    "title": "Lomake komponentit",
+    "path": "/lomake_komponentit",
+    "childrens": [
+        {
+          "title": "Painikkeet",
+          "path": "/lomake_komponentit/painikkeet",
+          "childrens": [
+              {
+                "title": "Radiopainike",
+                "path": "/lomake_komponentit/painikkeet/radiopainike"
+              },
+              {
+                "title": "Valintaruutu",
+                "path": "/lomake_komponentit/painikkeet/valintaruutu"
+              }
+            ]
+        },
+        {
+          "title": "Syöttökentät",
+          "path": "/lomake_komponentit/syöttökentät",
+          "childrens": [
+              {
+                "title": "Automaattinen täydennys / autocomplete",
+                "path": "/lomake_komponentit/automaattinen_täydennys"
+              }
+            ]
+        }
+    ]
+  },
+  {
+    "title": "Lomake komponentit",
+    "path": "/lomake_komponentit",
+    "childrens": [
+      {
+        "title": "Painikkeet",
+        "path": "/lomake_komponentit/painikkeet",
+        "childrens": [
+          {
+            "title": "Radiopainike",
+            "path": "/lomake_komponentit/painikkeet/radiopainike"
+          }
+        ]
+      }
+    ]
+  }
+]
