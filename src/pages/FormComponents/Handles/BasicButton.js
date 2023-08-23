@@ -1,14 +1,14 @@
 import '../../../styles.css';
 import {Helmet} from "react-helmet-async";
 
-export default function Handles() {
+export default function BasicButton() {
     return(
         <div>
             <Helmet>
-                <title>Painikkeet - Helppokäyttöinen lomakesovellus</title>
+                <title>Painike - Helppokäyttöinen lomakesovellus</title>
             </Helmet>
             <div>
-                <h2>Painikkeet</h2>
+                <h2>Painike / Button</h2>
             </div>
         </div>
     )

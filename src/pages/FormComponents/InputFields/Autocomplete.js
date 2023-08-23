@@ -1,7 +1,15 @@
 import '../../../styles.css';
+import {Helmet} from "react-helmet-async";
 
 export default function Autocomplete() {
     return(
-        <h2>Form component input field autocomplete</h2>
+        <div>
+            <Helmet>
+                <title>Automaattinen täydennys - Helppokäyttöinen lomakesovellus</title>
+            </Helmet>
+            <div>
+                <h2>Automaattinen täydennys / Autocomplete</h2>
+            </div>
+        </div>
     )
 }

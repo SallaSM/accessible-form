@@ -1,5 +1,5 @@
 /*index.js*/
-body {
+/*body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -24,7 +24,7 @@ code {
     width: 100vh;
 }
 
-/* Header */
+/* Header *//*
 .accessible-header-container {
     text-align: start;
     padding: 2em;
@@ -38,14 +38,15 @@ h1{
 
 }
 
-/*Navigation*/
+/*Sidebar*//*
 nav{
     margin: 0;
     background-color: white;
     color: midnightblue;
     justify-content: start;
-    width: 30vh;
-    height: 100vh;
+    width: 260px;
+    height: 100%;
+    overflow: auto;
 }
 
 nav a{
@@ -80,14 +81,197 @@ nav a:hover{
 
 
 
-nav ul ul ul{
+nav ul ul li  {
     margin-left: 3vh;
-    list-style: circle;
 }
 
-nav ul ul li{
+nav ul ul ul {
     margin-left: 3vh;
+}*/
+
+/*index.js*/
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #333;
 }
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.flex{
+    display: flex;
+    background-color: aliceblue
+}
+
+.container{
+    margin: 1rem;
+    width: 100vh;
+    height: 100vh;
+}
+
+
+body {
+    font-family: sans-serif;
+}
+
+/* Header */
+.accessible-header-container {
+    text-align: start;
+    padding: 2em;
+    background-color: #101044;
+}
+
+h1{
+    margin: 0;
+    color: white;
+    font-weight: normal;
+
+}
+
+
+/*
+.nav-area {
+    margin: 0;
+    background-color: white;
+    color: midnightblue;
+    justify-content: start;
+    width: 260px;
+    height: 100%;
+    overflow: auto;
+}*/
+
+
+/*
+.menus {
+    height: 100%;
+    overflow: auto;
+    background-color: white;
+    color: midnightblue;
+    width: 260px;
+    align-items: start;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: start;
+}
+
+.menu-items {
+    list-style: none;
+    position: relative;
+    font-size: 14px;
+    justify-content: start;
+}
+
+.menu-items a {
+    font-size: inherit;
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    text-align: left;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+}*/
+
+
+nav{
+    margin: 0;
+    background-color: white;
+    color: midnightblue;
+    justify-content: start;
+    width: 20%;
+    min-width: 30vh;
+    height: inherit;
+    overflow: auto;
+    padding: 1px;
+
+}
+
+
+
+nav a{
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 8px 16px 8px 16px;
+    list-style: none;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+nav li{
+    margin-left: 0;
+}
+
+nav a.active{
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+
+.menu-items .link-button-div{
+    display: flex;
+    align-items: center;
+    padding: 0.2rem 1rem 0.2rem 0rem;
+    width: 100%;
+
+}
+
+.button-div{
+    margin-left: auto;
+    margin-right: 2rem;
+}
+
+.menu-items button {
+    color: inherit;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 10% 0 0 0 ;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.menu-items button:hover {
+    color: #287693;
+}
+
+.menu-items button:focus {
+    outline: 2px dotted ;
+}
+
+
+.dropdown {
+    margin-left: 3vh;
+    list-style: none;
+    display: none;
+
+
+}
+
+.dropdown.show {
+    display: block;
+
+}
+
+.dropdown .dropdown-submenu {
+    margin-left: 6vh;
+
+}
+
 
 
 
