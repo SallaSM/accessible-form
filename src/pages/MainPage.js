@@ -12,6 +12,7 @@ export default function MainPage() {
             </Helmet>
             <div >
                 <h2>Etusivun sisältö</h2>
+                <button>Painike</button>
             </div>
         </div>
     )
