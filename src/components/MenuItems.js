@@ -1,6 +1,6 @@
 import React, {useCallback, useEffect, useRef, useState,} from 'react';
 import Dropdown from './Dropdown';
-import {NavLink, useNavigate} from 'react-router-dom';
+import {NavLink, useLocation} from 'react-router-dom';
 import {IoIosArrowDown, IoIosArrowUp} from "react-icons/io";
 
 
@@ -8,58 +8,16 @@ import {IoIosArrowDown, IoIosArrowUp} from "react-icons/io";
 const MenuItems = ({ items, depthLevel }) => {
     const [dropdown, setDropdown] = useState(false);
     const focusOnRef= useRef(null);
-    const [depthLevelCounter, setDepth] = useState(depthLevel);
-
-
-
-
-    function handleOpenDropdown(e){
-    setDropdown((prev) => !prev)
-        {dropdown === false ? (
-            setDepth(0)
-
-        ):(
-            setDepth(1)
-        )}
-        console.log(depthLevelCounter);
-    }
-
+    const location = useLocation();
 
     const escFunction = useCallback((event) => {
             if (event.key === "Escape") {
-                console.log("ennen loop " + depthLevelCounter);
-                {
-                    if(depthLevelCounter===0){
-                        setDropdown(false)}
-
-
-                    depthLevelCounter > 0 ? (
-                        setDropdown(false)
-
-
-                    ) : (
-
-
-                        depthLevelCounter === 0 ? (
-
-                                setDropdown(!dropdown)
-
-                            ):
-                            (
-                                setDropdown(!dropdown)
-                            )
-
-                    )
-                }
-                console.log("eskin jälkeen " + depthLevelCounter + depthLevel);
-
-            }
-        },
+                setDropdown(false)
+        }},
         []);
 
     useEffect(() => {
         document.addEventListener("keydown", escFunction, false);
-
 
         return () => {
             document.removeEventListener("keydown", escFunction, false);
@@ -67,16 +25,6 @@ const MenuItems = ({ items, depthLevel }) => {
     }, [escFunction]);
 
 
-
-
-
-        {/*1. esc näppäimellä sulkeminen
-       2. kun hyppää seuraavaan osioon esim komponenttien sisällä, edellisen tulisi suleutua
-       2. aktiivinene button, väri muuttuu (onko tarpeen?)
-       4. focusta seuraavan borderin manipulointi väri, muoto...
-       5. alimman listan kohdan kohdalla painaesssa tab tulisi kohdistuksen siirtä ensimmäiseen kohtaan
-       */
-        }
 
         return (
             <li
@@ -86,17 +34,20 @@ const MenuItems = ({ items, depthLevel }) => {
                     <>
                         <div className="link-button-div">
                             {depthLevel === 0 ? (
-                                <NavLink to={items.path} > {items.title}</NavLink>
+                                <NavLink
+                                    aria-current={location.pathname === items.path ? 'page' : false}
+                                    to={items.path}
+                                > {items.title}</NavLink>
                             ) : (
-                                <NavLink to={items.path}>{items.title}</NavLink>
+                                <NavLink  aria-current={location.pathname === items.path ? 'page' : false} to={items.path}>{items.title}</NavLink>
                             )}
                             <div className="button-div">
                                 <button
                                     ref={focusOnRef}
                                     aria-expanded={dropdown ? 'true' : 'false'}
                                     onClick={() =>
-                                       /* setDropdown((prev) => !prev)*/
-                                        handleOpenDropdown()
+                                       setDropdown((prev) => !prev)
+
                                 }
 
                                 >
@@ -127,6 +78,7 @@ const MenuItems = ({ items, depthLevel }) => {
 
                         <div>
                             <Dropdown
+
                                 depthLevel={depthLevel}
                                 submenus={items.submenu}
                                 dropdown={dropdown}
@@ -135,7 +87,7 @@ const MenuItems = ({ items, depthLevel }) => {
 
                     </>
                 ) : (
-                    <NavLink to={items.path}>{items.title}</NavLink>
+                    <NavLink aria-current={location.pathname === items.path ? 'page' : false}  to={items.path}>{items.title}</NavLink>
                 )}
             </li>
         );
