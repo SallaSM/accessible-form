@@ -8,8 +8,8 @@ const Navbar = () => {
     return (
         <>
 
-        <nav aria-label="Päänavigaatio">
-            <ul className="menus"
+        <nav aria-label="Päänavigaatio" className="col-3 col-s-3 menus" >
+            <ul
 
             >
                 {SidebarData.map((menu, index) => {
@@ -28,6 +28,7 @@ const Navbar = () => {
                 })}
             </ul>
         </nav>
+
 
 
         </>

@@ -1,7 +1,7 @@
 import '../../../styles.css';
 import {Helmet} from "react-helmet-async";
 
-export default function InputFiels() {
+export default function InputFields() {
     return(
         <div>
             <Helmet>
