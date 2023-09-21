@@ -3,23 +3,20 @@ import wcag from '../data/wcag.json'
 import {useState} from "react";
 import CriteriaListItem from "./CriteriaListItem";
 
-export function CriteriaList() {
-
-
+export function CriteriaList({searchTerm}) {
     return(
-        <ul className="criteriabox"
-
-        >
+        <>
             {wcag.map((criteria, index) => {
                 return (<>
                         <CriteriaListItem
                             items={criteria}
                             key={index}
+                            searchTerm={searchTerm}
                         />
 
                     </>
                 );
             })}
-        </ul>
+</>
     )
 }

@@ -26,7 +26,7 @@ function App() {
         <HelmetProvider>
 
           <Header/>
-            <Breadcrumbs/>
+            {/*<Breadcrumbs/>*/}
             <div className="flex">
 
                 <Navbar />
