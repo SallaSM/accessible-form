@@ -78,7 +78,6 @@ const MenuItems = ({ items, depthLevel }) => {
 
                         <div>
                             <Dropdown
-
                                 depthLevel={depthLevel}
                                 submenus={items.submenu}
                                 dropdown={dropdown}

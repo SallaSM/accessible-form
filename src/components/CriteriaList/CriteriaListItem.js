@@ -3,8 +3,21 @@ import wcag from '../data/wcag.json'
 import React, {useCallback, useEffect, useState} from "react";
 import {IoIosArrowDown, IoIosArrowUp} from "react-icons/io";
 
-const CriteriaListItem =({items}) => {
+const CriteriaListItem =({items, searchTerm}) => {
     const [dropdown, setDropdown] = useState(false);
+    const [sublist, setSublist ]= [];
+
+
+
+    {/*}const searchTerm="1.1.1";
+      const filterData = (searchTerm) => {
+        const filteredData = items.filter((criteria) =>
+            criteria.tunniste.includes(searchTerm)
+        );
+        setFilteredData(filteredData);
+    };
+
+    filterData("1.1.1");*/}
 
     const escFunction = useCallback((event) => {
             if (event.key === "Escape") {
@@ -22,13 +35,15 @@ const CriteriaListItem =({items}) => {
 
 
 
+
     return(
         <>
 
             <li className="criterialist" >
+                 {items.tunniste === searchTerm ?(
                 <div>
                     <div className="text-button-div">
-                        <p className="criteriaName">{items.nimi}</p>
+                        <p className="criteriaName">{items.tunniste} {items.nimi}</p>
                         <button
                             className="arrow-button"
                             aria-expanded={dropdown ? 'true' : 'false'}
@@ -50,16 +65,26 @@ const CriteriaListItem =({items}) => {
 
                     </div>
                         {dropdown ?
-                            <div>
+                            <div className="criteria-info-box">
                                 <p className="criteriaLevelBox">{items.taso}</p>
                                 <p>{items.selite}</p>
+                                { items.alaselite ?(
+                                <ul className="criteria-sublist">
+                                    {items.alaselite.map((item, i) => {
+                                        return <li key={i}>{item}</li>
+                                    })}
+                                </ul>
+                                ): ""
+                                }
+
                                 <a href={items.linkki} target="_blank" >WCAG ohje kohtaan</a>
                             </div>
                             : <>
                             </>
                         }
-                    </div>
 
+                    </div>
+                   ):(" ")}
 
             </li>
 
