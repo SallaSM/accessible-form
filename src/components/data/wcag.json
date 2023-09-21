@@ -27,6 +27,712 @@
 		"taso" : "A",
 		"selite" : "Kaikelle synkronoidussa mediassa olevalle tallennetulle audiosisällölle on tarjolla tekstitys, paitsi kun media on tekstin mediavastine ja selvästi merkitty sellaiseksi.",
 		"linkki" : "https://www.w3.org/Translations/WCAG21-fi/#captions-prerecorded"
+	},
+	{
+		"tunniste" : "",
+		"nimi" : "",
+		"taso" : "A",
+		"selite" : "",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "1.2.3",
+		"nimi" : "Kuvailutulkkaus tai mediavastine (tallennettu)",
+		"taso" : "A",
+		"selite" : "Synkronoidulle medialle on tarjolla aikasidonnaisen median vastine tai tallennetun videosisällön kuvailutulkkaus, paitsi silloin, kun media on tekstin mediavastine ja selvästi merkitty sellaiseksi.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "1.2.4",
+		"nimi" : "Tekstitys (suorissa lähetyksissä)",
+		"taso" : "AA",
+		"selite" : "Kaikelle synkronoidussa mediassa olevalle suoralle audiosisällölle on tarjolla tekstitys.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "1.2.5",
+		"nimi" : "Kuvailutulkkaus (tallennettu)",
+		"taso" : "AA",
+		"selite" : "Kaikelle synkronoidussa mediassa olevalle tallennetulle videosisällölle on tarjolla kuvailutulkkaus.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "1.2.6",
+		"nimi" : "Viittomakieli (tallennettu)",
+		"taso" : "AAA",
+		"selite" : "Kaikelle synkronoidussa mediassa olevalle tallennetulle audiosisällölle on tarjolla viittomakielinen tulkkaus.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "1.2.7",
+		"nimi" : " Pidennetty kuvailutulkkaus (tallennettu)",
+		"taso" : "AAA",
+		"selite" : "Kun tauot etualan äänissä (eli ei-taustaäänissä) ovat riittämättömiä videon tunnelman välittämiseen kuvailutulkkauksen avulla, kaikelle synkronoidussa mediassa olevalle tallennetulle videosisällölle tarjotaan pidennetty kuvailutulkkaus.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "1.2.8",
+		"nimi" : "Mediavastine (tallennettu)",
+		"taso" : "AAA",
+		"selite" : "Kaikelle tallennetulle synkronoidulle medialle ja kaikelle tallennetulle pelkälle videomedialle on tarjolla aikasidonnaisen median vastine.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "1.2.9",
+		"nimi" : "Pelkkä audio (suorissa lähetyksissä)",
+		"taso" : "AAA",
+		"selite" : "Tarjolla on vastine aikasidonnaiselle medialle, joka esittää vastaavan informaation kuin suorana lähetettävä pelkkä audiosisältö.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "1.3.1",
+		"nimi" : "Informaatio ja suhteet",
+		"taso" : "A",
+		"selite" : "Esitystavassa välittyvät informaatio, rakenne ja suhteet voidaan selvittää ohjelmallisesti tai ne ovat saatavilla tekstinä.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "1.3.2",
+		"nimi" : "Merkitykseen vaikuttava järjestys",
+		"taso" : "A",
+		"selite" : "Kun sisällön esitysjärjestys vaikuttaa sisällön merkitykseen, oikea lukemisjärjestys voidaan selvittää ohjelmallisesti.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "1.3.3",
+		"nimi" : "Aistinvaraiset ominaispiirteet",
+		"taso" : "A",
+		"selite" : "Ohjeet sisällön ymmärtämiseksi ja hallitsemiseksi eivät riipu yksinomaan komponenttien aistinvaraisista ominaispiirteistä kuten muoto, koko, visuaalinen sijainti, suunta tai ääni.",
+		"huomautus" : ["Tutustuaksesi väriin liittyviin vaatimuksiin katso Ohje 1.4."],
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "1.3.4",
+		"nimi" : "Asento",
+		"taso" : "AA",
+		"selite" : "Sisältöä ei ole rajoitettu vain tiettyyn näyttölaitteen asentoon kuten pysty- tai vaakasuuntaan, lukuun ottamatta tapausta, jossa tietty asento on olennainen.",
+		"huomautus" : ["Tapauksia, joissa tietty näyttölaitteen asento on olennainen ovat esimerkiksi šekki, pianosovellus, esitysdiat projektoria tai televisiota varten tai virtuaalitodellisuuden sisältö, joihin kahdensuuntainen näyttölaitteen asento ei sovellu."],
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "1.3.5",
+		"nimi" : "Määrittele syötteen tarkoitus",
+		"taso" : "AA",
+		"selite" : "Käyttäjän tietojen keräämiseen tarkoitettujen syötekenttien tarkoitus voidaan selvittää ohjelmallisesti, kun",
+		"alaselite" : ["käyttötarkoitus on listattu Syötteen tarkoitukset käyttöliittymäkomponenteissa -osiossa ja",
+			"sisällön toteutuksessa on käytetty teknologiaa, joka mahdollistaa syöte-elementin tarkoituksen kuvaamisen." ],
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "1.3.6",
+		"nimi" : "Määrittele tarkoitus",
+		"taso" : "AAA",
+		"selite" : "Sisällössä, joka on toteutettu käyttäen merkkauskieltä, käyttöliittymäkomponenttien, kuvakkeiden ja alueiden tarkoitus voidaan selvittää ohjelmallisesti.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "1.4.1",
+		"nimi" : "Värien käyttö",
+		"taso" : "A",
+		"selite" : "Väriä ei käytetä ainoana visuaalisena keinona informaation välittämisessä, toiminnon esittämisessä, vastauksen pyytämisessä tai visuaalisen elementin erottamisessa.",
+		"huomautus" : ["Tämä onnistumiskriteeri käsittelee erityisesti värien havaitsemista. Havaitsemisen muut muodot käsitellään ohjeessa 1.3, mukaan lukien ohjelmallinen pääsy värien ja muiden visuaalisten esitystapojen koodaukseen."],
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "1.4.2",
+		"nimi" : "Audion kontrollointi",
+		"taso" : "A",
+		"selite" : "Jos jokin ääni verkkosivulla soi automaattisesti kauemmin kuin kolme sekuntia, käytettävissä on joko mekanismi äänen keskeyttämiseen tai pysäyttämiseen tai mekanismi äänen voimakkuuden säätämiseksi koko järjestelmän äänenvoimakkuuden tasosta riippumatta.",
+		"huomautus" : ["Koska mikä tahansa sisältö, joka ei täytä tätä onnistumiskriteeriä, voi haitata käyttäjän mahdollisuuksia käyttää koko sivua, täytyy kaiken verkkosivun sisällön (riippumatta siitä käytetäänkö sitä täyttämään muita onnistumiskriteereitä vai ei) täyttää tämä onnistumiskriteeri. Katso ohjeidenmukaisuuden vaatimus 5: Häiriöttömyys."],
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "1.4.3",
+		"nimi" : "Kontrasti (minimi)",
+		"taso" : "AA",
+		"selite" : "Tekstin ja tekstiä esittävien kuvien visuaalisen esitystavan kontrastisuhde on vähintään 4,5:1, paitsi seuraavissa tapauksissa:",
+		"alaselite" : ["Isokokoinen teksti: Isokokoisessa tekstissä ja isokokoista tekstiä esittävissä kuvissa kontrastisuhde on vähintään 3:1.",
+			"Oheissisältö: Tekstille tai tekstiä esittäville kuville ei ole kontrastivaatimusta, jos ne ovat osa inaktiivista käyttöliittymäkomponenttia, yksinomaan koristeita, eivät ole näkyvissä kenellekään tai ovat osa kuvaa, jossa on muuta merkittävää visuaalista sisältöä.",
+			"Logotyypit: Tekstille, joka on osa logoa tai brändin nimeä, ei ole kontrastivaatimusta."],
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "1.4.4",
+		"nimi" : "Tekstin koon muuttaminen",
+		"taso" : "AA",
+		"selite" : "Lukuun ottamatta tekstitystä ja tekstiä esittäviä kuvia, tekstin kokoa voidaan muuttaa ilman avustavaa teknologiaa aina 200 prosenttiin asti ilman sisällön tai toiminnallisuuden menettämistä.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "1.4.5",
+		"nimi" : "Tekstiä esittävät kuvat",
+		"taso" : "AA",
+		"selite" : "Jos käytetty teknologia voi tuottaa visuaalisen esityksen, informaation välittämiseen käytetään ennemmin tekstiä kuin tekstiä esittäviä kuvia, paitsi seuraavissa tapauksissa:",
+		"alaselite" : ["Mukautettava: Tekstiä esittävä kuva voidaan visuaalisesti mukauttaa käyttäjän vaatimusten mukaisesti.",
+			"Olennainen: Tietty tekstin esitystapa on olennainen välitettävän informaation kannalta."],
+		"huomautus" : ["Logotyypit (teksti, joka on osa logoa tai brändin nimeä) tulkitaan olennaisiksi."],
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "1.4.6",
+		"nimi" : "Kontrasti (parannettu)",
+		"taso" : "AAA",
+		"selite" : "Tekstin ja tekstiä esittävien kuvien visuaalisen esitystavan kontrastisuhde on vähintään 7:1, paitsi seuraavissa tapauksissa:",
+		"alaselite" : ["Isokokoinen teksti: Isokokoisessa tekstissä ja isokokoista tekstiä esittävissä kuvissa kontrastisuhde on vähintään 4,5:1.",
+			"Oheissisältö: Tekstille tai tekstiä esittäville kuville ei ole kontrastivaatimusta, jos ne ovat osa inaktiivista käyttöliittymäkomponenttia, yksinomaan koristeita, eivät ole näkyvissä kenellekään tai ovat osa kuvaa, jossa on muuta merkittävää visuaalista sisältöä.",
+			"Logotyypit: Tekstille, joka on osa logoa tai brändin nimeä, ei ole kontrastivaatimusta."],
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "1.4.7",
+		"nimi" : "Hiljainen taustaääni tai ei taustaääntä",
+		"taso" : "AAA",
+		"selite" : "Tallennetulle pelkälle audiosisällölle joka (1) sisältää ensisijaisesti puhetta äänimaiseman etualalla, (2) ei ole auditiivinen CAPTCHA tai audiologo ja joka (3) ei ole vokalisaatio, jonka tarkoitus on ensisijaisesti olla musiikillinen ilmaisu, kuten laulu tai rap, ainakin yksi seuraavista pitää paikkansa:",
+		"alaselite" : ["Ei taustaa: Audio ei sisällä taustaääniä.",
+			"Pois päältä: Taustaäänet voidaan kytkeä pois päältä.",
+			"20 dB: Taustaäänet ovat vähintään 20 desibeliä hiljaisempia kuin äänimaiseman etualan puhesisältö, poikkeuksena satunnaiset, yksi tai kaksi sekuntia kestävät äänet."],
+		"huomautus" : ["\"Desibelin\" määritelmän mukaan taustaääni, joka täyttää tämän vaatimuksen, on noin neljä kertaa hiljaisempi kuin äänimaiseman etualan puhesisältö."],
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "1.4.8",
+		"nimi" : "Visuaalinen esitystapa",
+		"taso" : "AAA",
+		"selite" : "Tekstilohkojen visuaaliselle esitystavalle on olemassa mekanismi seuraaviin käyttötarkoituksiin:",
+		"alaselite" : ["Käyttäjä voi valita edustan ja taustan värit.",
+			"Leveys on enintään 80 merkkiä tai kuvaketta (40 CJK-kielissä).",
+			"Tekstiä ei ole tasattu molempiin reunoihin (tasattu sekä vasempaan että oikeaan marginaaliin).",
+			"Riviväli (rivin korkeus) on vähintään puolitoista riviä kappaleiden sisällä, ja kappaleiden väli on vähintään 1,5 kertaa suurempi kuin riviväli.",
+			"Tekstin kokoa voidaan muuttaa ilman avustavaa teknologiaa 200 prosenttiin asti tavalla, joka ei vaadi käyttäjää vierittämään tekstiä vaakasuunnassa rivin lukemiseksi koko näytön ikkunassa."],
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "1.4.9",
+		"nimi" : "Tekstiä esittävät kuvat (ei poikkeusta)",
+		"taso" : "AAA",
+		"selite" : "Tekstiä esittäviä kuvia käytetään yksinomaan koristeena tai silloin, kun tietty tekstin esitystapa on olennainen välitettävän informaation kannalta.",
+		"huomautus" : ["Logotyypit (teksti, joka on osa logoa tai brändin nimeä) tulkitaan olennaisiksi."],
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "1.4.10",
+		"nimi" : "Responsiivisuus",
+		"taso" : "AA",
+		"selite" : "Sisältö voidaan esittää ilman sisällön tai toiminnallisuuden menettämistä ja ilman kahdensuuntaista vierittämistä, kun",
+		"alaselite" : ["pystysuuntaan vieritettävän sisällön leveys on 320 CSS-pikseliä.",
+			"vaakasuuntaan vieritettävän sisällön korkeus on 256 CSS-pikseliä."],
+		"lisaselite" : "Lukuun ottamatta sisällön osia, jotka vaativat kahdensuuntaista esitystapaa käytön tai merkityksen vuoksi.",
+		"huomautus" : ["320 CSS-pikseliä vastaa 1280 CSS-pikselin levyistä selainikkunaa, joka on zoomattu 400 % kokoiseksi. Vaakasuuntaan vieritettävässä sisällössä (esim. pystysuuntainen kirjoitus), 256 CSS-pikseliä vastaa 1024 px korkeaa selainikkunaa, joka on zoomattu 400 % kokoiseksi.", "Esimerkkejä sisällöstä, joissa vaaditaan kahdensuuntaista esitystapaa, ovat kuvat, kartat, diagrammit, videopelit, esitykset, taulukkomuotoinen data ja käyttöliittymät, joissa on tarpeellista pitää työkalupalkki näkyvissä, kun käsitellään sisältöä." ],
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "1.4.11",
+		"nimi" : "Ei-tekstimuotoisen sisällön kontrasti",
+		"taso" : "AA",
+		"selite" : "Seuraavanlaisten elementtien visuaalisessa esitystavassa kontrastisuhde viereiseen väriin/väreihin on vähintään 3:1:",
+		"alaselite" : ["Käyttöliittymäkomponentit: Visuaalinen informaatio, joka vaaditaan käyttöliittymäkomponentin ja sen eri tilojen tunnistamiseen, lukuun ottamatta inaktiivisia komponentteja tai jos käyttäjäagentti määrittelee uuden sisällön visuaalisen esitystavan ja sisällön tuottaja ei ole sitä muokannut.",
+			"Graafiset objektit: Grafiikan osat, joita vaaditaan sisällön ymmärtämiseksi, lukuun ottamatta tapauksia, joissa ulkoasu on olennainen tietosisällön välittämiseksi."],
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "1.4.12",
+		"nimi" : "Tekstin välistys",
+		"taso" : "AA",
+		"selite" : "Sisällössä, joka on toteutettu käyttäen merkkauskieliä ja joka tukee seuraavia tekstin muotoilun ominaisuuksia, sisältöä tai toiminnallisuutta ei menetetä, jos asetetaan kaikki seuraavat muuttamatta mitään muuta tyylimääritystä:",
+		"alaselite" : ["Riviväliksi (rivin korkeudeksi) vähintään 1,5 kertaa kirjasinkoko.",
+			"Kappaleen jälkeisen tyhjän tilan kooksi vähintään 2 kertaa kirjasinkoko.",
+			"Kirjainväliksi vähintään 0,12 kertaa kirjasinkoko.",
+			"Sanojen väliksi vähintään 0,16 kertaa kirjasinkoko."],
+		"lisaselite" : "Poikkeus: Kielissä ja kirjoitustavoissa, joissa ei hyödynnetä yhtä tai useampaa ylläolevista ominaisuuksista, voidaan noudattaa kriteeriä vain niiden ominaisuuksien osalta, jotka soveltuvat kyseiseen kielen ja kirjoitustavan yhdistelmään.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "1.4.13",
+		"nimi" : "Sisältö osoitettaessa tai kohdistettaessa",
+		"taso" : "AA",
+		"selite" : "Jos osoittimen vieminen elementin päälle tai kohdistuksen siirtäminen elementtiin tuo näkyviin lisää sisältöä ja osoittimen tai kohdistuksen pois siirtäminen piilottaa sisällön, seuraavat ehdot pätevät:",
+		"alaselite" : ["Piilotettavissa: On olemassa mekanismi, jolla näkyviin tulleen sisällön saa piilotettua siirtämättä osoitinta tai kohdistusta, lukuun ottamatta tapausta, jossa sisältö on syötevirheestä kertova teksti tai se ei peitä tai korvaa muuta sisältöä.",
+			"Osoitettavissa: Jos osoittimen vieminen elementin päälle tuo näkyviin uutta sisältöä, osoitin voidaan viedä ilmestyneen sisällön päälle aiheuttamatta sen katoamista.",
+			"Pysyvä: Uusi sisältö pysyy näkyvissä kunnes osoitin tai kohdistus on siirretty pois, käyttäjä on piilottanut sisällön tai sen sisältö ei enää päde."],
+		"lisaselite" : "Poikkeus: käyttäjäagentti määrittelee uuden sisällön visuaalisen esitystavan, eikä sisällön tuottaja ole sitä muokannut.",
+		"huomautus" : ["Käyttäjäagentin määrittämä esitystapa on esimerkiksi selaimen työkaluvihjeet, jotka on toteutettu HTML:n title-attribuutin avulla.",
+			"Muokatut työkaluvihjeet, alavalikot ja muut ei-modaaliset ponnahdusikkunat ovat esimerkkejä sisällöstä, joka kuuluu tämän kriteerin alaan."],
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "2.1.1",
+		"nimi" : "Näppäimistö",
+		"taso" : "A",
+		"selite" : "Kaikki sisällön toiminnallisuus on hallittavissa näppäimistörajapinnan välityksellä ilman vaatimusta yksittäisten näppäinpainallusten erityisestä ajoittamisesta, paitsi kun taustalla oleva toiminnallisuus vaatii syötettä, joka riippuu käyttäjän liikkeiden reitistä eikä vain päätepisteistä.",
+		"huomautus" : ["Tämä poikkeus liittyy sovelluksen toimintoon, ei syötetekniikkaan. Esimerkiksi käytettäessä käsinkirjoitettua tekstiä syötteenä, syötetekniikka (käsin kirjoittaminen) vaatii reitistä riippuvaa syötettä, kun taas sovelluksen toiminnallisuus (tekstin syöttö) ei sitä vaadi.",
+			"Tämä ei kiellä hiireen perustuvan syötteen tai muiden syötemenetelmien käyttämistä näppäimistön lisäksi, eikä tarkoitus ole kannustaa luopumaan niistä."],
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "2.1.2",
+		"nimi" : "Ei näppäimistöansaa",
+		"taso" : "A",
+		"selite" : "Jos kohdistus voidaan siirtää sivun komponenttiin näppäimistörajapinnan kautta, niin kohdistus voidaan siirtää myös pois kyseiseltä komponentilta pelkästään näppäimistörajapintaa käyttämällä. Mikäli tämä vaatii muuta kuin pelkkien nuoli- tai tab-näppäimien tai muiden standardinmukaisten poistumismenetelmien käyttämistä, käyttäjälle neuvotaan menetelmä kohdistuksen poissiirtämiseksi.",
+		"huomautus" : ["Koska mikä tahansa sisältö, joka ei täytä tätä onnistumiskriteeriä, voi haitata käyttäjän mahdollisuuksia käyttää koko sivua, täytyy kaiken verkkosivun sisällön (riippumatta siitä käytetäänkö sitä täyttämään muita onnistumiskriteereitä vai ei) täyttää tämä onnistumiskriteeri. Katso ohjeidenmukaisuuden vaatimus 5: Häiriöttömyys."],
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "2.1.3",
+		"nimi" : "Näppäimistö (ei poikkeuksia)",
+		"taso" : "AAA",
+		"selite" : "Kaikki sisällön toiminnallisuus on käytettävissä näppäimistörajapinnan kautta ilman vaatimusta yksittäisten näppäinpainallusten erityisestä ajoittamisesta.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "2.1.4",
+		"nimi" : "Yhden merkin pikanäppäimet",
+		"taso" : "A",
+		"selite" : "Jos sisältöön on toteutettu näppäinoikotie, joka käyttää vain yhtä kirjain- (mukaan lukien pienet ja isot kirjaimet), välimerkki-, numero- tai symbolinäppäintä, vähintään yksi seuraavista pätee:",
+		"alaselite" : ["Pois päältä: On olemassa mekanismi, jolla näppäinoikotien voi ottaa pois käytöstä.",
+			"Uudelleenmäärittely: On olemassa mekanismi, jolla näppäinoikotie voidaan määritellä uudelleen käyttämään yhtä tai useampaa komentonäppäintä (Ctrl, Alt jne.).",
+			"Aktiivinen vain kohdistettaessa: Tietylle käyttöliittymäkomponentille tarkoitettu näppäinoikotie on käytössä vain, kun kohdistus on kyseisessä komponentissa."],
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "2.2.1",
+		"nimi" : "Säädettävä ajoitus",
+		"taso" : "A",
+		"selite" : "Jokaiselle sisällön asettamalle aikarajalle ainakin yksi seuraavista pitää paikkansa:",
+		"alaselite" : ["Pois päältä: Käyttäjä voi kytkeä aikarajan pois päältä ennen sen täyttymistä.",
+			"Säädä: Käyttäjän sallitaan säätää aikarajaa ennen sen kohtaamista laajalla asteikolla, joka on vähintään kymmenen kertaa oletusasetuksen pituus.",
+			"Jatka: Käyttäjää varoitetaan ennen ajan loppumista, annetaan vähintään 20 sekuntia aikaa aikarajan jatkamiseen yksinkertaisen toiminnon avulla (esimerkiksi, \"paina välilyöntiä\") ja käyttäjän sallitaan jatkaa aikarajaa vähintään kymmenen kertaa.",
+			"Reaaliaikainen poikkeus: Aikaraja on reaaliaikaisen tapahtuman vaadittu osa (esimerkiksi huutokaupan), ja vaihtoehto aikarajalle ei ole mahdollinen.",
+			"Olennainen poikkeus: Aikaraja on olennainen, ja sen pidentäminen mitätöisi toiminnon.",
+			"20 tunnin poikkeus: Aikaraja on yli 20 tuntia."],
+		"huomautus" : ["Tämä onnistumiskriteeri auttaa varmistamaan, että käyttäjät voivat saattaa tehtävät valmiiksi ilman odottamattomia aikarajasta johtuvia muutoksia sisällössä tai kontekstissa. Tätä onnistumiskriteeriä tulisi tarkastella yhdessä Onnistumiskriteerin 3.2.1:n kanssa, joka rajoittaa käyttäjän toiminnasta johtuvia sisällön tai kontekstin muutoksia."],
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "2.2.2",
+		"nimi" : "Tauota, pysäytä, piilota",
+		"taso" : "A",
+		"selite" : "Kaikki seuraavat pitävät paikkansa liikkuvalle, vilkkuvalle, vierivälle tai automaattisesti päivittyvälle informaatiolle:",
+		"alaselite" : ["Liikkuva, vilkkuva, vierivä: Kaikelle liikkuvalle, vilkkuvalle tai vierivälle informaatiolle, joka (1) käynnistyy automaattisesti, (2) kestää yli viisi sekuntia ja (3) esitetään rinnakkain muun sisällön kanssa, on olemassa mekanismi, jonka avulla käyttäjä voi tauottaa, pysäyttää tai piilottaa sen, paitsi silloin kun liikkuminen, vilkkuminen tai vieriminen on olennainen osa toimintoa ja",
+			"Automaattisesti päivittyvä: Kaikelle automaattisesti päivittyvälle informaatiolle, joka (1) käynnistyy automaattisesti ja (2) esitetään rinnakkain muun sisällön kanssa, on olemassa mekanismi, jonka avulla käyttäjä voi keskeyttää, pysäyttää tai piilottaa sen tai hallita sen päivitystiheyttä, paitsi silloin kun automaattinen päivittyminen on olennainen osa toimintoa."],
+		"huomautus" : ["Tarkista vilkkuvaan tai välähtelevään sisältöön liittyvät vaatimukset ohjeesta 2.3.",
+			"Koska mikä tahansa sisältö, joka ei täytä tätä onnistumiskriteeriä, voi haitata käyttäjän mahdollisuuksia käyttää koko sivua, täytyy kaiken verkkosivun sisällön (riippumatta siitä käytetäänkö sitä täyttämään muita onnistumiskriteereitä vai ei) täyttää tämä onnistumiskriteeri. Katso ohjeidenmukaisuuden vaatimus 5: Häiriöttömyys.",
+			"Sellaisesta sisällöstä, jota ohjelmisto ajoittain päivittää tai jota käyttäjäagentti lataa syötevirrasta, ei vaadita tallentamaan tai esittämään informaatiota, joka on luotu tai vastaanotettu tauon ja jatkamisen välissä, koska tämä saattaisi olla teknisesti mahdotonta ja monessa tilanteessa harhaanjohtavaa.",
+			"Animaatiota, joka näytetään osana esilatausvaihetta tai vastaavaa tilannetta, voidaan pitää olennaisena, jos kyseisen vaiheen aikana ei voi tapahtua vuorovaikutusta kenenkään käyttäjän kanssa, ja jos toiminnon edistymistä osoittavan animaation poisjättäminen saattaisi hämätä käyttäjiä tai saada heidät ajattelemaan, että sisältö on jämähtänyt tai vioittunut."],
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "2.2.3",
+		"nimi" : "Ei ajoitusta",
+		"taso" : "AAA",
+		"selite" : "Ajoitus ei ole olennainen osa sisällön esittämää tapahtumaa tai toimintoa, lukuun ottamatta ei-interaktiivista synkronoitua mediaa ja reaaliaikaisia tapahtumia.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "2.2.4",
+		"nimi" : "Keskeytykset",
+		"taso" : "AAA",
+		"selite" : "Käyttäjä voi lykätä tai estää keskeytykset, lukuun ottamatta hätätapauksiin liittyviä keskeytyksiä.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "2.2.5",
+		"nimi" : "Uudelleentunnistautuminen",
+		"taso" : "AAA",
+		"selite" : "Kun todennettu istunto vanhentuu, käyttäjä voi dataa menettämättä jatkaa toimintoa uudelleentunnistautumisen jälkeen.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "2.2.6",
+		"nimi" : "Aikakatkaisut",
+		"taso" : "AAA",
+		"selite" : "Käyttäjää varoitetaan, jos käyttäjän tietoja voi kadota käyttäjän inaktiivisuuden seurauksena, paitsi jos tietoja säilytetään yli 20 tuntia sen jälkeen, kun käyttäjä ei tee mitään.",
+		"huomautus" : ["Tietosuojasäännökset saattavat vaatia käyttäjän nimenomaisen suostumuksen ennen kuin käyttäjän tunnistetiedot on todennettu ja ennen käyttäjän tietojen tallentamista. Useimmissa oikeuskäytännöissä, valtioissa tai hallintoalueilla nimenomaista suostumusta ei voida siirtää toiselle henkilölle, mikäli käyttäjä on alaikäinen. Kun käyttäjän tietojen tallentamista harkitaan keinona tämän onnistumiskriteerin täyttämiseksi, on suositeltavaa hyödyntää tietosuoja-asiantuntijoita sekä lainopillista neuvontaa."],
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "2.3.1",
+		"nimi" : "Kolme välähdystä tai alle raja-arvon",
+		"taso" : "A",
+		"selite" : "Verkkosivut eivät sisällä mitään, joka milloinkaan välähtäisi useammin kuin kolme kertaa sekunnissa, tai välähdys on alle yleisen välähdyksen ja punaisen välähdyksen raja-arvojen.",
+		"huomautus" : ["Koska mikä tahansa sisältö, joka ei täytä tätä onnistumiskriteeriä, voi haitata käyttäjän mahdollisuuksia käyttää koko sivua, täytyy kaiken verkkosivun sisällön (riippumatta siitä käytetäänkö sitä täyttämään muita onnistumiskriteereitä vai ei) täyttää tämä onnistumiskriteeri. Katso ohjeidenmukaisuuden vaatimus 5: Häiriöttömyys."],
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "2.3.2",
+		"nimi" : "Kolme välähdystä",
+		"taso" : "AAA",
+		"selite" : "Verkkosivut eivät sisällä mitään, joka milloinkaan välähtäisi useammin kuin kolme kertaa sekunnissa.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "2.3.3",
+		"nimi" : "Animaatio vuorovaikutuksen yhteydessä",
+		"taso" : "AAA",
+		"selite" : "Käyttäjän vuorovaikutuksesta käynnistyvät liikeanimaatiot voidaan ottaa pois päältä, paitsi tilanteissa, joissa animaatio on olennainen käytön tai välitettävän informaation kannalta.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "2.4.1",
+		"nimi" : "Ohita lohkot",
+		"taso" : "A",
+		"selite" : "Tarjolla on mekanismi sellaisten sisällön lohkojen ohittamiseen, jotka toistuvat useilla verkkosivuilla.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "2.4.2",
+		"nimi" : "Sivuotsikot",
+		"taso" : "A",
+		"selite" : "Verkkosivuilla on otsikot, jotka kuvailevat aiheen tai merkityksen.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "2.4.3",
+		"nimi" : "Kohdistusjärjestys",
+		"taso" : "A",
+		"selite" : "Jos verkkosivu voidaan navigoida järjestyksessä ja navigointijärjestys vaikuttaa merkitykseen tai toimintoon, kohdistettavissa olevat komponentit saavat kohdistuksen järjestyksessä, joka säilyttää merkityksen ja toimivuuden.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "2.4.4",
+		"nimi" : "Linkin tarkoitus (kontekstissa)",
+		"taso" : "A",
+		"selite" : "Jokaisen linkin tarkoitus voidaan selvittää yksin linkkitekstistä tai linkkitekstistä yhdessä ohjelmallisesti selvitettävissä olevan linkkikontekstin avulla, paitsi tilanteissa, joissa linkki olisi yleisesti ottaen epäselvä käyttäjille.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "2.4.5",
+		"nimi" : "Useita tapoja",
+		"taso" : "AA",
+		"selite" : "Käytettävissä on enemmän kuin yksi tapa paikallistaa yksi verkkosivu verkkosivujen joukosta, paitsi silloin kun verkkosivu on prosessin lopputulos tai vaihe.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "2.4.6",
+		"nimi" : "Otsikot ja nimilaput",
+		"taso" : "AA",
+		"selite" : "Otsikot ja nimilaput kuvailevat aiheen tai merkityksen.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "2.4.7",
+		"nimi" : "Näkyvä kohdistus",
+		"taso" : "AA",
+		"selite" : "Kaikilla näppäimistöltä käytettävillä käyttöliittymillä on käyttötila, jossa näppäimistön kohdistuksen ilmaisin on näkyvissä.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "2.4.8",
+		"nimi" : "Sijainti",
+		"taso" : "AAA",
+		"selite" : "Saatavilla on informaatiota käyttäjän sijainnista verkkosivujen joukossa.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "2.4.9",
+		"nimi" : "Linkin tarkoitus (vain linkistä)",
+		"taso" : "AAA",
+		"selite" : "Jokaisen linkin tarkoituksen tunnistamiseen yksinomaan linkkitekstin perusteella on saatavilla mekanismi, paitsi tilanteissa, joissa linkin tarkoitus olisi yleisesti ottaen epäselvä käyttäjille.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "2.4.10",
+		"nimi" : "Osioiden otsikot",
+		"taso" : "AAA",
+		"selite" : "Sisällön organisoimiseen käytetään osioiden otsikoita.",
+		"huomautus" : ["Termiä \"otsikko\" käytetään tässä yleisessä mielessä, ja sillä tarkoitetaan otsikkotekstejä ja muita tapoja lisätä otsikoita erityyppiseen sisältöön.",
+			"Tämä onnistumiskriteeri kattaa osiot kirjoitetussa tekstissä, ei käyttöliittymäkomponenteissa. Käyttöliittymäkomponentit käsitellään onnistumiskriteerissä 4.1.2."],
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "2.5.1",
+		"nimi" : "Osoitineleet",
+		"taso" : "A",
+		"selite" : "Kaikkia toimintoja, joissa hyödynnetään monipiste- tai reittiin perustuvia ohjauseleitä, voidaan käyttää myös yhdellä osoittimella ja ilman reittiin perustuvaa elettä, paitsi jos kyseinen ohjaustapa on olennainen.",
+		"huomio" : ["Tämä vaatimus koskee verkkosisältöä, joka vastaanottaa ja tulkitsee osoitinlaitteen toimintoja (ts. tämä ei koske toimintoja, joilla ohjataan käyttäjäagenttia tai avustavaa teknologiaa)."],
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "2.5.2",
+		"nimi" : "Osoitinlaitteella tehdyn valinnan peruuttaminen",
+		"taso" : "A",
+		"selite" : "Toimintoihin, joita voidaan käyttää yhden osoittimen avulla, pätee vähintään yksi seuraavista:",
+		"alaselite" : ["Ei alas-tapahtumaa: Mikään osa toiminnallisuudesta ei tapahdu alas-tapahtuman yhteydessä.",
+			"Keskeytä tai kumoa: Toiminnon päättäminen tapahtuu ylös-tapahtuman yhdeydessä, ja on olemassa mekanismi, jolla toiminto voidaan perua ennen päättämistä tai kumota päättämisen jälkeen.",
+			"Vastakkaisuus: Ylös-tapahtuma kumoaa edeltävän alas-tapahtuman aiheuttaman toiminnon.",
+			"Olennainen: Toiminnon päättäminen alas-tapahtuman yhteydessä on olennaista."],
+		"huomautus" : ["Toimintoja, jotka jäljittelevät näppäimistön tai numeronäppäimistön painalluksia pidetään olennaisina.",
+			"Tämä vaatimus koskee verkkosisältöä, joka vastaanottaa ja tulkitsee osoitinlaitteen toimintoja (ts. tämä ei koske toimintoja, joilla ohjataan käyttäjäagenttia tai avustavaa teknologiaa)."],
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "2.5.3",
+		"nimi" : "Nimilappu nimessä",
+		"taso" : "A",
+		"selite" : "Tapauksissa, joissa käyttöliittymäkomponentin nimilapussa on tekstiä tai tekstiä esittävä kuva, komponentin nimi sisältää sen tekstin, joka on visuaalisesti näkyvissä.",
+		"huomautus" : ["Hyvä käytäntö on sijoittaa nimilapun teksti nimen alkuun."],
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "2.5.4",
+		"nimi" : "Käyttö liikkeen avulla",
+		"taso" : "A",
+		"selite" : "Toiminnallisuus, jota voidaan käyttää liikuttamalla laitetta, voidaan käyttää myös käyttöliittymäkomponenttien avulla, ja liikeaktivointi voidaan ottaa pois päältä, jotta vältetään toiminnan aktivoiminen vahingossa. Tämä ei koske seuraavia tapauksia:",
+		"alaselite" : ["Tuettu rajapinta: Liikeaktivointi on toteutettu sellaisen rajapinnan kautta, joka on saavutettavuudeltaan tuettu.",
+			"Olennainen: Liike on toiminnon kannalta olennainen, ja sen poistaminen mitätöisi toiminnon."],
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "2.5.5",
+		"nimi" : "Kohteen koko",
+		"taso" : "AAA",
+		"selite" : "Osoitinlaitteella aktivoitavan kohteen koko on vähintään 44 kertaa 44 CSS-pikseliä, lukuun ottamatta tapauksia, joissa:",
+		"alaselite" : ["Vastaava: Kohde on saatavilla vastaavan, samalla sivulla olevan, vähintään 44 kertaa 44 CSS-pikselin kokoisen linkin tai komponentin kautta.",
+			"Tekstin sisällä: Kohde on lauseen tai tekstilohkon sisällä.",
+			"Käyttäjäagentin määrittelemä: Käyttäjäagentti määrittelee kohteen koon, eikä sisällön tuottaja ole muokannut kokoa.",
+			"Olennainen: Tietynlainen esitystapa on olennainen välitettävän informaation kannalta."],
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "2.5.6",
+		"nimi" : "Rinnakkaiset syötemekanismit",
+		"taso" : "AAA",
+		"selite" : "Verkkosisältö ei rajoita käytettävissä olevien ohjaintapojen käyttämistä, paitsi jos rajoitus on olennainen, pakollista sisällön turvallisuuden vuoksi tai välttämätön käyttäjän asetusten noudattamiseksi.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "3.1.1",
+		"nimi" : "Sivun kieli",
+		"taso" : "A",
+		"selite" : "Jokaisen verkkosivun oletusarvoinen luonnollinen kieli voidaan selvittää ohjelmallisesti.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "3.1.2",
+		"nimi" : "Osien kieli",
+		"taso" : "AA",
+		"selite" : "Sisällön jokaisen tekstikatkelman tai ilmaisun luonnollinen kieli voidaan selvittää ohjelmallisesti, paitsi seuraavien osalta: erisnimet, tekniset termit, määrittämättömän kielen sanat sekä sanat tai ilmaisut, jotka ovat muuttuneet läheisen tekstiympäristön kielen murteelliseksi osaksi.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "3.1.3",
+		"nimi" : "Epätavalliset sanat",
+		"taso" : "AAA",
+		"selite" : "Tarjolla on mekanismi, jolla voi selvittää sanojen tai lauseiden tarkat määritelmät, jos niitä käytetään poikkeavalla tai tarkkaan rajatulla tavalla, mukaan lukien idiomit ja jargon.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "3.1.4",
+		"nimi" : "Lyhenteet",
+		"taso" : "AAA",
+		"selite" : "Tarjolla on mekanismi, jolla voi selvittää lyhenteiden laajennetun muodon tai merkityksen.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "3.1.5",
+		"nimi" : "Tekstin vaikeustaso",
+		"taso" : "AAA",
+		"selite" : "Jos teksti edellyttää 2. perusasteen opetuksen vaatimukset ylittävää lukutaitoa sen jälkeen, kun erisnimet ja otsikot on poistettu, tarjolla on täydentävää sisältöä tai versio, joka ei vaadi 2. perusasteen opetuksen tasoa edistyneempää lukutaitoa.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "3.1.6",
+		"nimi" : "Ääntämys",
+		"taso" : "AAA",
+		"selite" : "Käytettävissä on mekanismi sanojen täsmällisen ääntämistavan selvittämiseksi silloin, kun sanojen merkitys kontekstissaan olisi monitulkintainen, jos ääntämistapa ei ole tiedossa.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "3.2.1",
+		"nimi" : "Kohdistaminen",
+		"taso" : "A",
+		"selite" : "Kun mikä tahansa käyttöliittymäkomponentti saa kohdistuksen, se ei aiheuta kontekstin muutosta.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "3.2.2",
+		"nimi" : "Syöte",
+		"taso" : "A",
+		"selite" : "Minkään käyttöliittymäkomponentin asetuksen muuttaminen ei automaattisesti aiheuta kontekstin muutosta, ellei käyttäjää ole ohjeistettu tällaisesta toiminnosta ennen komponentin käyttöä.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "3.2.3",
+		"nimi" : "Johdonmukainen navigointi",
+		"taso" : "AA",
+		"selite" : "Verkkosivujen joukon useilla verkkosivuilla toistuvat navigointimekanismit esiintyvät aina samassa järjestyksessä suhteessa toisiinsa, ellei käyttäjä toisin valitse.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "3.2.4",
+		"nimi" : "Johdonmukainen merkitseminen",
+		"taso" : "AA",
+		"selite" : "Komponentit, joilla on sama toiminnallisuus verkkosivujen joukossa, merkitään johdonmukaisesti.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "3.2.5",
+		"nimi" : "Muutos pyydettäessä",
+		"taso" : "AAA",
+		"selite" : "Kontekstin muutokset tapahtuvat ainoastaan käyttäjän pyynnöstä tai tarjolla on mekanismi tämän tyyppisten muutoksien poiskytkemiseksi.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "3.3.1",
+		"nimi" : "Virheen tunnistaminen",
+		"taso" : "A",
+		"selite" : "Jos syötevirhe havaitaan automaattisesti, virheellinen kohta osoitetaan ja virhe kuvataan käyttäjälle tekstimuotoisena.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "3.3.2",
+		"nimi" : "Nimilaput tai ohjeet",
+		"taso" : "A",
+		"selite" : "Kun sisältö edellyttää käyttäjän syötettä, tarjolla on nimilappuja tai ohjeita.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "3.3.3",
+		"nimi" : "Virheen korjausehdotus",
+		"taso" : "AA",
+		"selite" : "Jos syötevirhe havaitaan automaattisesti ja korjausehdotuksia tiedetään, ehdotukset esitetään käyttäjälle, paitsi jos tämä vaarantaisi tietoturvan tai sisällön merkityksen.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "3.3.4",
+		"nimi" : "Virheiden ennaltaehkäisy (oikeudellinen, taloudellinen, data)",
+		"taso" : "AA",
+		"selite" : "Verkkosivuille, joista seuraa käyttäjälle oikeudellisia sitoumuksia tai taloudellisia transaktioita, jotka muokkaavat tai poistavat käyttäjän hallinnoimaa dataa tietovarastossa tai jotka lähettävät käyttäjän koevastauksia, ainakin yksi seuraavista pitää paikkansa:",
+		"alaselite" : ["Peruttavissa: Lähetykset ovat peruttavissa.",
+			"Tarkastettu: Käyttäjän syöttämä data tarkastetaan syötevirheiden varalta ja käyttäjälle tarjotaan mahdollisuus virheiden korjaamiseen.",
+			"Vahvistettu: Käytettävissä on mekanismi informaation tarkistamiseen, vahvistamiseen ja korjaamiseen ennen lopullista lähettämistä."],
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "3.3.5",
+		"nimi" : "Ohjeet",
+		"taso" : "AAA",
+		"selite" : "Saatavilla on kontekstisidonnaisia ohjeita.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "3.3.6",
+		"nimi" : "Virheiden ennaltaehkäisy (kaikki)",
+		"taso" : "AAA",
+		"selite" : "Verkkosivuille, jotka vaativat käyttäjää lähettämään informaatiota, ainakin yksi seuraavista pitää paikkansa:",
+		"alaselite" : ["Peruttavissa: Lähetykset ovat peruttavissa.",
+			"Tarkastettu: Käyttäjän syöttämä data tarkastetaan syötevirheiden varalta ja käyttäjälle tarjotaan mahdollisuus virheiden korjaamiseen.",
+			"Vahvistettu: Käytettävissä on mekanismi informaation tarkistamiseen, vahvistamiseen ja korjaamiseen ennen lopullista lähettämistä."],
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "4.1.1",
+		"nimi" : "Jäsentäminen",
+		"taso" : "A",
+		"selite" : "Kun sisältö on toteutettu merkkauskieliä käyttämällä, elementeillä on täydelliset alku- ja lopputagit, elementit on järjestetty sisäkkäin spesifikaation mukaisesti, samaa attribuuttia ei ole annettu elementeille moneen kertaan ja kaikki ID-tunnisteet ovat yksilöllisiä, paitsi tilanteissa, joissa määritykset sallivat tämänkaltaiset ominaisuudet.",
+		"huomautus" : ["Alku- ja lopputagit, joiden muotoilusta puuttuu jokin kriittinen merkki, kuten päättävä \"suurempi kuin\" -merkki tai sopiva lainausmerkki attribuutin arvosta, eivät ole täydellisiä."],
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "4.1.2",
+		"nimi" : "Nimi, rooli, arvo",
+		"taso" : "A",
+		"selite" : "Kaikkien käyttöliittymäkomponenttien (mm. lomake-elementit, linkit ja skriptien luomat komponentit) nimi ja rooli voidaan selvittää ohjelmallisesti tilat, ominaisuudet ja arvot, jotka käyttäjä voi asettaa, voidaan myös asettaa ohjelmallisesti ja tieto näiden muutoksista on käyttäjäagenttien, mukaan lukien avustavien teknologioiden, saatavissa.",
+		"huomautus" : ["Tämä onnistumiskriteeri on ensisijaisesti web-kehittäjille, jotka toteuttavat tai koodaavat itse käyttöliittymäkomponentteja. Esimerkiksi standardinmukaiset HTML-elementit täyttävät tämän onnistumiskriteerin, kun niitä käytetään spesifikaation mukaisesti."],
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "4.1.3",
+		"nimi" : "Tilasta kertovat viestit",
+		"taso" : "AA",
+		"selite" : "Sisällössä, joka on toteutettu käyttäen merkkauskieliä, tilasta kertovat viestit voidaan selvittää ohjelmallisesti sellaisen roolin tai ominaisuuksien avulla, jotka mahdollistavat viestin esittämisen käyttäjälle avustavan teknologian avulla ilman kohdistuksen siirtämistä.",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "5.2.1",
+		"nimi" : "Ohjeidenmukaisuuden taso",
+		"taso" : "",
+		"selite" : "Yksi seuraavista ohjeidenmukaisuuden tasoista täyttyy kokonaisuudessaan.",
+		"alaselite" : ["Ohjeidenmukaisuuden A-tason mukainen (ohjeidenmukaisuuden minimitaso) verkkosivu täyttää kaikki A-tason onnistumiskriteerit, tai ohjeidenmukainen vaihtoehtoinen versio on saatavilla.",
+			"Ohjeidenmukaisuuden AA-tason mukainen verkkosivu täyttää kaikki A-tason ja AA-tason onnistumiskriteerit, tai AA-tason mukainen vaihtoehtoinen versio on saatavilla.",
+			"Ohjeidenmukaisuuden AAA-tason mukainen verkkosivu täyttää kaikki A-tason, AA-tason ja AAA-tason onnistumiskriteerit, tai AAA-tason mukainen vaihtoehtoinen versio on saatavilla."],
+		"huomautus" : ["Vaikka ohjeidenmukaisuus voidaan saavuttaa vain ilmoitetuilla tasoilla, sisällöntuottajia kannustetaan (väittämissään) tiedottamaan kaikesta panostuksesta muiden tasojen onnistumiskriteerien täyttämiseksi saavutetun tason yläpuolella.",
+			"Ei ole suositeltavaa vaatia yleisenä linjauksena kokonaisten verkkosivustojen AAA-tason ohjeidenmukaisuutta, koska joidenkin sisältöjen osalta ei ole mahdollista täyttää kaikkia AAA-tason onnistumiskriteereitä."],
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "5.2.2",
+		"nimi" : "Kokonaiset sivut",
+		"taso" : "",
+		"selite" : "Ohjeidenmukaisuus (ja ohjeidenmukaisuuden tasot) koskee vain kokonaisia verkkosivuja, eikä se voi toteutua, jos jokin osa verkkosivusta jätetään tarkastelun ulkopuolelle.",
+		"huomautus" : ["Ohjeidenmukaisuuden määritelemiseksi sivun osien vaihtoehtoiset sisällöt tulkitaan osaksi sivua silloin, kun niihin on pääsy suoraan sivulta, kuten esimerkiksi pitkä kuvausteksti tai videon vaihtoehtoinen esitystapa.",
+			"Verkkosivujen sisällöntuottajat, jotka eivät voi noudattaa ohjeita johtuen siitä, että sisältö ei ole heidän hallinnassaan, voivat harkita lausumaa osittaisesta ohjeidenmukaisuudesta.",
+			"Kokonainen sivu käsittää myös jokaisen sivun variaation, jotka esitetään käyttäjälle automaattisesti erikokoisilla näytöillä (esim. responsiivisen verkkosivun variaatiot). Jokaisen näistä variaatioista täytyy olla ohjeiden mukainen (tai sillä täytyy olla ohjeidenmukainen vaihtoehtoinen versio), jotta koko sivu olisi ohjeiden mukainen."],
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "5.2.3",
+		"nimi" : "Kokonaiset prosessit",
+		"taso" : "",
+		"selite" : "Kun verkkosivu on osa verkkosivujen sarjaa, jossa sivut kuuluvat prosessiin (vaiheiden sarja, joka täytyy käydä läpi toiminnon suorittamiseksi), kaikki prosessiin kuuluvat verkkosivut noudattavat vähintään määritellyn tason ohjeita. (Ohjeidenmukaisuus tietyllä tasolla ei ole mahdollista, jos jokin prosessin sivuista ei noudata vähintään kyseisen tason ohjeita,)",
+		"alaselite" : ["Verkkokaupassa on sarja verkkosivuja, joita käytetään tuotteiden valitsemiseen ja ostamiseen. Sarjan kaikki sivut prosessin alusta loppuun (maksamiseen) noudattavat ohjeita, jotta prosessin yksittäiset sivut olisivat ohjeidenmukaisia."],
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "5.2.4",
+		"nimi" : "Vain saavutettavuudeltaan tuettuja tapoja käyttää teknologioita",
+		"taso" : "",
+		"selite" : "Onnistumiskriteerien täyttämiseksi nojaudutaan vain saavutettavuudeltaan tuettuihin tapoihin käyttää teknologioita. Kaikki informaatio tai toiminnallisuudet, jotka tarjotaan tavalla, joka ei ole saavutettavuudeltaan tuettu, ovat saatavilla myös saavutettavuudeltaan tuetulla tavalla (ks. Understanding accessibility support).",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "5.2.5",
+		"nimi" : "Häiriöttömyys",
+		"taso" : "",
+		"selite" : "Jos teknologioita käytetään tavalla, jotka eivät ole saavutettavuudeltaan tuettuja tai jos niitä käytetään tavalla, joka ei noudata ohjeita, niin ne eivät estä käyttäjiä saavuttamasta muuta osaa sivusta. Tämän lisäksi verkkosivu kokonaisuudessaan täyttää ohjeidenmukaisuuden vaatimukset myös kaikissa seuraavissa tilanteissa: kun teknologia, johon ei nojauduta, kytketään käyttäjäagentissa päälle,\nkun teknologia, johon ei nojauduta, kytketään käyttäjäagentissa pois päältä, ja\nkun teknologiaa, johon ei nojauduta, ei tueta käyttäjäagentissa.\nTämän lisäksi seuraavat onnistumiskriteerit pätevät kaikkeen sivun sisältöön, mukaan lukien sisältö, johon ei muutoin nojauduta ohjeidenmukaisuuden saavuttamiseksi, koska näiden onnistumiskriteerien noudattamatta jättäminen saattaisi häiritä sivun käyttöä:",
+		"alaselite" : ["1.4.2 - Audion kontrollointi",
+			"2.1.2 - Ei näppäimistöansaa",
+			"2.3.1 - Kolme välähdystä tai alle raja-arvon ja",
+			"2.2.2 - Tauota, pysäytä, piilota."],
+		"lisaselite" : "Saadaksesi lisätietoja, mukaan lukien esimerkkejä, katso Understanding Conformance Requirements.",
+		"huomautus" : ["Jos sivu ei voi noudattaa ohjeita (esimerkiksi ohjeidenmukaisuuden testisivu tai esimerkkisivu), sitä ei voida sisällyttää ohjeidenmukaisten sivujen joukkoon tai ohjeidenmukaisuudesta kertovaan väittämään."],
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "5.3.1",
+		"nimi" : "Ohjeidenmukaisuudesta kertovan väittämän pakolliset osat",
+		"taso" : "",
+		"selite" : "Ohjeidenmukaisuudesta kertovia väittämiä ei vaadita. Sisällöntuottajat voivat noudattaa WCAG 2.0:aa tekemättä väittämää. Jos ohjeidenmukaisuudesta kertova väittämä kuitenkin tehdään, pitää väittämän sisältää seuraava informaatio. LISÄTIETOA SEURAAVAN LINKIN KAUTTA",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "5.3.2",
+		"nimi" : "Ohjeidenmukaisuudesta kertovan väittämän valinnaiset osat",
+		"taso" : "",
+		"selite" : "Edellä kuvattujen ohjeidenmukaisuudesta kertovien väittämien pakollisten osien lisäksi harkitse käyttäjiä auttavan lisäinformaation tarjoamista. Suositeltava lisäinformaatio sisältää:",
+		"alaselite" : ["Lista onnistumiskriteereistä, jotka ylittävät väitetyn ohjeidenmukaisuuden tason. Tämä informaatio tulisi toimittaa käyttäjille käyttökelpoisessa muodossa, mieluiten koneellisesti luettavina metatietoina.",
+			"Lista erityisistä teknologioista, joita \"käytetään, mutta joihin ei nojauduta\".",
+			"Lista asiakasohjelmista, mukaan lukien avustavat teknologiat, joita on käytetty sisällön testaamiseen.",
+			"Lista sisällön erityisistä saavutettavuusominaisuuksista, tarjottuna koneellisesti luettavien metatietojen muodossa.",
+			"Informaatio muista lisätoimista, joita onnistumiskriteerien lisäksi on tehty saavutettavuuden parantamiseksi.",
+			"Koneellisesti luettava metatietoversio luettelosta, jossa kerrotaan erityisistä teknologioista, joihin nojaudutaan.",
+			"Koneellisesti luettava metatietoversio ohjeidenmukaisuudesta kertovasta väittämistä."],
+		"huomautus" : ["Katso Understanding Conformance Claims saadaksesi lisätietoa ja esimerkkejä ohjeidenmukaisuudesta kertovista väittämistä.",
+			"Katso Understanding Metadata saadaksesi lisätietoja metatiedon käytöstä ohjeidenmukaisuudesta kertovissa väittämissä."],
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "",
+		"nimi" : "",
+		"taso" : "A",
+		"selite" : "",
+		"linkki" : ""
+	},
+	{
+		"tunniste" : "",
+		"nimi" : "",
+		"taso" : "A",
+		"selite" : "",
+		"linkki" : ""
 	}
 ]
 

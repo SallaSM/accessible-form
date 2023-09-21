@@ -76,6 +76,23 @@ const CriteriaListItem =({items, searchTerm}) => {
                                 </ul>
                                 ): ""
                                 }
+                                { items.lisaselite ?(
+                                    <p>{items.lisaselite}</p>
+                                ): ""
+                                }
+                                { items.huomautus ?(
+                                   <div>
+                                       {items.huomautus.map((item, i) =>{
+                                           return(
+                                           <div className="additional-note-div">
+                                                <p className="bold-text">HUOMAUTUS</p>
+                                                <p className="note-text"  key={i}>{item}</p>
+                                           </div>
+                                           )
+                                       })}
+                                   </div>
+                                    ): ""
+                                }
 
                                 <a href={items.linkki} target="_blank" >WCAG ohje kohtaan</a>
                             </div>
