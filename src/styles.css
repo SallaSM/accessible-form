@@ -339,6 +339,21 @@ nav li{
     padding-bottom: 5px;
 }
 
+.additional-note-div{
+    background-color: rgba(200, 248, 150, 0.77);
+    padding: 3px;
+    margin-bottom: 10px;
+}
+.bold-text{
+    font-weight: bold;
+    font-size: small;
+    color: rgb(57, 112, 2);
+    margin: 5px 5px 2px 5px;
+}
+.note-text{
+    margin: 0 10px 5px 15px;
+}
+
 .next-button-div{
     overflow: auto;
     position: absolute;

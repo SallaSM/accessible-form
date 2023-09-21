@@ -38,8 +38,12 @@ export default function BasicButton() {
                 </div>
                 <div className="col-6 col-s-12 float-right">
                     <ul className="criteriabox">
-                    <CriteriaList searchTerm={"1.1.1"}/>
-                    <CriteriaList searchTerm={"1.2.2"}/>
+                        <CriteriaList searchTerm={"1.1.1"}/>
+                        <CriteriaList searchTerm={"1.2.2"}/>
+                        <CriteriaList searchTerm={"1.4.10"}/>
+                        <CriteriaList searchTerm={"1.3.5"}/>
+                        <CriteriaList searchTerm={"1.4.5"}/>
+                        <CriteriaList searchTerm={"1.4.7"}/>
                     </ul>
                 </div>
 
