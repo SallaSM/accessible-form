@@ -719,20 +719,6 @@
 		"huomautus" : ["Katso Understanding Conformance Claims saadaksesi lisätietoa ja esimerkkejä ohjeidenmukaisuudesta kertovista väittämistä.",
 			"Katso Understanding Metadata saadaksesi lisätietoja metatiedon käytöstä ohjeidenmukaisuudesta kertovissa väittämissä."],
 		"linkki" : ""
-	},
-	{
-		"tunniste" : "",
-		"nimi" : "",
-		"taso" : "A",
-		"selite" : "",
-		"linkki" : ""
-	},
-	{
-		"tunniste" : "",
-		"nimi" : "",
-		"taso" : "A",
-		"selite" : "",
-		"linkki" : ""
 	}
 ]
 

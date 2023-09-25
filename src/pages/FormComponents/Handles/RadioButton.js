@@ -7,7 +7,7 @@ export default function RadioButton() {
             <Helmet>
                 <title>Radiopainike / Radiobutton - Helppokäyttöinen lomakesovellus</title>
             </Helmet>
-            <div>
+            <div className="page-container">
                 <h2>Radiopainike / Radiobutton</h2>
             </div>
         </div>
