@@ -32,7 +32,7 @@ function App() {
                 <Navbar />
                 <main>
                         <Routes >
-                            <Route  path="/"  index element={<MainPage/>}/>
+                            <Route  path="/"  element={<MainPage/>}/>
                             <Route path="/yleista_tietoa" element={<GeneralInfo/>}/>
                             <Route path="/lomake_komponentit" element={<FormComponents/>}/>
                             /*handles*/

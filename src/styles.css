@@ -65,16 +65,16 @@ code {
     monospace;
 }
 
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 7px;               /* width of the entire scrollbar */
     position: absolute;
 }
 
-body::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: white;        /* color of the tracking area */
 }
 
-body::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background-color:  #101044;  /* color of the scroll thumb */
     border-radius: 25px;       /* roundness of the scroll thumb */
     border: 1px solid aliceblue;  /* creates padding around scroll thumb */
@@ -112,6 +112,10 @@ h1{
 }
 h2{
     padding-left: 15px;
+}
+
+h3{
+    margin-top: 0;
 }
 
 /*breadcrumbs*/
@@ -254,15 +258,25 @@ nav li{
 
 }
 
-.page-container{
+
+.scroll-page-container{
     padding: 20px 10px;
-    height: 100%;
-    min-height: 80vh;
+    height: 80vh;
     background-color: aliceblue;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.page-container{
+    height: fit-content;
     overflow: auto;
     position: relative;
-    /*float: right;*/
+    padding-bottom: 10px;
+    min-height: 74vh;
 }
+
+
 /*
 .page-content-box{
    display: flex;
@@ -282,7 +296,7 @@ nav li{
 }
 
 .criteriabox{
-    border-radius: 5%;
+    border-radius: 5px;
     background-color: white;
     padding: 20px 20px 20px 30px;
     position: relative;
@@ -295,9 +309,10 @@ nav li{
 
 .criterialist .text-button-div{
     display: flex;
-    align-items: center;
+    justify-content: space-between;
     padding: 0.2rem 1rem 0.2rem 0rem;
     width: 100%;
+
 
 
 }
@@ -342,7 +357,7 @@ nav li{
 .additional-note-div{
     background-color: rgba(200, 248, 150, 0.77);
     padding: 3px;
-    margin-bottom: 10px;
+    margin: 10px 0 10px 0;
 }
 .bold-text{
     font-weight: bold;
@@ -353,21 +368,24 @@ nav li{
 .note-text{
     margin: 0 10px 5px 15px;
 }
-
+/*
 .next-button-div{
-    overflow: auto;
     position: absolute;
     right: 35px;
     bottom: 35px;
-}
+}*/
 
-.next-page-button{
+.page-container .next-page-button{
+    overflow: auto;
+    position: absolute;
+    right: 35px;
+    bottom: 25px;
     color: midnightblue;
     font-size: 20px;
     border: none;
     background-color: transparent;
     cursor: pointer;
-    padding: 5px;
+
 }
 
 .next-page-button:hover {
@@ -376,16 +394,17 @@ nav li{
 }
 
 /*Painike/button*/
-.example-buttons-div{
+.example-button-div{
     display: flex;
     justify-content: space-evenly;
+    padding: 25px;
 }
 
 .button-example1{
     font-size: 15px;
     font-weight: bold;
     padding: 10px;
-    border: none;
+    border:#101044 solid;
     border-radius: 6px;
     background-color: #101044;
     color: white;
@@ -393,15 +412,16 @@ nav li{
 }
 
 .button-example1:hover {
-    background-color: transparent;
-    color: #101044;
-    transition: 0.4s;
+   /* background-color: transparent;
+    color: #101044;*/
+    font-style: italic;
+    box-shadow: 0px 0px 10px 0px #101044;
+    transition: 0.2s;
 }
-.button-example1:active {
-    background-color: transparent;
-    box-shadow: 0px 0px 10px 0px #101044;;
+.activebutton {
+   /* box-shadow: 0px 0px 10px 0px #101044;;*/
+    background-color: white;
     color: #101044;
-    transition: 0.4s;
 }
 /*
 .button-example2{
