@@ -12,7 +12,7 @@ export default function Breadcrumbs() {
 
             return(
                 <div className="breadcrumb" key={crumb}>
-                    <Link to={currentLink}>{crumb}</Link>
+                    <Link to={currentLink}>{crumb} </Link>
                 </div>
             )
         })

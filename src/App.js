@@ -14,7 +14,8 @@ import Navbar from "./components/Navbar";
 import BasicButton from "./pages/FormComponents/Handles/BasicButton";
 import InputValidation from "./pages/FormComponents/InputFields/InputValidation";
 import ChangingView from "./pages/ ChangingView/ChangingView";
-import Breadcrumbs from "./components/Breadcrumbs";
+import Combobox from "./pages/FormComponents/InputFields/Combobox";
+
 
 function App() {
 
@@ -31,24 +32,24 @@ function App() {
 
                 <Navbar />
                 <main>
-                        <Routes >
-                            <Route  path="/"  element={<MainPage/>}/>
+                        <Routes>
+                            <Route path="/"  element={<MainPage/>}/>
                             <Route path="/yleista_tietoa" element={<GeneralInfo/>}/>
                             <Route path="/lomake_komponentit" element={<FormComponents/>}/>
                             /*handles*/
                             <Route path="/lomake_komponentit/painikkeet" element={<Handles/>}/>
-                            <Route  path="/lomake_komponentit/painikkeet/painike" element={<BasicButton/>}/>
+                            <Route path="/lomake_komponentit/painikkeet/painike" element={<BasicButton/>}/>
                             <Route path="/lomake_komponentit/painikkeet/radiopainike" element={<RadioButton/>}/>
                             <Route path="/lomake_komponentit/painikkeet/valintaruutu" element={<CheckBox/>}/>
                             /*inputfields*/
                             <Route path="/lomake_komponentit/syottokentat" element={<InputFields/>}/>
                             <Route path="/lomake_komponentit/syottokentat/syotteen_validointi" element={<InputValidation/>}/>
                             <Route path="/lomake_komponentit/syottokentat/automaattinen_taydennys" element={<Autocomplete/>}/>
+                            <Route path="/lomake_komponentit/syottokentat/pudotusvalikko" element={<Combobox/>}/>
                             /*muuttuva näkymä*/
                             <Route path="/muuttuva_nakyma" element={<ChangingView/>}/>
                         </Routes>
-
-            </main>
+                </main>
             </div>
 
         </HelmetProvider>

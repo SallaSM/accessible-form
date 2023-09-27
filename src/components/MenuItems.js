@@ -10,6 +10,7 @@ const MenuItems = ({ items, depthLevel }) => {
     const focusOnRef= useRef(null);
     const location = useLocation();
 
+
     const escFunction = useCallback((event) => {
             if (event.key === "Escape") {
                 setDropdown(false)

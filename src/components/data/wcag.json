@@ -121,7 +121,7 @@
 		"selite" : "Käyttäjän tietojen keräämiseen tarkoitettujen syötekenttien tarkoitus voidaan selvittää ohjelmallisesti, kun",
 		"alaselite" : ["käyttötarkoitus on listattu Syötteen tarkoitukset käyttöliittymäkomponenteissa -osiossa ja",
 			"sisällön toteutuksessa on käytetty teknologiaa, joka mahdollistaa syöte-elementin tarkoituksen kuvaamisen." ],
-		"linkki" : ""
+		"linkki" : "https://www.w3.org/Translations/WCAG21-fi/#identify-input-purpose"
 	},
 	{
 		"tunniste" : "1.3.6",
@@ -171,7 +171,7 @@
 		"alaselite" : ["Mukautettava: Tekstiä esittävä kuva voidaan visuaalisesti mukauttaa käyttäjän vaatimusten mukaisesti.",
 			"Olennainen: Tietty tekstin esitystapa on olennainen välitettävän informaation kannalta."],
 		"huomautus" : ["Logotyypit (teksti, joka on osa logoa tai brändin nimeä) tulkitaan olennaisiksi."],
-		"linkki" : ""
+		"linkki" : "https://www.w3.org/Translations/WCAG21-fi/#images-of-text"
 	},
 	{
 		"tunniste" : "1.4.6",
@@ -192,7 +192,7 @@
 			"Pois päältä: Taustaäänet voidaan kytkeä pois päältä.",
 			"20 dB: Taustaäänet ovat vähintään 20 desibeliä hiljaisempia kuin äänimaiseman etualan puhesisältö, poikkeuksena satunnaiset, yksi tai kaksi sekuntia kestävät äänet."],
 		"huomautus" : ["\"Desibelin\" määritelmän mukaan taustaääni, joka täyttää tämän vaatimuksen, on noin neljä kertaa hiljaisempi kuin äänimaiseman etualan puhesisältö."],
-		"linkki" : ""
+		"linkki" : "https://www.w3.org/Translations/WCAG21-fi/#low-or-no-background-audio"
 	},
 	{
 		"tunniste" : "1.4.8",
@@ -223,7 +223,7 @@
 			"vaakasuuntaan vieritettävän sisällön korkeus on 256 CSS-pikseliä."],
 		"lisaselite" : "Lukuun ottamatta sisällön osia, jotka vaativat kahdensuuntaista esitystapaa käytön tai merkityksen vuoksi.",
 		"huomautus" : ["320 CSS-pikseliä vastaa 1280 CSS-pikselin levyistä selainikkunaa, joka on zoomattu 400 % kokoiseksi. Vaakasuuntaan vieritettävässä sisällössä (esim. pystysuuntainen kirjoitus), 256 CSS-pikseliä vastaa 1024 px korkeaa selainikkunaa, joka on zoomattu 400 % kokoiseksi.", "Esimerkkejä sisällöstä, joissa vaaditaan kahdensuuntaista esitystapaa, ovat kuvat, kartat, diagrammit, videopelit, esitykset, taulukkomuotoinen data ja käyttöliittymät, joissa on tarpeellista pitää työkalupalkki näkyvissä, kun käsitellään sisältöä." ],
-		"linkki" : ""
+		"linkki" : "https://www.w3.org/Translations/WCAG21-fi/#reflow"
 	},
 	{
 		"tunniste" : "1.4.11",
