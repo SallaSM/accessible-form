@@ -51,6 +51,11 @@ export const SidebarData = [
                         path: '/lomake_komponentit/syottokentat/automaattinen_taydennys',
                         cName: 'nav-text',
                     },
+                    {
+                        title: 'Pudotusvalikko',
+                        path: '/lomake_komponentit/syottokentat/pudotusvalikko',
+                        cName: 'nav-text',
+                    },
                 ]
             },
 

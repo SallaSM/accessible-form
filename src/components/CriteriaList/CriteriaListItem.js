@@ -66,10 +66,10 @@ const CriteriaListItem =({items, searchTerm}) => {
                     </div>
                         {dropdown ?
                             <div className="criteria-info-box">
-                                <p className="criteriaLevelBox">{items.taso}</p>
-                                <p>{items.selite}</p>
+                                <p  aria-label="kriteeri taso" className="criteriaLevelBox">{items.taso}</p>
+                                <p >{items.selite}</p>
                                 { items.alaselite ?(
-                                <ul className="criteria-sublist">
+                                <ul  aria-label=""  className="criteria-sublist">
                                     {items.alaselite.map((item, i) => {
                                         return <li key={i}>{item}</li>
                                     })}

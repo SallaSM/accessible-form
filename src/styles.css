@@ -268,6 +268,13 @@ nav li{
     overflow-y: auto;
 }
 
+.non-scroll-page-container{
+    padding: 20px 10px;
+    background-color: aliceblue;
+    position: relative;
+    overflow: auto;
+}
+
 .page-container{
     height: fit-content;
     overflow: auto;
@@ -466,10 +473,23 @@ nav li{
     font-style: italic;
 }
 
+*/
+pre{
+    margin-top: 25px;
 
-.criteria-explanation-text-div{
-    padding-top: 15px;
-}*/
+}
+pre code {
+    background-color: #1d1d33;
+    border: 1px solid #101044;
+    border-radius: 5px;
+    display: block;
+    padding: 20px;
+    color: rgb(185, 90, 158);
+    font-weight: bold;
+}
 
-
-
+pre code p{
+    margin: 0 0 0 25px;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+}
