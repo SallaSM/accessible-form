@@ -15,6 +15,8 @@ body {
     position:relative;
     overflow-x: hidden;
 }
+
+
 * {
     box-sizing: border-box;
 }
@@ -79,19 +81,6 @@ code {
     border-radius: 25px;       /* roundness of the scroll thumb */
     border: 1px solid aliceblue;  /* creates padding around scroll thumb */
 }
-/*
-.content{
-    height: 80vh;
-}*/
-
-.flex{
- /*   display: grid;
-    grid-template-columns: repeat(3, 1fr);*/
-
-
-  /*  height: 100%;
-    width: 100%;*/
-}
 
 
 
@@ -99,15 +88,51 @@ code {
 .accessible-header-container {
     text-align: start;
     background-color: #101044;
-    width: 100%;
+    width: 100vw;
     height: fit-content;
     position: relative;
 }
 
+.logo{
+    margin-left: 30px;
+    width: 200px;
+}
+
+:focus{
+    outline-color:#16A7EC;
+}
+
+.skip-link {
+    left: 0;
+    top: 0;
+    position: absolute;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    border:#101044 solid;
+    border-radius: 6px;
+    background-color: white;
+    color: #101044;
+}
+
+.skip-link:focus {
+    transform: translateY(0%);
+}
+
+.current{
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+/*headings*/
 h1{
     margin: 0;
-    color: white;
-    font-weight: normal;
+    color: #101044;
+    font-weight: bold;
     padding: 35px 0 35px 35px;
 }
 h2{
@@ -117,43 +142,6 @@ h2{
 h3{
     margin-top: 0;
 }
-
-/*breadcrumbs*/
-.breadcrumbs {
-    overflow: auto;
-    padding:  10px 0 0 30px ;
-    align-items: start;
-    background-color: white;
-    height: 35px;
-
-}
-
-.breadcrumbs > *{
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.breadcrumbs .breadcrumb a{
-    color: #287693;
-    text-decoration: none;
-}
-
-.breadcrumbs .breadcrumb a:hover{
-    color: #125975;
-    text-decoration: none;
-}
-
-.breadcrumbs .breadcrumb:after{
-    content: ">";
-    margin-left: 10px;
-
-}
-.breadcrumbs .breadcrumb:last-child:after{
-    display: none;
-
-}
-
-
 
 .navdiv{
     margin: 1px;
@@ -178,7 +166,7 @@ nav a{
     display: flex;
     justify-content: start;
     align-items: center;
-    padding: 8px 16px 8px 16px;
+    padding: 8px 0px 8px 16px;
     list-style: none;
 
 }
@@ -193,6 +181,9 @@ nav a.active{
     font-style: italic;
     font-weight: bold;
 }
+
+
+
 
 nav a:hover {
     color: #287693;
@@ -210,6 +201,108 @@ nav li{
     margin-left: 0;
 }
 
+.focusableHeader:focus {
+    outline: none;
+}
+/*
+a.nav-mainlink{
+    color: pink;
+    padding: 5px;
+    border: #101044 solid;
+    border-radius: 15px;
+}
+
+a.nav-mainlink:visited{
+    color: red;
+
+}
+
+a.nav-sublink{
+    color: pink;
+    padding: 5px;
+    border: #101044 solid;
+    border-radius: 15px;
+}
+
+a.nav-sublink:visited{
+    color: #61bb01;
+
+}
+
+a.active {
+    border: 2px solid  #f51d19 !important;
+}
+
+
+
+
+a:link{
+    color: midnightblue;
+}
+
+a:visited{
+    color: #61bb01;
+    padding: 5px;
+    border: #101044 solid;
+    border-radius: 15px;
+}
+a:hover{
+    color: #125975;
+}
+
+a:active{
+    color: #101044;
+}*/
+/*breadcrumbs*/
+
+.breadcrumbs {
+    overflow: auto;
+    padding:  10px 0 0 0 ;
+    align-items: start;
+    background-color: white;
+    min-height: 35px;
+}
+
+
+.breadcrumbs > *{
+    display: inline-block;
+
+}
+
+.breadcrumbs .breadcrumb a{
+    color: #287693;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.breadcrumbs .breadcrumb a:hover{
+    color: #125975;
+    text-decoration: none;
+}
+
+
+.breadcrumbs .breadcrumb:last-child a{
+    color: black;
+    pointer-events: none;
+}
+
+
+.breadcrumbs .breadcrumb:last-child:after{
+    display: none;
+}
+
+.breadcrumbs .breadcrumb .arrow-icon{
+    margin: 2px 0 0 15px ;
+    padding-top: 3px;
+    width: 15px;
+    height: 15px;
+}
+/*
+.arrow-icon:last-child:after{
+    display: none;
+}*/
+
+
 .menu-items .link-button-div{
     display: flex;
     align-items: center;
@@ -217,6 +310,13 @@ nav li{
     width: 100%;
 
 }
+
+.block{
+    display: block;
+    overflow: auto;
+    width: fit-content;
+}
+
 
 .button-div{
     margin-left: auto;
@@ -266,6 +366,8 @@ nav li{
     position: relative;
     overflow-x: hidden;
     overflow-y: auto;
+    border-left: #101044 2px solid;
+
 }
 
 .non-scroll-page-container{
@@ -273,6 +375,8 @@ nav li{
     background-color: aliceblue;
     position: relative;
     overflow: auto;
+    border-left: #101044 2px solid;
+
 }
 
 .page-container{
@@ -281,6 +385,7 @@ nav li{
     position: relative;
     padding-bottom: 10px;
     min-height: 74vh;
+
 }
 
 
@@ -416,6 +521,11 @@ nav li{
     background-color: #101044;
     color: white;
     cursor:pointer;
+
+}
+
+.button-example1:focus {
+    outline-color: #16A7EC;
 }
 
 .button-example1:hover {

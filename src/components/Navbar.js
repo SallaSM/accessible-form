@@ -1,5 +1,6 @@
 import {SidebarData} from "./SidebarData";
 import MenuItems from './MenuItems';
+import {Outlet} from "react-router-dom";
 
 const Navbar = () => {
 
@@ -8,7 +9,7 @@ const Navbar = () => {
     return (
         <>
 
-        <nav aria-label="Päänavigaatio" className="col-3 col-s-3 menus" >
+        <nav aria-label="Päänavigaatio" className="col-3 col-s-12" >
             <ul
 
             >
@@ -29,7 +30,7 @@ const Navbar = () => {
             </ul>
         </nav>
 
-
+            <Outlet />
 
         </>
     );
