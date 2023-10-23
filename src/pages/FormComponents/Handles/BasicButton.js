@@ -1,11 +1,13 @@
 import '../../../styles.css';
 import {Helmet} from "react-helmet-async";
 import {CriteriaList} from "../../../components/CriteriaList/CriteriaList";
-import {useEffect, useRef, useState} from "react";
+import {createRef, useEffect, useRef, useState} from "react";
+import FocusableHeader from "../../../components/FocusableHeader";
 
 export default function BasicButton() {
     const [buttonActive, setButtonActive] = useState(false);
     const [buttonText, setButtonText] = useState( "Klikkaa Painiketta");
+
 
     const handleClick = () => {
         setButtonActive((prev) => !prev);
@@ -18,17 +20,18 @@ export default function BasicButton() {
     };
 
     return(
+        <div>
 
-        <section>
             <Helmet>
                 <title>Painike - Helppokäyttöinen lomakesovellus</title>
             </Helmet>
+
 
             <div className="scroll-page-container">
 
                 <div id="content" className="page-container">
 
-                    <h2>Painike / Button</h2>
+                    <FocusableHeader header="Painike / Button"/>
 
                     <div className="col-6 col-s-12">
                         <h3>Saavutettava painike esimerkki</h3>
@@ -41,7 +44,6 @@ export default function BasicButton() {
                                 {buttonText}
                             </button>
                         </div>
-
                         {/*  {explanation ?
                             (
                         <div className="criteria-explanation-text-div">
@@ -92,7 +94,7 @@ export default function BasicButton() {
                     </div>
                 </div>
             </div>
-        </section>
 
+        </div>
     )
 }

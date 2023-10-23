@@ -1,7 +1,8 @@
 import React, {useCallback, useEffect, useRef, useState,} from 'react';
 import Dropdown from './Dropdown';
-import {NavLink, useLocation} from 'react-router-dom';
+import {NavLink, useLocation, useNavigate} from 'react-router-dom';
 import {IoIosArrowDown, IoIosArrowUp} from "react-icons/io";
+
 
 
 
@@ -9,6 +10,7 @@ const MenuItems = ({ items, depthLevel }) => {
     const [dropdown, setDropdown] = useState(false);
     const focusOnRef= useRef(null);
     const location = useLocation();
+
 
 
     const escFunction = useCallback((event) => {
@@ -27,7 +29,10 @@ const MenuItems = ({ items, depthLevel }) => {
 
 
 
+console.log("jeje")
+
         return (
+
             <li
                 className="menu-items"
             >
@@ -38,17 +43,18 @@ const MenuItems = ({ items, depthLevel }) => {
                                 <NavLink
                                     aria-current={location.pathname === items.path ? 'page' : false}
                                     to={items.path}
+
+
                                 > {items.title}</NavLink>
                             ) : (
-                                <NavLink  aria-current={location.pathname === items.path ? 'page' : false} to={items.path}>{items.title}</NavLink>
-                            )}
-                            <div className="button-div">
+                                    <NavLink   aria-current={location.pathname === items.path ? 'page' : false} to={items.path}>{items.title}</NavLink>
+                                    )}
+                                <div className="button-div">
                                 <button
                                     ref={focusOnRef}
                                     aria-expanded={dropdown ? 'true' : 'false'}
                                     onClick={() =>
                                        setDropdown((prev) => !prev)
-
                                 }
 
                                 >
@@ -58,6 +64,7 @@ const MenuItems = ({ items, depthLevel }) => {
                                         <div>
                                             {dropdown
                                                 ?
+
                                                 <IoIosArrowUp aria-label="Sulje alavalikko painike"  color={"#2c84a4"}/>
                                                 : <IoIosArrowDown aria-label="Avaa alavalikko painike"/>
 
@@ -90,8 +97,11 @@ const MenuItems = ({ items, depthLevel }) => {
                     <NavLink aria-current={location.pathname === items.path ? 'page' : false}  to={items.path}>{items.title}</NavLink>
                 )}
             </li>
+
         );
+
     };
 
 
 export default MenuItems;
+

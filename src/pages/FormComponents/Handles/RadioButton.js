@@ -2,6 +2,7 @@ import '../../../styles.css';
 import {Helmet} from "react-helmet-async";
 import {CriteriaList} from "../../../components/CriteriaList/CriteriaList";
 import {useState} from "react";
+import FocusableHeader from "../../../components/FocusableHeader";
 
 export default function RadioButton() {
     const [buttonActive, setButtonActive] = useState(false);
@@ -27,7 +28,7 @@ export default function RadioButton() {
 
             <div id="content" className="page-container">
 
-                <h2>Radiopainike / Radiobutton</h2>
+                <FocusableHeader header="Radiopainike / Radiobutton"/>
 
                 <div className="col-6 col-s-12">
                     <h3>Saavutettava painike esimerkki</h3>
