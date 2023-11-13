@@ -15,10 +15,12 @@ import BasicButton from "./pages/FormComponents/Handles/BasicButton";
 import InputValidation from "./pages/FormComponents/InputFields/InputValidation";
 import ChangingView from "./pages/ ChangingView/ChangingView";
 import Combobox from "./pages/FormComponents/InputFields/Combobox";
-import Breadcrumbs from "./components/Breadcrumbs";
+
+import Breadcrumb from "./components/Breadcrumb";
 
 
-function App() {
+
+function App({location}) {
 
 
   return (
@@ -29,11 +31,13 @@ function App() {
             <div>
                 <Navbar />
                 <div className="block">
-                    <Breadcrumbs/>
+                    {/*<Breadcrumbs/>*/}
+                    <Breadcrumb/>
+
                     <main id="main-content">
                             <Routes >
-                                <Route index element={<MainPage/>} />
                                 <Route path="/"  element={<MainPage/>}/>
+                                <Route path="/accessible-form"  element={<MainPage/>}/>
                                 <Route path="/yleista_tietoa" element={<GeneralInfo/>}/>
                                 <Route path="/lomake_komponentit" element={<FormComponents/>}/>
                                 /*handles*/

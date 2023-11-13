@@ -12,7 +12,7 @@ const MenuItems = ({ items, depthLevel }) => {
     const location = useLocation();
 
 
-
+    {/*esc koodi: https://stackoverflow.com/questions/37440408/how-to-detect-esc-key-press-in-react-and-how-to-handle-it*/}
     const escFunction = useCallback((event) => {
             if (event.key === "Escape") {
                 setDropdown(false)
@@ -29,7 +29,7 @@ const MenuItems = ({ items, depthLevel }) => {
 
 
 
-console.log("jeje")
+
 
         return (
 
@@ -43,8 +43,6 @@ console.log("jeje")
                                 <NavLink
                                     aria-current={location.pathname === items.path ? 'page' : false}
                                     to={items.path}
-
-
                                 > {items.title}</NavLink>
                             ) : (
                                     <NavLink   aria-current={location.pathname === items.path ? 'page' : false} to={items.path}>{items.title}</NavLink>
@@ -56,7 +54,6 @@ console.log("jeje")
                                     onClick={() =>
                                        setDropdown((prev) => !prev)
                                 }
-
                                 >
 
 
