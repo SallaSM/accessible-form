@@ -6,10 +6,14 @@ import {IoIosArrowForward} from "react-icons/io";
 export default function Breadcrumbs() {
     const location=useLocation()
     let currentLink=""
+    const crumbname="";
     const crumbs= location.pathname.split("/")
         .filter(crumb => crumb !== "")
         .map(crumb =>{
             currentLink += `/${crumb}`
+
+
+
 
             return(
                 <div className="breadcrumb" key={crumb}>
@@ -18,11 +22,19 @@ export default function Breadcrumbs() {
                 </div>
             )
         })
-    return(
+    return(<>
+        {/* <div>
+            {Object.key(SidebarData).map((key, i) =>
+            key={i}
+                if (key.path===currentLink){
+                    crumbname=key.title
+            }
+            )}
+        </div>*/}
 
         <nav aria-label="Murupolku" className="col-12 col-s-12 breadcrumbs">
             {crumbs}
         </nav>
 
-    )}
+</> )}
 

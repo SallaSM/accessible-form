@@ -9,6 +9,7 @@ export default function Handles() {
             </Helmet>
             <div>
                 <h2>Painikkeet</h2>
+                <p>jeeje</p>
             </div>
         </div>
     )

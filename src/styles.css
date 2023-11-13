@@ -182,9 +182,6 @@ nav a.active{
     font-weight: bold;
 }
 
-
-
-
 nav a:hover {
     color: #287693;
     font-style: italic;
@@ -258,6 +255,8 @@ a:active{
 .breadcrumbs {
     overflow: auto;
     padding:  10px 0 0 0 ;
+    margin-top: 3px;
+    margin-bottom: 3px;
     align-items: start;
     background-color: white;
     min-height: 35px;
@@ -284,11 +283,8 @@ a:active{
 .breadcrumbs .breadcrumb:last-child a{
     color: black;
     pointer-events: none;
-}
-
-
-.breadcrumbs .breadcrumb:last-child:after{
-    display: none;
+    font-weight: normal;
+    font-style: normal;
 }
 
 .breadcrumbs .breadcrumb .arrow-icon{
@@ -297,10 +293,15 @@ a:active{
     width: 15px;
     height: 15px;
 }
+
+.breadcrumbs .breadcrumb:last-child .arrow-icon{
+     display: none;
+ }
 /*
 .arrow-icon:last-child:after{
     display: none;
 }*/
+
 
 
 .menu-items .link-button-div{

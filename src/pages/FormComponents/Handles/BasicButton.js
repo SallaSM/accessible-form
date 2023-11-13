@@ -27,11 +27,11 @@ export default function BasicButton() {
             </Helmet>
 
 
-            <div className="scroll-page-container">
+            <div className="non-scroll-page-container">
 
                 <div id="content" className="page-container">
 
-                    <FocusableHeader header="Painike / Button"/>
+                    <FocusableHeader header="Painike"/>
 
                     <div className="col-6 col-s-12">
                         <h3>Saavutettava painike esimerkki</h3>
