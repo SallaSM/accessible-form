@@ -253,8 +253,9 @@ a:active{
 /*breadcrumbs*/
 
 .breadcrumbs {
-    overflow: auto;
-    padding:  10px 0 0 0 ;
+    padding:8px 0 0 0;
+    width:fit-content;
+    margin-left: 2px;
     margin-top: 3px;
     margin-bottom: 3px;
     align-items: start;
@@ -280,12 +281,12 @@ a:active{
 }
 
 
-.breadcrumbs .breadcrumb:last-child a{
+/*.breadcrumbs .breadcrumb:last-child a{
     color: black;
     pointer-events: none;
     font-weight: normal;
     font-style: normal;
-}
+}*/
 
 .breadcrumbs .breadcrumb .arrow-icon{
     margin: 2px 0 0 15px ;
@@ -297,6 +298,11 @@ a:active{
 .breadcrumbs .breadcrumb:last-child .arrow-icon{
      display: none;
  }
+
+.breadcrumbs .breadcrumb .breadcrumb-last{
+    padding: 8px 0px 8px 16px;
+}
+
 /*
 .arrow-icon:last-child:after{
     display: none;
@@ -372,7 +378,7 @@ a:active{
 }
 
 .non-scroll-page-container{
-    padding: 20px 10px;
+    padding: 10px;
     background-color: aliceblue;
     position: relative;
     overflow: auto;

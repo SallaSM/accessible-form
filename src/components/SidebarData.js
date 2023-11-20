@@ -5,6 +5,7 @@ export const SidebarData = [
         cName: 'nav-text',
         breadcrumb:"Etusivu"
     },
+
     {
         title: 'Yleistä tietoa',
         path: '/yleista_tietoa',
@@ -12,32 +13,32 @@ export const SidebarData = [
         breadcrumb:"Yleistä tietoa"
     },
     {
-        title: 'Lomake komponentit',
-        path: '/lomake_komponentit',
+        title: 'Lomake-komponentit',
+        path: '/lomakekomponentit',
         cName: 'nav-text',
         breadcrumb: "Lomake komponentit",
         submenu: [
             {
                 title: 'Painikkeet',
-                path: '/lomake_komponentit/painikkeet',
+                path: '/lomakekomponentit/painikkeet',
                 cName: 'nav-text',
                 breadcrumb: "Painikkeet",
                 submenu: [
                     {
                         title: 'Painike',
-                        path: '/lomake_komponentit/painikkeet/painike',
+                        path: '/lomakekomponentit/painikkeet/painike',
                         cName: 'nav-text',
                         breadcrumb:"Painike"
                     },
                     {
                         title: 'Radiopainike',
-                        path: '/lomake_komponentit/painikkeet/radiopainike',
+                        path: '/lomakekomponentit/painikkeet/radiopainike',
                         cName: 'nav-text',
                         breadcrumb:"Radiopainike"
                     },
                     {
                         title: 'Valintaruutu',
-                        path: '/lomake_komponentit/painikkeet/valintaruutu',
+                        path: '/lomakekomponentit/painikkeet/valintaruutu',
                         cName: 'nav-text',
                         breadcrumb: "Valintaruutu"
                     },
@@ -45,25 +46,25 @@ export const SidebarData = [
             },
             {
                 title: 'Syöttökentät',
-                path: '/lomake_komponentit/syottokentat',
+                path: '/lomakekomponentit/syottokentat',
                 cName: 'nav-text',
                 breadcrumb:"Syöttökentät",
                 submenu: [
                     {
                         title: 'Syötteen validointi',
-                        path: '/lomake_komponentit/syottokentat/syotteen_validointi',
+                        path: '/lomakekomponentit/syottokentat/syotteen_validointi',
                         cName: 'nav-text',
                         breadcrumb:"Syötteen validointi"
                     },
                     {
                         title: 'Automaattinen täydennys',
-                        path: '/lomake_komponentit/syottokentat/automaattinen_taydennys',
+                        path: '/lomakekomponentit/syottokentat/automaattinen_taydennys',
                         cName: 'nav-text',
                         breadcrumb:"Automaatitnen täydennyt"
                     },
                     {
                         title: 'Pudotusvalikko',
-                        path: '/lomake_komponentit/syottokentat/pudotusvalikko',
+                        path: '/lomakekomponentit/syottokentat/pudotusvalikko',
                         cName: 'nav-text',
                         breadcrumb:"Pudotusvalikko"
                     },

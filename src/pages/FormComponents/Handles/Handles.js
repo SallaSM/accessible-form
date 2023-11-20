@@ -9,7 +9,7 @@ export default function Handles() {
             </Helmet>
             <div>
                 <h2>Painikkeet</h2>
-                <p>jeeje</p>
+                <p>tähän tulee yleistä tietoa saavutettavista painikkeista</p>
             </div>
         </div>
     )

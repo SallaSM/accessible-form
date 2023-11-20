@@ -5,10 +5,10 @@ export default function FormComponents() {
     return(
         <div>
             <Helmet>
-                <title>Lomake komponentit - Helppokäyttöinen lomakesovellus</title>
+                <title>Lomakekomponentit - Helppokäyttöinen lomakesovellus</title>
             </Helmet>
             <div>
-                <h2>Lomake komponentit</h2>
+                <h2>Lomakekomponentit</h2>
             </div>
         </div>
     )
