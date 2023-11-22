@@ -7,7 +7,7 @@ import FocusableHeader from "../../../components/FocusableHeader";
 export default function BasicButton() {
     const [buttonActive, setButtonActive] = useState(false);
     const [buttonText, setButtonText] = useState( "Klikkaa Painiketta");
-
+    const criteriaArray=["1.1.1", "1.2.2", "1.3.5", "1.4.5", "1.4.11"]
 
     const handleClick = () => {
         setButtonActive((prev) => !prev);
@@ -77,16 +77,12 @@ export default function BasicButton() {
 
 
                     </div>
-                    <div className="col-6 col-s-12 float-right">
-                        <ul className="criteriabox">
-                            <CriteriaList searchTerm={"1.1.1"}/>
-                            <CriteriaList searchTerm={"1.2.2"}/>
-                            <CriteriaList searchTerm={"1.3.5"}/>
-                            <CriteriaList searchTerm={"1.4.5"}/>
-                            <CriteriaList searchTerm={"1.4.7"}/>
-                            <CriteriaList searchTerm={"1.4.10"}/>
-                        </ul>
-                    </div>
+
+
+                            <CriteriaList searchTerm={criteriaArray}/>
+
+
+
 
 
                     <div className="next-button-div">

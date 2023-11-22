@@ -29,13 +29,6 @@
 		"linkki" : "https://www.w3.org/Translations/WCAG21-fi/#captions-prerecorded"
 	},
 	{
-		"tunniste" : "",
-		"nimi" : "",
-		"taso" : "A",
-		"selite" : "",
-		"linkki" : ""
-	},
-	{
 		"tunniste" : "1.2.3",
 		"nimi" : "Kuvailutulkkaus tai mediavastine (tallennettu)",
 		"taso" : "A",
