@@ -7,6 +7,7 @@ import FocusableHeader from "../../../components/FocusableHeader";
 export default function RadioButton() {
     const [buttonActive, setButtonActive] = useState(false);
     const [buttonText, setButtonText] = useState( "Klikkaa Painiketta");
+    const criteriaArray=["1.1.1", "1.2.4", "1.2.5", "1.3.3", "1.4.10"]
 
     const handleClick = () => {
         setButtonActive((prev) => !prev);
@@ -75,16 +76,13 @@ export default function RadioButton() {
 
 
                 </div>
-                <div className="col-6 col-s-12 float-right">
-                    <ul className="criteriabox">
-                        <CriteriaList searchTerm={"1.1.1"}/>
-                        <CriteriaList searchTerm={"1.2.2"}/>
-                        <CriteriaList searchTerm={"1.3.5"}/>
-                        <CriteriaList searchTerm={"1.4.5"}/>
-                        <CriteriaList searchTerm={"1.4.7"}/>
-                        <CriteriaList searchTerm={"1.4.10"}/>
-                    </ul>
-                </div>
+
+
+                <CriteriaList searchTerm={criteriaArray}/>
+
+
+
+
 
 
                 <div className="next-button-div">
