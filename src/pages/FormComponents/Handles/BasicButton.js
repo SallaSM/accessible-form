@@ -7,7 +7,8 @@ import FocusableHeader from "../../../components/FocusableHeader";
 export default function BasicButton() {
     const [buttonActive, setButtonActive] = useState(false);
     const [buttonText, setButtonText] = useState( "Klikkaa Painiketta");
-    const criteriaArray=["1.1.1", "1.2.2", "1.3.5", "1.4.5", "1.4.11"]
+    const criteriaArray=["1.1.1", "1.2.2", "1.3.5", "1.4.5", "1.4.11"];
+    const pageHeader="Painike";
 
     const handleClick = () => {
         setButtonActive((prev) => !prev);
@@ -31,10 +32,10 @@ export default function BasicButton() {
 
                 <div id="content" className="page-container">
 
-                    <FocusableHeader header="Painike"/>
+                    <FocusableHeader header={pageHeader}/>
 
                     <div className="col-6 col-s-12">
-                        <h3>Saavutettava painike esimerkki</h3>
+                        <h2>Saavutettava painike esimerkki</h2>
                         <div className="example-button-div">
                              <button className={buttonActive ? "button-example1 activebutton" : "button-example1"}
                                     aria-pressed={buttonActive ? 'true' : 'false'}
@@ -79,7 +80,10 @@ export default function BasicButton() {
                     </div>
 
 
-                            <CriteriaList searchTerm={criteriaArray}/>
+                     <CriteriaList
+                         searchTerm={criteriaArray}
+                         pageHeader={pageHeader}
+                        />
 
 
 

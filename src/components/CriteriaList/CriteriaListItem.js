@@ -1,11 +1,40 @@
 import '../../styles.css';
-import wcag from '../data/wcag.json'
-import React, {useCallback, useEffect, useState} from "react";
+import React, {useCallback, useEffect, useRef, useState} from "react";
 import {IoIosArrowDown, IoIosArrowUp} from "react-icons/io";
 
-const CriteriaListItem =({items}) => {
-    const [dropdown, setDropdown] = useState(false);
+const CriteriaListItem =(props) => {
+
     const escFunction = useCallback((event) => {
+            if (event.key === "Escape") {
+                props.func(null)
+            }},
+        []);
+
+    useEffect(() => {
+        document.addEventListener("keydown", escFunction, false);
+        return () => {
+            document.removeEventListener("keydown", escFunction, false);
+        };
+    }, [escFunction]);
+
+  {/*
+
+
+    const [dropdown, setDropdown] = useState(false);
+    const [dropdown, setDropdown] = useState(null);*/}
+
+
+
+    {/*     const handleDropdownClick = (index) => {
+        setDropdown(dropdown === index ? null : index);
+        console.log( index + " dropdown index= "+ dropdown + "   list item key " + indexx + "jeje")
+    };
+
+    dropdownin index numero pitäisi saada ylemmästä tasosta
+        nyt dopclickin indexi on tämän listakomponentin indexi
+        vertailu komponentin indexin ja klikattavan indexin välillä*/}
+
+    {/*   const escFunction = useCallback((event) => {
             if (event.key === "Escape") {
                 setDropdown(false)
             }},
@@ -18,7 +47,22 @@ const CriteriaListItem =({items}) => {
         };
     }, [escFunction]);
 
-    {/*   return(
+
+    useEffect(() => {
+        buttonRef.current.addEventListener('click', handleClick);
+        return () => {
+            buttonRef.current.removeEventListener('click', handleClick);
+        };
+    }, []);
+
+       const handleClick = useCallback((event) => {
+        const currentTarget = event.currentTarget.getAttribute("id")
+        if(event.currentTarget.getAttribute("id") !== items.index){
+            setDropdown(false);
+            console.log("eventcurrent" + currentTarget )
+        }},
+        []);
+     return(
         <>
 
     {items.map((criteria, index) => {
@@ -34,26 +78,34 @@ const CriteriaListItem =({items}) => {
     })}
             </>)
 
+            onClick={(e) =>
+              setDropdown((prev) => !prev)
+              }
+
+
 */}
     return(
         <>
-            {items.map((criteria, index) => {
-
+            {props.items.map((criteria) => {
+                const tunniste=criteria.tunniste + " " +criteria.nimi;
                 return (<>
-                <li  className="criterialist">
+
+                <li id={tunniste} key={criteria.tunniste} className="criterialist">
 
                         <div>
                             <div className="text-button-div">
                                 <p className="criteriaName">{criteria.tunniste} {criteria.nimi}</p>
                                 <button
+                                    aria-labelledby={tunniste}
                                     className="arrow-button"
-                                    aria-expanded={dropdown ? 'true' : 'false'}
-                                    onClick={() =>
-                                        setDropdown((prev) => !prev)
-                                    }>
+                                    aria-expanded={props.listDropdown === props.listIndex ? 'true' : 'false'}
+                                    onClick={() => props.func(props.listIndex)
+                                    }
+                                >
 
                                     <div>
-                                        {dropdown ?
+                                        {props.listDropdown === props.listIndex ?
+
                                             (
                                                 <IoIosArrowUp aria-label="Sulje alavalikko painike" color={"#2c84a4"}/>
                                             ) : (
@@ -65,7 +117,8 @@ const CriteriaListItem =({items}) => {
 
 
                             </div>
-                            {dropdown ?
+                            {props.listDropdown === props.listIndex &&(
+
                                 <div className="criteria-info-box">
                                     <p aria-label="kriteeri taso" className="criteriaLevelBox">{criteria.taso}</p>
                                     <p>{criteria.selite}</p>
@@ -95,18 +148,19 @@ const CriteriaListItem =({items}) => {
                                     ) : ""
                                     }
 
-                                    <a href={criteria.linkki} target="_blank">WCAG ohje kohtaan</a>
+                                    <a  href={criteria.linkki} target="_blank"> Lue lisää kriteeristä {tunniste} (Vie ulkoiseen palveluun)</a>
                                 </div>
-                                : <>
-                                </>
+                            )
                             }
                         </div>
-                </li>
+                        </li>
             </>
             );
             })}
 </>
     );
-};
 
+
+};
 export default CriteriaListItem;
+

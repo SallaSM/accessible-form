@@ -136,7 +136,9 @@ h1{
     padding: 35px 0 35px 35px;
 }
 h2{
-    padding-left: 15px;
+
+    color: #101044;
+    font-weight: normal;
 }
 
 h3{
@@ -196,6 +198,10 @@ nav ul{
 }
 nav li{
     margin-left: 0;
+}
+
+.focusableHeader{
+    padding-bottom: 0;
 }
 
 .focusableHeader:focus {
@@ -408,6 +414,8 @@ a:active{
 
 
 }*/
+
+
 .float-right{
     position: relative;
     float: right;
@@ -415,11 +423,19 @@ a:active{
 }
 
 .criteriabox{
-    border-radius: 5px;
+  /*  border-radius: 5px;*/
     background-color: white;
     padding: 20px 20px 20px 30px;
     position: relative;
     margin-top: 0;
+    border-bottom: #101044 2px solid;
+    border-top: #101044 2px solid;
+}
+
+.criteriabox h2{
+    padding-left: 0;
+    margin-top: 0;
+
 }
 
 .criterialist{
@@ -431,9 +447,6 @@ a:active{
     justify-content: space-between;
     padding: 0.2rem 1rem 0.2rem 0rem;
     width: 100%;
-
-
-
 }
 .criteriaName{
     padding: 0 20px 0 0 ;
@@ -457,9 +470,12 @@ a:active{
     color: #287693;
 }
 
+
 .criteria-info-box{
     padding-bottom: 15px;
+    transition: max-height 200ms ease, opacity 200ms ease;
 }
+
 
 .criteriaLevelBox{
     background-color: rgba(68, 137, 159, 0.68);
@@ -471,6 +487,20 @@ a:active{
 
 .criteria-sublist li{
     padding-bottom: 5px;
+
+}
+
+.criteria-info-box a{
+    color: #101044;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 8px 0px 8px 16px;
+}
+.criteria-info-box a:hover{
+    font-style: italic;
 }
 
 .additional-note-div{
