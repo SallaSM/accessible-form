@@ -23,9 +23,10 @@ export function CriteriaList(props) {
         <>
             <div className="col-6 col-s-12 float-right">
                 <ul className="criteriabox">
-                    <FocusableSecondHeader header= {props.pageHeader +"-elementtiin vaikuttavat WCAG kriteerit:"}/>
+                    {/*  <FocusableSecondHeader header= {props.pageHeader +"-elementtiin vaikuttavat WCAG kriteerit:"}/>*/}
+                        <h2>{props.pageHeader +"-elementtiin vaikuttavat WCAG kriteerit:"}</h2>
 
-                        {searchTerm?.map((item, index) => {
+                    {searchTerm?.map((item, index) => {
                             return (<>
                                      <CriteriaFilter
                                          func={handleDropdownClick}
