@@ -505,8 +505,6 @@ a:active{
 
 .criteria-info-box a{
     color: #101044;
-    text-decoration: none;
-
     display: flex;
     justify-content: start;
     align-items: center;

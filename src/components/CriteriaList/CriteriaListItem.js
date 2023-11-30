@@ -88,13 +88,14 @@ const CriteriaListItem =(props) => {
         <>
             {props.items.map((criteria) => {
                 const tunniste=criteria.tunniste + " " +criteria.nimi;
+                const taso= "Kriteerin taso " + criteria.taso;
                 return (<>
 
                 <li id={tunniste} key={criteria.tunniste} className={`criterialist ${props.listDropdown === props.listIndex ? 'active' : ''}`} >
 
                         <div>
                             <div className="text-button-div">
-                                <p className="criteriaName">{criteria.tunniste} {criteria.nimi}</p>
+                                <h3 className="criteriaName">{criteria.tunniste} {criteria.nimi}</h3>
                                 <button
                                     aria-labelledby={tunniste}
                                     className="arrow-button"
@@ -107,9 +108,9 @@ const CriteriaListItem =(props) => {
                                         {props.listDropdown === props.listIndex ?
 
                                             (
-                                                <IoIosArrowUp aria-label="Sulje alavalikko painike" color={"#2c84a4"}/>
+                                                <IoIosArrowUp color={"#2c84a4"}/>
                                             ) : (
-                                                <IoIosArrowDown aria-label="Avaa alavalikko painike"/>
+                                                <IoIosArrowDown />
                                             )
                                         }
                                     </div>
@@ -120,10 +121,10 @@ const CriteriaListItem =(props) => {
                             {props.listDropdown === props.listIndex &&(
 
                                 <div className="criteria-info-box">
-                                    <p aria-label="kriteeri taso" className="criteriaLevelBox">{criteria.taso}</p>
+                                    <p aria-label={taso} className="criteriaLevelBox">{criteria.taso}</p>
                                     <p>{criteria.selite}</p>
                                     {criteria.alaselite ? (
-                                        <ul aria-label="" className="criteria-sublist">
+                                        <ul className="criteria-sublist">
                                             {criteria.alaselite.map((item, i) => {
                                                 return <li key={i}>{item}</li>
                                             })}
