@@ -10,6 +10,7 @@ export default function BasicButton() {
     const criteriaArray=["1.1.1", "1.2.2", "1.3.5", "1.4.5", "1.4.11"];
     const pageHeader="Painike";
 
+
     const handleClick = () => {
         setButtonActive((prev) => !prev);
 
@@ -91,7 +92,7 @@ export default function BasicButton() {
 
 
                 </div>
-                <aside>
+                <aside >
                     <CriteriaList
                         searchTerm={criteriaArray}
                         pageHeader={pageHeader}

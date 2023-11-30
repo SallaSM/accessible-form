@@ -95,7 +95,7 @@ const CriteriaListItem =(props) => {
 
                         <div>
                             <div className="text-button-div">
-                                <h3 className="criteriaName">{criteria.tunniste} {criteria.nimi}</h3>
+                                <h3 className="criteriaName">{criteria.tunniste} {criteria.nimi}   </h3>
                                 <button
                                     aria-labelledby={tunniste}
                                     className="arrow-button"
