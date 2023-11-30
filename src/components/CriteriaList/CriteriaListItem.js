@@ -90,7 +90,7 @@ const CriteriaListItem =(props) => {
                 const tunniste=criteria.tunniste + " " +criteria.nimi;
                 return (<>
 
-                <li id={tunniste} key={criteria.tunniste} className="criterialist">
+                <li id={tunniste} key={criteria.tunniste} className={`criterialist ${props.listDropdown === props.listIndex ? 'active' : ''}`} >
 
                         <div>
                             <div className="text-button-div">

@@ -9,6 +9,9 @@ export function CriteriaList(props) {
     const [dropdown, setDropdown] = useState(null);
     const handleDropdownClick = (index) => {
         setDropdown(dropdown === index ? null : index);
+        if(dropdown === index){
+
+        }
         console.log( index + " dropdown index= "+ dropdown + "   list item key " + "jeje")
     };
 

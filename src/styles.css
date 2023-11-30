@@ -422,6 +422,8 @@ a:active{
     margin-bottom: 25px;
 }
 
+
+
 .criteriabox{
   /*  border-radius: 5px;*/
     background-color: white;
@@ -430,7 +432,9 @@ a:active{
     margin-top: 0;
     border-bottom: #101044 2px solid;
     border-top: #101044 2px solid;
+
 }
+
 
 .criteriabox h2{
     padding-left: 0;
@@ -438,9 +442,18 @@ a:active{
 
 }
 
-.criterialist{
+.criterialist {
     list-style: none;
 }
+  /*  max-height: 35px;
+    transition: height 0.4s ease-in;
+
+}
+
+.criterialist.active{
+    max-height: fit-content;
+    height: fit-content;
+}*/
 
 .criterialist .text-button-div{
     display: flex;
@@ -524,7 +537,7 @@ a:active{
     bottom: 35px;
 }*/
 
-.page-container .next-page-button{
+.next-page-button{
     overflow: auto;
     position: absolute;
     right: 35px;

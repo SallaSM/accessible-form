@@ -8,6 +8,7 @@ export default function RadioButton() {
     const [buttonActive, setButtonActive] = useState(false);
     const [buttonText, setButtonText] = useState( "Klikkaa Painiketta");
     const criteriaArray=["1.1.1", "1.2.4", "1.2.5", "1.3.3", "1.4.10"]
+    const pageHeader="Radiopainike";
 
     const handleClick = () => {
         setButtonActive((prev) => !prev);
@@ -29,10 +30,10 @@ export default function RadioButton() {
 
             <div id="content" className="page-container">
 
-                <FocusableHeader header="Radiopainike / Radiobutton"/>
+                <FocusableHeader header={pageHeader}/>
 
                 <div className="col-6 col-s-12">
-                    <h3>Saavutettava painike esimerkki</h3>
+                    <h2>Saavutettava painike esimerkki</h2>
                     <div className="example-button-div">
                         <button className={buttonActive ? "button-example1 activebutton" : "button-example1"}
                                 aria-pressed={buttonActive ? 'true' : 'false'}
@@ -78,7 +79,11 @@ export default function RadioButton() {
                 </div>
 
 
-                <CriteriaList searchTerm={criteriaArray}/>
+
+                <CriteriaList
+                    searchTerm={criteriaArray}
+                    pageHeader={pageHeader}
+                />
 
 
 

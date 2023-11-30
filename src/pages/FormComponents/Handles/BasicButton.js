@@ -30,11 +30,11 @@ export default function BasicButton() {
 
             <div className="non-scroll-page-container">
 
-                <div id="content" className="page-container">
+                <div id="content" className="page-container col-6 col-s-12">
 
                     <FocusableHeader header={pageHeader}/>
 
-                    <div className="col-6 col-s-12">
+                    <div >
                         <h2>Saavutettava painike esimerkki</h2>
                         <div className="example-button-div">
                              <button className={buttonActive ? "button-example1 activebutton" : "button-example1"}
@@ -79,20 +79,28 @@ export default function BasicButton() {
 
                     </div>
 
-
+                    {/* <aside>
                      <CriteriaList
                          searchTerm={criteriaArray}
                          pageHeader={pageHeader}
                         />
+                    </aside>*/}
 
 
 
 
 
-                    <div className="next-button-div">
-                        <button className="next-page-button"> Seuraava sivu</button>
-                    </div>
                 </div>
+                <aside>
+                    <CriteriaList
+                        searchTerm={criteriaArray}
+                        pageHeader={pageHeader}
+                    />
+                </aside>
+
+                <div className="next-button-div">
+                <button className="next-page-button"> Seuraava sivu</button>
+            </div>
             </div>
 
         </div>
