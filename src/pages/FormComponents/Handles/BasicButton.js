@@ -92,7 +92,7 @@ export default function BasicButton() {
 
 
                 </div>
-                <aside aria-label="Painikkeeseen vaikuttavat WCAG kriteerit">
+                <aside >
                     <CriteriaList
                         searchTerm={criteriaArray}
                         pageHeader={pageHeader}
