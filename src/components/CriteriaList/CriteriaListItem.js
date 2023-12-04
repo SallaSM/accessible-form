@@ -87,12 +87,11 @@ const CriteriaListItem =(props) => {
     return(
         <>
             {props.items.map((criteria) => {
-                const tunniste=criteria.tunniste + " " +criteria.nimi;
-                const taso= "Kriteerin taso " + criteria.taso;
+                {/*välit pois tunnisteesta*/}
+                const tunniste=(criteria.tunniste + criteria.nimi).replace(/ /g, '');
+                const taso= "Kriteerin taso " + criteria.taso.split('').join(' ');
                 return (<>
-
                 <li id={tunniste} key={criteria.tunniste} className={`criterialist ${props.listDropdown === props.listIndex ? 'active' : ''}`} >
-
                         <div>
                             <div className="text-button-div">
                                 <h3 className="criteriaName">{criteria.tunniste} {criteria.nimi}   </h3>
@@ -108,9 +107,9 @@ const CriteriaListItem =(props) => {
                                         {props.listDropdown === props.listIndex ?
 
                                             (
-                                                <IoIosArrowUp color={"#2c84a4"}/>
+                                                <IoIosArrowUp aria-hidden={true} color={"#2c84a4"}/>
                                             ) : (
-                                                <IoIosArrowDown />
+                                                <IoIosArrowDown aria-hidden={true} />
                                             )
                                         }
                                     </div>
