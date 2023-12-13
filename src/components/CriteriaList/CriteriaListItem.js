@@ -116,15 +116,15 @@ const CriteriaListItem =(props) => {
                                         }
                                     </div>
                                 </button>
-                                </h3>
+                            </h3>
                             </div>
 
 
                             {props.listDropdown === props.listIndex &&(
-                                <div role="region"
-                                aria-labelledby={btnId}>
 
-                                <div className="criteria-info-box">
+
+                                <div className="criteria-info-box"
+                                     aria-labelledby={btnId}>
 
                                     <p aria-label={taso} className="criteriaLevelBox">{criteria.taso}</p>
                                     <p>{criteria.selite}</p>
@@ -157,7 +157,7 @@ const CriteriaListItem =(props) => {
                                     <a  href={criteria.linkki} target="_blank"> Lue lisää kriteeristä {tunniste} (Vie ulkoiseen palveluun)</a>
 
 
-                                </div>
+
                                 </div>
                             )
                             }
