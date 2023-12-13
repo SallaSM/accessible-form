@@ -23,8 +23,9 @@ export function CriteriaList(props) {
         <>
             <div className="col-6 col-s-12 float-right">
                 <ul className="criteriabox">
+                    <div>
                     {/*  <FocusableSecondHeader header= {props.pageHeader +"-elementtiin vaikuttavat WCAG kriteerit:"}/>*/}
-                        <h2>{props.pageHeader +"-elementtiin vaikuttavat WCAG kriteerit:"}</h2>
+                        <h2>{props.pageHeader +"-elementtiin vaikuttavat WCAG kriteerit:"}  </h2>
 
                     {searchTerm?.map((item, index) => {
                             return (<>
@@ -36,7 +37,10 @@ export function CriteriaList(props) {
                                         />
 
                             </> );
+
                         })}
+                         </div>
+
                 </ul>
             </div>
         </>

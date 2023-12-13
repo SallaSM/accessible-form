@@ -4,6 +4,7 @@ import {IoIosArrowDown, IoIosArrowUp} from "react-icons/io";
 
 const CriteriaListItem =(props) => {
 
+
     const escFunction = useCallback((event) => {
             if (event.key === "Escape") {
                 props.func(null)
@@ -87,17 +88,18 @@ const CriteriaListItem =(props) => {
     return(
         <>
             {props.items.map((criteria) => {
-                {/*välit pois tunnisteesta*/}
                 const tunniste=(criteria.tunniste + criteria.nimi).replace(/ /g, '');
                 const taso= "Kriteerin taso " + criteria.taso.split('').join(' ');
+                const btnId=tunniste + "btn";
                 return (<>
                 <li id={tunniste} key={criteria.tunniste} className={`criterialist ${props.listDropdown === props.listIndex ? 'active' : ''}`} >
-                        <div>
+                    <div>
                             <div className="text-button-div">
-                                <h3 className="criteriaName">{criteria.tunniste} {criteria.nimi}   </h3>
+                                <h3 className="criteriaName">{criteria.tunniste} {criteria.nimi}
                                 <button
                                     aria-labelledby={tunniste}
                                     className="arrow-button"
+                                    id={btnId}
                                     aria-expanded={props.listDropdown === props.listIndex ? 'true' : 'false'}
                                     onClick={() => props.func(props.listIndex)
                                     }
@@ -114,12 +116,16 @@ const CriteriaListItem =(props) => {
                                         }
                                     </div>
                                 </button>
-
-
+                            </h3>
                             </div>
+
+
                             {props.listDropdown === props.listIndex &&(
 
-                                <div className="criteria-info-box">
+
+                                <div className="criteria-info-box"
+                                     aria-labelledby={btnId}>
+
                                     <p aria-label={taso} className="criteriaLevelBox">{criteria.taso}</p>
                                     <p>{criteria.selite}</p>
                                     {criteria.alaselite ? (
@@ -149,10 +155,13 @@ const CriteriaListItem =(props) => {
                                     }
 
                                     <a  href={criteria.linkki} target="_blank"> Lue lisää kriteeristä {tunniste} (Vie ulkoiseen palveluun)</a>
+
+
+
                                 </div>
                             )
                             }
-                        </div>
+                    </div>
                         </li>
             </>
             );
