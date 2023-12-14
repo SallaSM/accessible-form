@@ -1,6 +1,7 @@
 import '../../styles.css';
 import React, {useCallback, useEffect, useRef, useState} from "react";
 import {IoIosArrowDown, IoIosArrowUp} from "react-icons/io";
+import CriteriaDropdown from "../CriteriaDropdown";
 
 const CriteriaListItem =(props) => {
 
@@ -82,7 +83,7 @@ const CriteriaListItem =(props) => {
             onClick={(e) =>
               setDropdown((prev) => !prev)
               }
-
+ <div className="text-button-div"> </div>
 
 */}
     return(
@@ -90,79 +91,80 @@ const CriteriaListItem =(props) => {
             {props.items.map((criteria) => {
                 const tunniste=(criteria.tunniste + criteria.nimi).replace(/ /g, '');
                 const taso= "Kriteerin taso " + criteria.taso.split('').join(' ');
-                const btnId=tunniste + "btn";
+
                 return (<>
-                <li id={tunniste} key={criteria.tunniste} className={`criterialist ${props.listDropdown === props.listIndex ? 'active' : ''}`} >
-                    <div>
-                            <div className="text-button-div">
-                                <h3 className="criteriaName">{criteria.tunniste} {criteria.nimi}
-                                <button
-                                    aria-labelledby={tunniste}
-                                    className="arrow-button"
-                                    id={btnId}
-                                    aria-expanded={props.listDropdown === props.listIndex ? 'true' : 'false'}
-                                    onClick={() => props.func(props.listIndex)
-                                    }
-                                >
+                    <li id={tunniste} key={criteria.tunniste} className={`criterialist ${props.listDropdown === props.listIndex ? 'active' : ''}`} >
 
-                                    <div>
-                                        {props.listDropdown === props.listIndex ?
+                        <div className="text-button-div">
+                            <h3 className="criteriaName">{criteria.tunniste} {criteria.nimi}
 
-                                            (
-                                                <IoIosArrowUp aria-hidden={true} color={"#2c84a4"}/>
-                                            ) : (
-                                                <IoIosArrowDown aria-hidden={true} />
-                                            )
-                                        }
-                                    </div>
-                                </button>
-                            </h3>
-                            </div>
-
-
-                            {props.listDropdown === props.listIndex &&(
-
-
-                                <div className="criteria-info-box"
-                                     aria-labelledby={btnId}>
-
-                                    <p aria-label={taso} className="criteriaLevelBox">{criteria.taso}</p>
-                                    <p>{criteria.selite}</p>
-                                    {criteria.alaselite ? (
-                                        <ul className="criteria-sublist">
-                                            {criteria.alaselite.map((item, i) => {
-                                                return <li key={i}>{item}</li>
-                                            })}
-                                        </ul>
-                                    ) : ""
-                                    }
-                                    {criteria.lisaselite ? (
-                                        <p>{criteria.lisaselite}</p>
-                                    ) : ""
-                                    }
-                                    {criteria.huomautus ? (
-                                        <div>
-                                            {criteria.huomautus.map((item, i) => {
-                                                return (
-                                                    <div className="additional-note-div">
-                                                        <p className="bold-text">HUOMAUTUS</p>
-                                                        <p className="note-text" key={i}>{item}</p>
-                                                    </div>
-                                                )
-                                            })}
-                                        </div>
-                                    ) : ""
-                                    }
-
-                                    <a  href={criteria.linkki} target="_blank"> Lue lisää kriteeristä {tunniste} (Vie ulkoiseen palveluun)</a>
-
-
-
-                                </div>
-                            )
+                            <button
+                                aria-labelledby={tunniste}
+                                className="arrow-button"
+                                aria-expanded={props.listDropdown === props.listIndex ? 'true' : 'false'}
+                                onClick={() => props.func(props.listIndex)
                             }
-                    </div>
-                        </li>
+                            >
+
+                                <div>
+                                    {props.listDropdown === props.listIndex ?
+
+                                        (
+                                            <IoIosArrowUp aria-hidden={true} color={"#2c84a4"}/>
+                                        ) : (
+                                            <IoIosArrowDown aria-hidden={true} />
+                                        )
+                                    }
+                                </div>
+                            </button>
+                            </h3>
+                        </div>
+
+                    </li>
+
+                    {props.listDropdown === props.listIndex &&(
+                        <div className="criteria-info-box">
+                            {/*paragraphDescription added for screenreader to be able to read criterialevel correctly*/}
+                            <div id="paragraphDescription" className="sr-only">{taso}</div>
+
+                            <p className="criteriaLevelBox"
+                               aria-hidden={true}
+                               aria-describedby="paragraphDescription">{criteria.taso}</p>
+
+                            <p>{criteria.selite}</p>
+                            {criteria.alaselite ? (
+                                <ul className="criteria-sublist">
+                                    {criteria.alaselite.map((item, i) => {
+                                        return <li key={i}>{item}</li>
+                                    })}
+                                </ul>
+                            ) : ""
+                            }
+                            {criteria.lisaselite ? (
+                                <p>{criteria.lisaselite}</p>
+                            ) : ""
+                            }
+                            {criteria.huomautus ? (
+                                <div>
+                                    {criteria.huomautus.map((item, i) => {
+                                        return (
+                                            <div className="additional-note-div">
+                                                <p className="bold-text">HUOMAUTUS</p>
+                                                <p className="note-text" key={i}>{item}</p>
+                                            </div>
+                                        )
+                                    })}
+                                </div>
+                            ) : ""
+                            }
+
+                            <a  href={criteria.linkki} target="_blank"> Lue lisää kriteeristä {tunniste} (Vie ulkoiseen palveluun)</a>
+
+
+
+                        </div>
+
+                        )}
             </>
             );
             })}
