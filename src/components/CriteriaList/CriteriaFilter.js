@@ -12,6 +12,7 @@ export function CriteriaFilter(props) {
                 listIndex={props.listIndex}
                 func={props.func}
                 listDropdown={props.listDropdown}
+                div={props.div}
             />
         </>
     );
