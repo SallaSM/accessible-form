@@ -31,6 +31,12 @@ export const SidebarData = [
                         breadcrumb:"Painike"
                     },
                     {
+                        title: 'Valintapainike',
+                        path: '/lomakekomponentit/painikkeet/valintapainike',
+                        cName: 'nav-text',
+                        breadcrumb:"Valintapainike"
+                    },
+                    {
                         title: 'Radiopainike',
                         path: '/lomakekomponentit/painikkeet/radiopainike',
                         cName: 'nav-text',

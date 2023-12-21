@@ -16,6 +16,7 @@ import InputValidation from "./pages/FormComponents/InputFields/InputValidation"
 import ChangingView from "./pages/ ChangingView/ChangingView";
 import Combobox from "./pages/FormComponents/InputFields/Combobox";
 import Breadcrumb from "./components/Breadcrumb";
+import ToggleButton from "./pages/FormComponents/Handles/ToggleButton";
 
 
 
@@ -24,12 +25,12 @@ function App({location}) {
 
   return (
         <>
-        <HelmetProvider>
+        <HelmetProvider>   <div><div className="block" >
             <Header/>
             {/*<a id="skip-link" className="skip-link" href="#main-content">Siirry sisältöön</a>*/}
-            <div>
+
                 <Navbar />
-                <div className="block">
+
                     {/*<Breadcrumbs/>*/}
                     <Breadcrumb/>
                     <main id="main-content">
@@ -48,6 +49,7 @@ function App({location}) {
                                 /*handles*/
                                 <Route path="/lomakekomponentit/painikkeet" element={<Handles/>}/>
                                 <Route path="/lomakekomponentit/painikkeet/painike" element={<BasicButton/>}/>
+                                <Route path="/lomakekomponentit/painikkeet/valintapainike" element={<ToggleButton/>}/>
                                 <Route path="/lomakekomponentit/painikkeet/radiopainike" element={<RadioButton/>}/>
                                 <Route path="/lomakekomponentit/painikkeet/valintaruutu" element={<CheckBox/>}/>
                                 /*inputfields*/

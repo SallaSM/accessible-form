@@ -2,7 +2,6 @@ import '../../styles.css';
 import React, {createRef, useCallback, useEffect, useState} from "react";
 import {CriteriaFilter} from "./CriteriaFilter";
 import dropdown from "../Dropdown";
-import FocusableSecondHeader from "../FocusableSecondHeader";
 
 export function CriteriaList(props) {
     const searchTerm=props.searchTerm;
@@ -19,11 +18,11 @@ export function CriteriaList(props) {
 
     return(
         <>
-            <div className="col-6 col-s-12 float-right">
-                <ul className="criteriabox">
+            <div className="col-4 col-s-12 float-right">
+                {/* <h2 id="criteria-list-header">{props.pageHeader +"-elementtiin vaikuttavat WCAG kriteerit:"}  </h2>*/}
+                <h2 id="criteria-list-header">{props.pageHeader +"-elementtiin vaikuttavat WCAG kriteerit:"}  </h2>
 
-                    {/*  <FocusableSecondHeader header= {props.pageHeader +"-elementtiin vaikuttavat WCAG kriteerit:"}/>*/}
-                        <h2>{props.pageHeader +"-elementtiin vaikuttavat WCAG kriteerit:"}  </h2>
+                <ul aria-labelledby="criteria-list-header" className="criteriabox">
 
                     {searchTerm?.map((item, index) => {
                             return (<>

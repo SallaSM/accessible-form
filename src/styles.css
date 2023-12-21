@@ -1,11 +1,13 @@
 /*index.js*/
-
-
-body {
-    margin: 0;
+* {
+    box-sizing: border-box;
+}
+ body{
    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;*/
+    margin: 0;
+    padding: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #333;
@@ -13,24 +15,24 @@ body {
     height: fit-content;
     width: 100vw;
     position:relative;
+    box-sizing: border-box;
     overflow-x: hidden;
 }
 
-
-* {
-    box-sizing: border-box;
-}
-
 [class*="col-"] {
-    float: left;
-    padding: 15px;
+   float: left;
+  padding: 15px;
 }
 
 /* For mobile phones: */
 [class*="col-"] {
     width: 100%;
 }
+.accessible-header-container-center{
+    background-color: #101044;
+    text-align: center;
 
+}
 @media only screen and (min-width: 600px) {
     /* For tablets: */
     .col-s-1 {width: 8.33%;}
@@ -45,8 +47,25 @@ body {
     .col-s-10 {width: 83.33%;}
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
+
 }
 @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%; }
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%; height: fit-content;}
+}
+
+@media only screen and (min-width: 1071px) {
     /* For desktop: */
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
@@ -60,6 +79,14 @@ body {
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+    .accessible-header-container-start {
+        text-align: start;
+        background-color: #101044;
+        width: 100vw;
+        height: fit-content;
+        position: relative;
+        box-sizing: border-box;
+    }
 }
 
 code {
@@ -70,6 +97,7 @@ code {
 ::-webkit-scrollbar {
     width: 7px;               /* width of the entire scrollbar */
     position: absolute;
+    height: 5px;
 }
 
 ::-webkit-scrollbar-track {
@@ -84,15 +112,21 @@ code {
 
 
 
-/* Header */
+
+/* Header
 .accessible-header-container {
     text-align: start;
     background-color: #101044;
     width: 100vw;
     height: fit-content;
     position: relative;
+    box-sizing: border-box;
 }
+header{
+    width: 100%;
 
+}
+*/
 .logo{
     margin-left: 30px;
     width: 200px;
@@ -331,6 +365,56 @@ a:active{
 }
 
 
+.codeblock{
+    overflow: auto;
+    background: white;
+    border-left: #101044 1px solid;
+}
+
+.code-example-header{
+    border-bottom: #101044 solid 2px;
+    width: 100%;
+    padding: 10px 0 0 10px;
+}
+
+.code-example-header h3{
+    font-size: 15px;
+    font-family: Consolas;
+    margin-bottom: 2px;
+}
+
+
+.flex-box{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.float-up-right{
+    position: relative;
+    float: right;
+    margin-top: 5px;
+
+}
+
+.copy-button {
+    font-size: 17px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 25%;
+    padding: 2px 0 2px 0 ;
+    width: 25px;
+    height: 25px;
+
+}
+
+.copy-button:hover {
+    border: #101044 solid 2px;
+
+}
+
+
 .button-div{
     margin-left: auto;
     margin-right: 2rem;
@@ -377,7 +461,7 @@ a:active{
     height: 80vh;
     background-color: aliceblue;
     position: relative;
-    overflow-x: hidden;
+ /*   overflow-x: hidden;*/
     overflow-y: auto;
     border-left: #101044 2px solid;
 
@@ -402,12 +486,8 @@ a:active{
 }
 
 
-/*
-.page-content-box{
-   display: flex;
-    padding: 10px;
 
-}*/
+
 /*
 .examplebox{
     width: 50%;
@@ -420,6 +500,7 @@ a:active{
     position: relative;
     float: right;
     margin-bottom: 25px;
+
 }
 
 
@@ -512,7 +593,7 @@ a:active{
 
 .criteria-sublist li{
     padding-bottom: 5px;
-
+    margin-right: 4px;
 }
 
 .criteria-info-box a{
@@ -570,35 +651,47 @@ a:active{
     display: flex;
     justify-content: space-evenly;
     padding: 25px;
+    background-color: white;
+    border-radius: 15px;
 }
 
 .button-example1{
     font-size: 15px;
-    font-weight: bold;
+    font-weight: normal;
     padding: 10px;
-    border:#101044 solid;
-    border-radius: 6px;
+    border:#101044 1px solid;
+    border-radius: 10px;
     background-color: #101044;
     color: white;
     cursor:pointer;
 
 }
-
+/*
 .button-example1:focus {
-    outline-color: #16A7EC;
+    outline-color: transparent;
+    outline-style: solid;
+    box-shadow: 0 0 0 2px #16A7EC;
+}
+*/
+.button-example1:hover {
+    color: #ffffff;
+    transition: 0.3s;
+    opacity: 0.9;
+    font-style: italic;
+}
+.active-basicbutton {
+    opacity: 0.7;
+    background-color: #125975;
+    border: 1px #125975 solid;
+    color: white;
+    pointer-events: none;
 }
 
-.button-example1:hover {
-   /* background-color: transparent;
-    color: #101044;*/
-    font-style: italic;
-    box-shadow: 0px 0px 10px 0px #101044;
-    transition: 0.2s;
-}
-.activebutton {
-   /* box-shadow: 0px 0px 10px 0px #101044;;*/
-    background-color: white;
-    color: #101044;
+.active-togglebutton {
+    opacity: 0.7;
+    background-color: #125975;
+    border: 1px #125975 solid;
+    color: white;
 }
 /*
 .button-example2{
@@ -644,22 +737,18 @@ a:active{
 }
 
 */
+/*
 pre{
     margin-top: 25px;
 
 }
 pre code {
-    background-color: #1d1d33;
-    border: 1px solid #101044;
-    border-radius: 5px;
     display: block;
     padding: 20px;
-    color: rgb(185, 90, 158);
-    font-weight: bold;
 }
 
 pre code p{
     margin: 0 0 0 25px;
-    color: rgb(255, 255, 255);
-    font-weight: normal;
+    color: black;
 }
+*/

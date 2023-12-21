@@ -9,7 +9,7 @@ const Navbar = () => {
     return (
         <>
 
-        <nav aria-label="Päänavigaatio" className="col-3 col-s-12" >
+        <nav aria-label="Päänavigaatio" className="col-3  col-s-12" >
             <ul
 
             >

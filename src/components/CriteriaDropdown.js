@@ -1,6 +1,4 @@
-
 import React from "react";
-import * as root from "react-dom";
 
 const CriteriaDropdown =(props) => {
 
