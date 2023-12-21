@@ -96,7 +96,7 @@ const CriteriaListItem =(props) => {
                     <li id={tunniste} key={criteria.tunniste} className={`criterialist ${props.listDropdown === props.listIndex ? 'active' : ''}`} >
 
                         <div className="text-button-div">
-                            <h3 className="criteriaName">{criteria.tunniste} {criteria.nimi}    </h3>
+                            <h3 className="criteriaName">{criteria.tunniste} {criteria.nimi} </h3>
 
                             <button
                                 aria-labelledby={tunniste}
