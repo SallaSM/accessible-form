@@ -7,44 +7,44 @@ export const SidebarData = [
     },
 
     {
-        title: 'Yleistä tietoa',
-        path: '/yleista_tietoa',
+        title: 'Yleistä saavutettavuudesta',
+        path: '/yleista_saavutettavuudesta',
         cName: 'nav-text',
-        breadcrumb:"Yleistä tietoa"
+        breadcrumb:"Yleistä saavutettavuudesta"
     },
     {
-        title: 'Lomake-komponentit',
-        path: '/lomakekomponentit',
+        title: 'Lomake-elementti',
+        path: '/lomake-elementti',
         cName: 'nav-text',
-        breadcrumb: "Lomake komponentit",
+        breadcrumb: "Lomake-elementti",
         submenu: [
             {
                 title: 'Painikkeet',
-                path: '/lomakekomponentit/painikkeet',
+                path: '/lomake-elementti/painikkeet',
                 cName: 'nav-text',
                 breadcrumb: "Painikkeet",
                 submenu: [
                     {
-                        title: 'Painike',
-                        path: '/lomakekomponentit/painikkeet/painike',
+                        title: 'Kerran painettavat painikkeet',
+                        path: '/lomake-elementti/painikkeet/painike',
                         cName: 'nav-text',
                         breadcrumb:"Painike"
                     },
                     {
                         title: 'Valintapainike',
-                        path: '/lomakekomponentit/painikkeet/valintapainike',
+                        path: '/lomake-elementti/painikkeet/valintapainike',
                         cName: 'nav-text',
                         breadcrumb:"Valintapainike"
                     },
                     {
                         title: 'Radiopainike',
-                        path: '/lomakekomponentit/painikkeet/radiopainike',
+                        path: '/lomake-elementti/painikkeet/radiopainike',
                         cName: 'nav-text',
                         breadcrumb:"Radiopainike"
                     },
                     {
                         title: 'Valintaruutu',
-                        path: '/lomakekomponentit/painikkeet/valintaruutu',
+                        path: '/lomake-elementti/painikkeet/valintaruutu',
                         cName: 'nav-text',
                         breadcrumb: "Valintaruutu"
                     },
@@ -52,25 +52,25 @@ export const SidebarData = [
             },
             {
                 title: 'Syöttökentät',
-                path: '/lomakekomponentit/syottokentat',
+                path: '/lomake-elementti/syottokentat',
                 cName: 'nav-text',
                 breadcrumb:"Syöttökentät",
                 submenu: [
                     {
                         title: 'Syötteen validointi',
-                        path: '/lomakekomponentit/syottokentat/syotteen_validointi',
+                        path: '/lomake-elementti/syottokentat/syotteen_validointi',
                         cName: 'nav-text',
                         breadcrumb:"Syötteen validointi"
                     },
                     {
                         title: 'Automaattinen täydennys',
-                        path: '/lomakekomponentit/syottokentat/automaattinen_taydennys',
+                        path: '/lomake-elementti/syottokentat/automaattinen_taydennys',
                         cName: 'nav-text',
                         breadcrumb:"Automaatitnen täydennyt"
                     },
                     {
                         title: 'Pudotusvalikko',
-                        path: '/lomakekomponentit/syottokentat/pudotusvalikko',
+                        path: '/lomake-elementti/syottokentat/pudotusvalikko',
                         cName: 'nav-text',
                         breadcrumb:"Pudotusvalikko"
                     },

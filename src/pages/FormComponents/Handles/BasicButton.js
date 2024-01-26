@@ -12,8 +12,8 @@ export default function BasicButton() {
     const [button1Active, setButton1Active] = useState(false);
     const [button2Active, setButton2Active] = useState(false);
     const [buttonText, setButtonText] = useState( "Klikkaa");
-    const criteriaArray=["1.4.3", "2.1.1","2.1.2", "2.4.3", "2.4.7", "3.2.2","4.1.2"];
-    const pageHeader="Painikkeet";
+    const criteriaArray=["1.4.3", "2.1.1","2.1.2", "2.4.3", "2.4.7","4.1.2"];
+    const pageHeader="Kerran painettavat painikkeet";
 
 
     const handleToggleClick = () => {
@@ -30,7 +30,7 @@ export default function BasicButton() {
         <div>
 
             <Helmet>
-                <title>Painike - Helppokäyttöinen lomakesovellus</title>
+                <title>Kerran painettava painike - Helppokäyttöinen lomakesovellus</title>
             </Helmet>
 
 
@@ -40,7 +40,10 @@ export default function BasicButton() {
 
                     <div id="first-section">
                         <h2>Kerran klikattava painike</h2>
+                        <p>Painike joka suorittaa peruuttamattoman tominnon klikkauksen jälkeen. Näihin painikkeisiin lukeutuu muun muassa Lähetä -, Tyhjennä -ja Peruuta -painikkeet.
+                        Alla oleva yksinkertainen painike aktivoituu klikkauksesta ja jää aktiiviseksi. </p>
                         <div className="example-button-div">
+
                             <button
                                 className={button1Active ? "button-example1 active-basicbutton" : "button-example1"}
                                 aria-pressed={button1Active ? 'true' : 'false'}
@@ -89,14 +92,14 @@ text={`<button
                     </div>
 
                     <div id="second-section">
-                        <h2>Useasti klikattava painike</h2>
+                        <h2>Lähetä-painike</h2>
                         <div className="example-button-div">
                             <button
                                 className={button2Active ? "button-example1 active-togglebutton" : "button-example1"}
                                 aria-pressed={button2Active ? 'true' : 'false'}
                                 onClick={() =>
                                 handleToggleClick()}>
-                                Klikkaa
+                                Lähetä
                         </button>
                         </div>
                         <div>

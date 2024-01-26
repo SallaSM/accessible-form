@@ -179,6 +179,13 @@ h3{
     margin-top: 0;
 }
 
+.content-info{
+    background-color: white;
+    margin-right: 25px;
+    max-width: 400px;
+    border: #101044 solid 1px;
+}
+
 .navdiv{
     margin: 1px;
 }
@@ -358,6 +365,13 @@ a:active{
 
 }
 
+.wcag-criteria{
+    border: #101044 solid 1px;
+    background-color: white;
+    padding: 15px;
+}
+
+
 .block{
     display: block;
     overflow: auto;
@@ -367,8 +381,10 @@ a:active{
 
 .codeblock{
     overflow: auto;
+/*tähän määritä leveys, vaikuttaa responsiivisuuteen*/
     background: white;
     border-left: #101044 1px solid;
+    margin: 10px 0 10px 0;
 }
 
 .code-example-header{
@@ -486,7 +502,9 @@ a:active{
 }
 
 
-
+.criteria-div{
+    padding: 10px;
+}
 
 /*
 .examplebox{

@@ -3,7 +3,7 @@ import useBreadcrumbs from 'use-react-router-breadcrumbs'
 import {SidebarData} from "./SidebarData";
 import {IoIosArrowForward} from "react-icons/io";
 {/*aria-current=location!!*/}
-export default function Breadcrumbs() {
+export default function Breadcrumb() {
 
     const breadcrumbs = useBreadcrumbs(SidebarData);
     const location = useLocation();
