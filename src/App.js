@@ -25,7 +25,9 @@ function App({location}) {
 
   return (
         <>
-        <HelmetProvider>   <div><div className="block" >
+        <HelmetProvider>
+            <div>
+            <div className="block" >
             <Header/>
             {/*<a id="skip-link" className="skip-link" href="#main-content">Siirry sisältöön</a>*/}
 
@@ -44,19 +46,19 @@ function App({location}) {
                                         )
                                     }
                                 />
-                                <Route path="/yleista_tietoa" element={<GeneralInfo/>}/>
-                                <Route path="/lomakekomponentit" element={<FormComponents/>}/>
+                                <Route path="/yleista_saavutettavuudesta" element={<GeneralInfo/>}/>
+                                <Route path="/lomake-elementti" element={<FormComponents/>}/>
                                 /*handles*/
-                                <Route path="/lomakekomponentit/painikkeet" element={<Handles/>}/>
-                                <Route path="/lomakekomponentit/painikkeet/painike" element={<BasicButton/>}/>
-                                <Route path="/lomakekomponentit/painikkeet/valintapainike" element={<ToggleButton/>}/>
-                                <Route path="/lomakekomponentit/painikkeet/radiopainike" element={<RadioButton/>}/>
-                                <Route path="/lomakekomponentit/painikkeet/valintaruutu" element={<CheckBox/>}/>
+                                <Route path="/lomake-elementti/painikkeet" element={<Handles/>}/>
+                                <Route path="/lomake-elementti/painikkeet/painike" element={<BasicButton/>}/>
+                                <Route path="/lomake-elementti/painikkeet/valintapainike" element={<ToggleButton/>}/>
+                                <Route path="/lomake-elementti/painikkeet/radiopainike" element={<RadioButton/>}/>
+                                <Route path="/lomake-elementti/painikkeet/valintaruutu" element={<CheckBox/>}/>
                                 /*inputfields*/
-                                <Route path="/lomakekomponentit/syottokentat" element={<InputFields/>}/>
-                                <Route path="/lomakekomponentit/syottokentat/syotteen_validointi" element={<InputValidation/>}/>
-                                <Route path="/lomakekomponentit/syottokentat/automaattinen_taydennys" element={<Autocomplete/>}/>
-                                <Route path="/lomakekomponentit/syottokentat/pudotusvalikko" element={<Combobox/>}/>
+                                <Route path="/lomake-elementti/syottokentat" element={<InputFields/>}/>
+                                <Route path="/lomake-elementti/syottokentat/syotteen_validointi" element={<InputValidation/>}/>
+                                <Route path="/lomake-elementti/syottokentat/automaattinen_taydennys" element={<Autocomplete/>}/>
+                                <Route path="/lomake-elementti/syottokentat/pudotusvalikko" element={<Combobox/>}/>
                                 /*muuttuva näkymä*/
                                 <Route path="/muuttuva_nakyma" element={<ChangingView/>}/>
                             </Routes>
