@@ -25,16 +25,16 @@ export const SidebarData = [
                 breadcrumb: "Painikkeet",
                 submenu: [
                     {
+                    title: 'Valintapainike',
+                    path: '/lomake-elementti/painikkeet/valintapainike',
+                    cName: 'nav-text',
+                    breadcrumb:"Valintapainike"
+                    },
+                    {
                         title: 'Kerran painettavat painikkeet',
                         path: '/lomake-elementti/painikkeet/painike',
                         cName: 'nav-text',
                         breadcrumb:"Painike"
-                    },
-                    {
-                        title: 'Valintapainike',
-                        path: '/lomake-elementti/painikkeet/valintapainike',
-                        cName: 'nav-text',
-                        breadcrumb:"Valintapainike"
                     },
                     {
                         title: 'Radiopainike',

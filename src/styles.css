@@ -89,10 +89,29 @@
     }
 }
 
+pre {
+    margin: 0;
+    padding: 1em;
+    overflow: auto;
+}
+
+code {
+    display: block;
+    white-space: pre-wrap;
+}
+
+/* Responsive styling using media query */
+@media only screen and (max-width: 600px) {
+    pre {
+        overflow: hidden;
+        word-wrap: break-word;
+    }
+}
+/*
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+}*/
 
 ::-webkit-scrollbar {
     width: 7px;               /* width of the entire scrollbar */
@@ -380,8 +399,9 @@ a:active{
 
 
 .codeblock{
-    overflow: auto;
-/*tähän määritä leveys, vaikuttaa responsiivisuuteen*/
+    /*  overflow-x: scroll;
+tähän määritä leveys, vaikuttaa responsiivisuuteen*/
+    padding: 0;
     background: white;
     border-left: #101044 1px solid;
     margin: 10px 0 10px 0;
@@ -399,13 +419,22 @@ a:active{
     margin-bottom: 2px;
 }
 
+.example-content{
+    overflow: auto;
+    background: white;
+    margin: 10px 0 10px 0;
+}
+.example-flex-box{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
 
 .flex-box{
     display: flex;
     justify-content: space-between;
-
 }
-
 .float-up-right{
     position: relative;
     float: right;
@@ -484,8 +513,9 @@ a:active{
 }
 
 .non-scroll-page-container{
+    background-image: url("tausta7.png");
     padding: 10px;
-    background-color: aliceblue;
+    /*background-color: aliceblue;*/
     position: relative;
     overflow: auto;
     border-left: #101044 2px solid;
@@ -665,7 +695,7 @@ a:active{
 }
 
 /*Painike/button*/
-.example-button-div{
+.example-div{
     display: flex;
     justify-content: space-evenly;
     padding: 25px;
@@ -705,11 +735,26 @@ a:active{
     pointer-events: none;
 }
 
+.button-example-toggle-aria-pressed{
+    font-size: 30px;
+    padding: 5px 5px 0 5px;
+    font-weight: normal;
+    border: none;
+    color: #101044;
+    background-color: white;
+    cursor:pointer;
+}
+
+.button-example-toggle-aria-pressed:hover {
+    color:  #125975;
+    transition: 0.3s;
+    opacity: 0.8;
+    font-style: italic;
+}
 .active-togglebutton {
-    opacity: 0.7;
-    background-color: #125975;
-    border: 1px #125975 solid;
-    color: white;
+     color: #125975;
+     border: none;
+
 }
 /*
 .button-example2{

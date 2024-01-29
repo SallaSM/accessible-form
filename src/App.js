@@ -50,8 +50,8 @@ function App({location}) {
                                 <Route path="/lomake-elementti" element={<FormComponents/>}/>
                                 /*handles*/
                                 <Route path="/lomake-elementti/painikkeet" element={<Handles/>}/>
-                                <Route path="/lomake-elementti/painikkeet/painike" element={<BasicButton/>}/>
                                 <Route path="/lomake-elementti/painikkeet/valintapainike" element={<ToggleButton/>}/>
+                                <Route path="/lomake-elementti/painikkeet/painike" element={<BasicButton/>}/>
                                 <Route path="/lomake-elementti/painikkeet/radiopainike" element={<RadioButton/>}/>
                                 <Route path="/lomake-elementti/painikkeet/valintaruutu" element={<CheckBox/>}/>
                                 /*inputfields*/
