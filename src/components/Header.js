@@ -1,12 +1,12 @@
 import '../styles.css';
-import hellologo from ".././images/hellologo.png";
+import hellologo2 from ".././images/hellologo2.png";
 
 
 export function Header() {
     return(
 
             <header className="accessible-header-container-center accessible-header-container-start">
-                 <img src={hellologo}  alt="helppokäyttöisen lomakesovelluksen logo" className="logo"/>
+                 <img src={hellologo2}  alt="helppokäyttöisen lomakesovelluksen logo" className="logo"/>
             </header>
 
     )

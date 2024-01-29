@@ -10,7 +10,7 @@ class PrismCodeBlock extends React.Component {
     render() {
         return( <>
             <pre>
-               <code className="language-javascript">
+               <code className="language-html">
                     {this.props.text}
                </code>
            </pre>
