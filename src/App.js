@@ -30,7 +30,7 @@ function App({location}) {
             <div className="block" >
             <Header/>
             {/*<a id="skip-link" className="skip-link" href="#main-content">Siirry sisältöön</a>*/}
-
+                <div className="article">
                 <Navbar />
 
                     {/*<Breadcrumbs/>*/}
@@ -64,6 +64,7 @@ function App({location}) {
                             </Routes>
                     </main>
                 </div>
+            </div>
             </div>
 
         </HelmetProvider>

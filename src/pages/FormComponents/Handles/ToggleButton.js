@@ -5,15 +5,18 @@ import ExampleBox from "../../../components/ExampleBox";
 import {FaArrowRight, FaCheckCircle, FaCircle} from "react-icons/fa";
 import {useState} from "react";
 import CopyableCodeBlock from "../../../components/CopyableCodeBlock";
+import {ImCheckboxChecked, ImCheckboxUnchecked} from "react-icons/im";
+import {CriteriaList} from "../../../components/CriteriaList/CriteriaList";
 
 export default function ToggleButton() {
-    const pageHeader="Valintapainike"
+    const pageHeader="Valintapainike / Toggle Button"
+    const criteriaArray=["1.4.1", "1.4.3", "2.1.1","2.1.2", "2.4.3", "2.4.7","4.1.2"];
     const [toggleButtonActive, setToggleButtonActive] = useState(false);
-
+    {/*className={toggleButtonActive ? "button-example-toggle-aria-pressed active-togglebutton" : "button-example-toggle-aria-pressed"}*/}
     return(
         <div>
             <Helmet>
-                <title>Valintapainike - Helppokäyttöinen lomakesovellus</title>
+                <title>Valintapainike / Toggle Button- Helppokäyttöinen lomakesovellus</title>
             </Helmet>
             <div>
                 <div className="non-scroll-page-container">
@@ -30,6 +33,7 @@ export default function ToggleButton() {
                             <ExampleBox
                                 example={
                                     <button
+                                        type="checkbox"
                                         className={toggleButtonActive ? "button-example-toggle-aria-pressed active-togglebutton" : "button-example-toggle-aria-pressed"}
                                         aria-pressed={toggleButtonActive ? 'true' : 'false'}
                                         onClick={() =>
@@ -37,8 +41,8 @@ export default function ToggleButton() {
 
                                         {toggleButtonActive ?
 
-                                        <FaCheckCircle  aria-label="Merkkaus"/>
-                                            :<FaCircle  aria-label="Merkkaus"/>
+                                        <ImCheckboxChecked   aria-label="Merkkaus"/>
+                                            :<ImCheckboxUnchecked aria-label="Merkkaus"/>
                                         }
                                     </button> }
                             />
@@ -54,8 +58,22 @@ export default function ToggleButton() {
                                                    `    <FaCheckCircle  aria-label="Merkkaus"/> \n` +
                                                    `</button>`}/>
 
+                            <p>Jos painike on suoraan yhteydessä sitä edeltävään tekstiin, tulee otsikko ja painike yhdistää toisiinsa
+                                ohjelmallisesti esimerkiksi aria-labelledby-attribuutin avulla.
+                            </p>
+
+                            <CopyableCodeBlock aria-label="Kopoitava esimerkkikoodi"
+                                               text={`<button aria-pressed="true">\n` +
+                                                   `    <FaCheckCircle  aria-label="Merkkaus"/> \n` +
+                                                   `</button> ... valintapainike otsikolla`}/>
                         </div>
                     </div>
+                    <aside >
+                        <CriteriaList
+                            searchTerm={criteriaArray}
+                            pageHeader={pageHeader}
+                        />
+                    </aside>
                 </div>
             </div>
         </div>

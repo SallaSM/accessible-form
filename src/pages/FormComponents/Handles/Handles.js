@@ -11,7 +11,7 @@ import ExampleBox from "../../../components/ExampleBox";
 export default function Handles() {
     const criteriaArray=["1.4.1", "1.4.3", "2.1.1","2.1.2", "2.4.3", "2.4.7","4.1.2"];
     const pageHeader="Painikkeet";
-    const [toggleButtonActive, setToggleButtonActive] = useState(false);
+    const [basicButtonActive, setBasicButtonActive] = useState(false);
     {/* koistettu esimerkki kriteereistä
     -jos ongelmia koodiblokin kanssa, kokeile vasihtaa taxt attribuutin nimeä
      <div className="criteria-div">
@@ -50,10 +50,6 @@ export default function Handles() {
                     </p>
                     <h2>Lomakepainikkeisiin yleisesti vaikuttavat WCAG 2.1 -ohjeistuksen A- ja AA-tason onnistumiskriteerit</h2>
                     <div className="criteria-div">
-                        <h3>1.1.1	Ei-tekstuaalinen sisältö (A)</h3>
-                        <p>Ainoastaan ikonin sisältävissä painikkeissa ikonin on koristeellinen eikä välitä informaatiota käyttötarkoituksestaan ruudunlikan käyttäjälle.  Näin ollen se on hämmentävä elementti. Ikoni on parempi piilottaa ruudunlukijalta aria-hidden-attribuutin avulla. Napilla tulee olla kuitenkin annettu kuvaava nimi avustavaa teknologiaa varten.
-                        TÄYDENTÄMÄSSÄ PAIKKAA, SAATTAA OLLA ETTÄ 1.1.1 EI TULE TÄLLE SIVULLE OLLENKAAN</p>
-
                         <h3>1.3.1 Informaatio ja suhteet (A)</h3>
                         <p>Painikkeen kohdalla ainoastaan painalluksesta seuraava visuaalinen muutos ei riitä välittämään
                             tietoa aktivoinnista käyttäjälle. Yleensä painikkeen painalluksesta seuraa tapahtuma, mutta jos
@@ -75,10 +71,9 @@ export default function Handles() {
                          <ExampleBox
                              example={
                             <button
-                                className={toggleButtonActive ? "button-example1 active-togglebutton" : "button-example1"}
-                                aria-pressed={toggleButtonActive ? 'true' : 'false'}
+                                className={basicButtonActive ? "button-example1 active-basicbutton" : "button-example1"}
                                 onClick={() =>
-                                    setToggleButtonActive((prev) => !prev)}>
+                                    setBasicButtonActive(true)}>
                                 <FaArrowRight aria-label="Seuraava sivu painike"/>
 
                             </button> }

@@ -1,4 +1,5 @@
 /*index.js*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 * {
     box-sizing: border-box;
 }
@@ -11,12 +12,13 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #333;
-    font-family: sans-serif;
+     font-family: "Montserrat";
     height: fit-content;
     width: 100vw;
     position:relative;
     box-sizing: border-box;
     overflow-x: hidden;
+
 }
 
 [class*="col-"] {
@@ -147,7 +149,7 @@ header{
 }
 */
 .logo{
-    margin-left: 30px;
+    margin-left: 70px;
     width: 200px;
 }
 
@@ -176,8 +178,11 @@ header{
 }
 
 .current{
-    font-style: italic;
     font-weight: bold;
+}
+
+.article{
+    margin: 0 3vw 0 3vw;
 }
 
 
@@ -198,11 +203,29 @@ h3{
     margin-top: 0;
 }
 
+
+
 .content-info{
     background-color: white;
     margin-right: 25px;
+    padding-left: 5px;
     max-width: 400px;
     border: #101044 solid 1px;
+}
+
+.content-info a{
+    color: #101044;
+    text-decoration: none;
+}
+.content-info a:hover{
+    font-style: italic;
+}
+.content-info ul{
+    padding-left: 15px;
+}
+.content-info ul li{
+    margin-left: 25px;
+    padding-top: 3px;
 }
 
 .navdiv{
@@ -228,7 +251,7 @@ nav a{
     display: flex;
     justify-content: start;
     align-items: center;
-    padding: 8px 0px 8px 16px;
+    padding: 3px 0px 3px 3px;
     list-style: none;
 
 }
@@ -240,8 +263,8 @@ nav a:focus {
 }
 
 nav a.active{
-    font-style: italic;
     font-weight: bold;
+    color:#101044;
 }
 
 nav a:hover {
@@ -489,7 +512,6 @@ tähän määritä leveys, vaikuttaa responsiivisuuteen*/
 
 
 }
-
 .dropdown.show {
     display: block;
 
@@ -500,18 +522,18 @@ tähän määritä leveys, vaikuttaa responsiivisuuteen*/
 
 }
 
-
+/*
 .scroll-page-container{
     padding: 20px 10px;
     height: 80vh;
     background-color: aliceblue;
     position: relative;
- /*   overflow-x: hidden;*/
+
     overflow-y: auto;
     border-left: #101044 2px solid;
 
 }
-
+*/
 .non-scroll-page-container{
     background-image: url("tausta7.png");
     padding: 10px;
@@ -735,26 +757,36 @@ tähän määritä leveys, vaikuttaa responsiivisuuteen*/
     pointer-events: none;
 }
 
+/*-toggle example 1-*/
 .button-example-toggle-aria-pressed{
-    font-size: 30px;
-    padding: 5px 5px 0 5px;
-    font-weight: normal;
     border: none;
-    color: #101044;
-    background-color: white;
+    color: #125975;
     cursor:pointer;
+    background-color: white;
+    font-size: 25px;
+    padding-top: 5px;
 }
+
 
 .button-example-toggle-aria-pressed:hover {
-    color:  #125975;
-    transition: 0.3s;
-    opacity: 0.8;
-    font-style: italic;
+    font-size: 25px;
+    border: none;
+    color: #282c34;
 }
-.active-togglebutton {
-     color: #125975;
-     border: none;
 
+.active-togglebutton {
+    color: #125975;
+    font-size: 25px;
+    border: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    left:     -10000px;
+    top:      auto;
+    width:    1px;
+    height:   1px;
+    overflow: hidden;
 }
 /*
 .button-example2{

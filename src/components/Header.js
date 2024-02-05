@@ -6,7 +6,7 @@ export function Header() {
     return(
 
             <header className="accessible-header-container-center accessible-header-container-start">
-                 <img src={hellologo2}  alt="helppokäyttöisen lomakesovelluksen logo" className="logo"/>
+                 <img className="logo" src={hellologo2}  alt="helppokäyttöisen lomakesovelluksen logo" className="logo"/>
             </header>
 
     )

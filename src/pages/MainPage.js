@@ -25,23 +25,10 @@ const pageHeader="Etusivu";
                             WCAG-ohjeistus on laadittu, jotta kaikki ihmiset, muun muassa myös vammoja tai toimintarajoitteita omaavat henkilöt, voivat itsenäisesti käyttää verkkopalveluja.
                         </p>
 
-                        <h2>Digipalvelulaki</h2>
-                        <p>Laki digitaalisten palvelujen tarjoamisesta tuli voimaan Suomessa 1.4.2019 ja siihen tuli muutoksia 1.2.2023. Laki velvoittaa julkista sektoria ja osaa yksityisen ja kolmannen sektorin organisaatioista täyttämään saavutettavuusvaatimukset. Lain taustalla ovat vuonna 2016 annettu Euroopan unionin saavutettavuus- ja vuonna 2019 annettu esteettömyysdirektiivi. Taustalla vaikuttaa myös YK:n yleissopimus vammaisten henkilöiden oikeuksista.
-                            </p>
-                        <p>
-                            Digipalvelulain tekniset saavutettavuusvaatimukset on määritelty eurooppalaisessa EN301 549 standardissa, jossa viitataan WCAG-ohjeistukseen. Standardin mukaan velvoitettujen verkkosivujen tulee noudattaa WCAG 2.1-ohjeistuksen A- ja AA-tason kriteerejä. Laki ei velvoita AAA-tason kriteerien täyttämiseen. Saavutettavuusvaatimusten osalta standardi on kattavampi kuin pelkät WCAG-ohjeistukset. Standardi sisältää vaatimuksia myös muun muassa videosoittimille, kaksisuuntaiselle ääniviestinnälle, reaaliaikaiselle tekstille sekä mobiilisovelluksille.
-                            </p>
-                        <p>
-                            Vaikka toimija ei kuuluisi lain piiriin, yhdenvertaisuuden tukemiseksi olisi hyvä tapa noudattaa saavutettavuusvaatimuksia tarjottavissa digitaalisissa palveluissa. Näin mahdollistetaan palvelun käyttö mahdollisimman laajalle käyttäjäkunnalle.
-                        </p>
-                        <p>Tämän sivuston linkit ohjaavat W3C:n sivuille.</p>
 
-
-
-
-                        <div className="next-button-div">
+                        {/*   <div className="next-button-div">
                             <button className="next-page-button"> Painike</button>
-                        </div>
+                        </div>*/}
                     </div>
             </div>
     </>

@@ -29,6 +29,7 @@ const CopyBlockComponent = ({ textToCopy }) => {
                                 <FaRegCopy aria-hidden={true} color={"#101044"}/>
                             )
                         }
+                    <span className="visually-hidden">Kopioi leikepöydälle</span>
                 </button>
             </CopyToClipboard>
 

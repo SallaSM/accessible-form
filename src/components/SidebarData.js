@@ -25,7 +25,7 @@ export const SidebarData = [
                 breadcrumb: "Painikkeet",
                 submenu: [
                     {
-                    title: 'Valintapainike',
+                    title: 'Valintapainike / Toggle Button',
                     path: '/lomake-elementti/painikkeet/valintapainike',
                     cName: 'nav-text',
                     breadcrumb:"Valintapainike"
