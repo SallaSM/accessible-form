@@ -18,7 +18,7 @@ export default function GeneralInfo() {
                 <FocusableHeader header={pageHeader}/>
                 <div className="col-11 col-s-11">
                     <div className="content-info">
-                        <ul>Sivun sisältö:
+                        <ul><h2>Sivun sisältö:</h2>
                             <li><a href="#apuvalinevaatimukset">Apuvälinevaatimukset</a></li>
                             <li> <a href="#nappaimistovaatimukset">Näppäimistövaatimukset</a></li>
                             <li><a href="#skaalautuvuus">Skaalautuvuus</a></li>

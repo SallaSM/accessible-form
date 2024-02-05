@@ -2,11 +2,12 @@ import '../../../styles.css';
 import {Helmet} from "react-helmet-async";
 import FocusableHeader from "../../../components/FocusableHeader";
 import ExampleBox from "../../../components/ExampleBox";
-import {FaArrowRight, FaCheckCircle, FaCircle} from "react-icons/fa";
-import {useState} from "react";
+import {FaArrowRight, FaCheckCircle, FaCircle, FaToggleOff, FaToggleOn} from "react-icons/fa";
+import React, {useState} from "react";
 import CopyableCodeBlock from "../../../components/CopyableCodeBlock";
 import {ImCheckboxChecked, ImCheckboxUnchecked} from "react-icons/im";
 import {CriteriaList} from "../../../components/CriteriaList/CriteriaList";
+import {LiaToggleOffSolid, LiaToggleOnSolid} from "react-icons/lia";
 
 export default function ToggleButton() {
     const pageHeader="Valintapainike / Toggle Button"
@@ -31,31 +32,40 @@ export default function ToggleButton() {
                             </p>
 
                             <ExampleBox
+                                title={"Valintakytkin painike / Toggle Swich"}
                                 example={
+                                <div className="example-label-btn-box" >
+                                    <label for="swichbtn" className="example-btn-label">Valinta 1</label>
                                     <button
-                                        type="checkbox"
+                                        id="swichbtn"
                                         className={toggleButtonActive ? "button-example-toggle-aria-pressed active-togglebutton" : "button-example-toggle-aria-pressed"}
                                         aria-pressed={toggleButtonActive ? 'true' : 'false'}
                                         onClick={() =>
                                             setToggleButtonActive((prev) => !prev)}>
 
                                         {toggleButtonActive ?
+                                            <LiaToggleOnSolid />
 
-                                        <ImCheckboxChecked   aria-label="Merkkaus"/>
-                                            :<ImCheckboxUnchecked aria-label="Merkkaus"/>
+                                            :<LiaToggleOffSolid  />
                                         }
-                                    </button> }
+                                    </button>
+                                </div>
+                                    }
                             />
-                            <p>Aria-pressed on totuus arvo true tai false, joka kertoo avustavalle teknologialle, painikkeen tilasta.
+                            <p>Aria-pressed on totuusarvo true tai false, joka kertoo avustavalle teknologialle, painikkeen tilasta.
                                 Tässä esimerkissä painettu arvo on true ja painamattoman painikkeen arvo on false.
-                                Esimerkin painike on nimetty aria-labelin avulla nimellä "Merkkaus" ja siinä on käytetty aria-pressed-attribuuttia.
-                                Näin ollen painiketta painettua ruudulukija kertoisi "Merkkaus grafiikka, vaihtopainike painettu"
+                                Esimerkin painike on sitä edeltävän nimilapun avulla ja siinä on käytetty aria-pressed-attribuuttia.
+                                Näin ollen painiketta painettua ruudulukija kertoisi "Valinta 1 vaihtopainike painettu"
                             </p>
 
 
                             <CopyableCodeBlock aria-label="Kopoitava esimerkkikoodi"
-                                               text={`<button aria-pressed="true">\n` +
-                                                   `    <FaCheckCircle  aria-label="Merkkaus"/> \n` +
+                                               text={
+                                                   `<label for="swichbutton" >Valinta 1</label> \n` +
+                                                    `<button \n` +
+                                                   ` id="swichbutton"\n` +
+                                                   ` aria-pressed="true">\n` +
+                                                   `    <FaCheckCircle />    //Valintakytkimen kuvake\n` +
                                                    `</button>`}/>
 
                             <p>Jos painike on suoraan yhteydessä sitä edeltävään tekstiin, tulee otsikko ja painike yhdistää toisiinsa
