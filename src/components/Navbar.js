@@ -10,9 +10,7 @@ const Navbar = () => {
         <>
 
         <nav aria-label="Päänavigaatio" className="col-3  col-s-12" >
-            <ul
-
-            >
+            <ul className="navdiv">
                 {SidebarData.map((menu, index) => {
                     const depthLevel = 0;
                     return (<>

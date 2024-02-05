@@ -81,13 +81,13 @@ const MenuItems = ({ items, depthLevel }) => {
                             </div>
                         </div>
 
-                        <div>
+
                             <Dropdown
                                 depthLevel={depthLevel}
                                 submenus={items.submenu}
                                 dropdown={dropdown}
                             />
-                        </div>
+
 
                     </>
                 ) : (

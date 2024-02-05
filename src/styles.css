@@ -149,7 +149,7 @@ header{
 }
 */
 .logo{
-    margin-left: 70px;
+    margin-left: 100px;
     width: 200px;
 }
 
@@ -182,7 +182,7 @@ header{
 }
 
 .article{
-    margin: 0 3vw 0 3vw;
+    margin: 0 5vw 0 5vw;
 }
 
 
@@ -218,7 +218,7 @@ h3{
     text-decoration: none;
 }
 .content-info a:hover{
-    font-style: italic;
+    text-decoration: underline;
 }
 .content-info ul{
     padding-left: 15px;
@@ -230,6 +230,7 @@ h3{
 
 .navdiv{
     margin: 1px;
+    padding-top: 20px;
 }
 
 
@@ -268,7 +269,7 @@ nav a.active{
 }
 
 nav a:hover {
-    color: #287693;
+    color: #1c5369;
     font-style: italic;
 }
 
@@ -282,6 +283,7 @@ nav ul{
 nav li{
     margin-left: 0;
 }
+
 
 .focusableHeader{
     padding-bottom: 0;
@@ -359,14 +361,16 @@ a:active{
 }
 
 .breadcrumbs .breadcrumb a{
-    color: #287693;
+    color: #101048;
     text-decoration: none;
     display: inline-block;
+    margin: 0 0 0 15px;
 }
 
 .breadcrumbs .breadcrumb a:hover{
-    color: #125975;
-    text-decoration: none;
+    color: #15155e;
+    text-decoration: underline;
+    font-style: normal;
 }
 
 
@@ -402,9 +406,8 @@ a:active{
 .menu-items .link-button-div{
     display: flex;
     align-items: center;
-    padding: 0.2rem 1rem 0.2rem 0rem;
+    padding: 0.2rem 0 0.2rem 0rem;
     width: 100%;
-
 }
 
 .wcag-criteria{
@@ -420,15 +423,42 @@ a:active{
     width: fit-content;
 }
 
+.codeblock-div{
+   /* background-color: #e1effa;*/
+    background-color: rgba(132, 180, 206, 0.53);
+    padding: 5px 5px 2px 10px;
+    border-radius: 10px;
+    margin: 10px 0 20px 0;
+}
 
 .codeblock{
-    /*  overflow-x: scroll;
-tähän määritä leveys, vaikuttaa responsiivisuuteen*/
+    background: white;
+    margin: 10px 0 3px 0;
+    padding: 0;
+    border-left: #101044 4px solid;
+
+}
+.code-example-header{
+    width: 100%;
+    padding: 10px 0 0 10px;
+    background-color: transparent;
+}
+
+.code-example-header h3{
+    font-size: 16px;
+    color: #101044;
+    font-family: 'Montserrat';
+    margin-bottom: 2px;
+}
+/*
+.codeblock{
     padding: 0;
     background: white;
-    border-left: #101044 1px solid;
+    border: #101044 1px solid;
+    border-radius: 5px;
     margin: 10px 0 10px 0;
 }
+
 
 .code-example-header{
     border-bottom: #101044 solid 2px;
@@ -438,25 +468,30 @@ tähän määritä leveys, vaikuttaa responsiivisuuteen*/
 
 .code-example-header h3{
     font-size: 15px;
-    font-family: Consolas;
+    font-family: 'Montserrat';
     margin-bottom: 2px;
-}
+}*/
 
 .example-content{
     overflow: auto;
     background: white;
     margin: 10px 0 10px 0;
+    padding: 5px 5px 2px 10px;
+    border: rgba(132, 180, 206, 0.53) solid 1px;
+   /* box-shadow: 2px 2px 2px 1px rgba(18, 89, 117, 0.75);*/
+    border-radius: 10px;
 }
 .example-flex-box{
     display: flex;
     justify-content: center;
-    padding: 15px;
+    padding: 25px;
 }
 
 
 .flex-box{
     display: flex;
     justify-content: space-between;
+    margin: 2px;
 }
 .float-up-right{
     position: relative;
@@ -474,12 +509,10 @@ tähän määritä leveys, vaikuttaa responsiivisuuteen*/
     padding: 2px 0 2px 0 ;
     width: 25px;
     height: 25px;
-
 }
 
 .copy-button:hover {
     border: #101044 solid 2px;
-
 }
 
 
@@ -506,7 +539,7 @@ tähän määritä leveys, vaikuttaa responsiivisuuteen*/
 }
 
 .dropdown {
-    margin-left: 3vh;
+    margin-left: 15px;
     list-style: none;
     display: none;
 
@@ -518,7 +551,7 @@ tähän määritä leveys, vaikuttaa responsiivisuuteen*/
 }
 
 .dropdown .dropdown-submenu {
-    margin-left: 6vh;
+    margin-left: 30px;
 
 }
 
@@ -535,12 +568,12 @@ tähän määritä leveys, vaikuttaa responsiivisuuteen*/
 }
 */
 .non-scroll-page-container{
-    background-image: url("tausta7.png");
+    background-image: url("taustaympyrat.png");
     padding: 10px;
     /*background-color: aliceblue;*/
     position: relative;
     overflow: auto;
-    border-left: #101044 2px solid;
+    border-left: #101044 1px solid;
 
 }
 
@@ -609,13 +642,13 @@ tähän määritä leveys, vaikuttaa responsiivisuuteen*/
 .criterialist .text-button-div{
     display: flex;
     justify-content: space-between;
-    padding: 0.2rem 1rem 0.2rem 0rem;
+    padding: 0.1rem 1rem 0.1rem 0rem;
     width: 100%;
 }
 .criteriaName{
     padding: 0 20px 0 0 ;
     margin:0;
-    font-weight: bold;
+    font-size: 16px;
 }
 
 .arrow-button {
@@ -760,34 +793,42 @@ tähän määritä leveys, vaikuttaa responsiivisuuteen*/
 /*-toggle example 1-*/
 .button-example-toggle-aria-pressed{
     border: none;
-    color: #125975;
+    color: #605f5f;
     cursor:pointer;
     background-color: white;
-    font-size: 25px;
-    padding-top: 5px;
+    font-size: 35px;
+    padding-top: 12px;
+
 }
 
-
 .button-example-toggle-aria-pressed:hover {
-    font-size: 25px;
     border: none;
     color: #282c34;
+
 }
 
 .active-togglebutton {
     color: #125975;
-    font-size: 25px;
-    border: none;
+
 }
 
 .visually-hidden {
     position: absolute;
-    left:     -10000px;
     top:      auto;
     width:    1px;
     height:   1px;
     overflow: hidden;
 }
+
+.example-btn-label{
+    font-size: 23px;
+    padding-right: 30px;
+}
+.example-label-btn-box {
+    display: inline-flex;
+    align-items: center;
+}
+
 /*
 .button-example2{
     color: #101044;

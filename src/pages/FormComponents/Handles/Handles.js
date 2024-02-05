@@ -69,6 +69,7 @@ export default function Handles() {
 
 
                          <ExampleBox
+                             title={"Nuolipainike"}
                              example={
                             <button
                                 className={basicButtonActive ? "button-example1 active-basicbutton" : "button-example1"}

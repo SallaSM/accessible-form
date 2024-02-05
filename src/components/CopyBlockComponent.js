@@ -5,6 +5,7 @@ import {IoIosArrowDown, IoIosArrowUp} from "react-icons/io";
 
 const CopyBlockComponent = ({ textToCopy }) => {
     const [isCopied, setIsCopied] = useState(false);
+    {/*aria-label={isCopied ? 'Esimekkikoodi kopioitu leikepöydälle' : 'Kopioi esimerkkikoodi'}*/}
 
     const handleCopy = () => {
         setIsCopied(true);
@@ -19,7 +20,7 @@ const CopyBlockComponent = ({ textToCopy }) => {
             <CopyToClipboard text={textToCopy} onCopy={handleCopy}>
                 <button
                     className="copy-button"
-                    aria-label={isCopied ? 'Esimekkikoodi kopioitu leikepöydälle' : 'Kopioi esimerkkikoodi'}>
+                    >
 
                         {isCopied ?
 

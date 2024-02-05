@@ -4,16 +4,19 @@ import PrismCodeBlock from "./PrismCodeBlock";
 {/**/}
 const CopyableCodeBlock =(props) => {
     return (
-        <div className="codeblock col-12 col-s-12">
-            <div className="code-example-header">
-                <h3>Koodiesimerkki </h3>
-            </div>
-            <div className="flex-box">
+        <div className="codeblock-div col-12 col-s-12">
 
-               <PrismCodeBlock text={props.text}/>
+                <div className="code-example-header">
+                    <h3>Koodiesimerkki </h3>
+                </div>
+            <div className="codeblock ">
+                <div className="flex-box">
 
-                <div className="float-up-right">
-                    <CopyBlockComponent textToCopy={props.text} />
+                   <PrismCodeBlock text={props.text}/>
+
+                    <div className="float-up-right">
+                        <CopyBlockComponent textToCopy={props.text} />
+                    </div>
                 </div>
             </div>
         </div>
