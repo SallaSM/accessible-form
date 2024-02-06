@@ -20,17 +20,17 @@ const CopyBlockComponent = ({ textToCopy }) => {
             <CopyToClipboard text={textToCopy} onCopy={handleCopy}>
                 <button
                     className="copy-button"
+                    title="Kopioi esimerkkikoodi leikepöydälle"
+                    aria-pressed={isCopied ? 'true' : 'false'}
                     >
-
                         {isCopied ?
-
                             (
                                 <FaCopy aria-hidden={true} color={"#101044"}/>
                             ) : (
                                 <FaRegCopy aria-hidden={true} color={"#101044"}/>
                             )
                         }
-                    <span className="visually-hidden">Kopioi leikepöydälle</span>
+                    <span className="visually-hidden">Kopioi</span>
                 </button>
             </CopyToClipboard>
 
