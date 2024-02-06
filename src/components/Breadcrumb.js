@@ -10,6 +10,7 @@ export default function Breadcrumb() {
 
 
         return (
+            <div className="b">
             <nav aria-label="Murupolku" >
                 {location.pathname === '/'  ? (
                 <p aria-hidden="true" > </p>
@@ -33,6 +34,7 @@ export default function Breadcrumb() {
                 </ol>
                 )}
             </nav>
+    </div>
         );
     }
 

@@ -9,7 +9,7 @@ import {FaArrowRight} from "react-icons/fa";
 import ExampleBox from "../../../components/ExampleBox";
 
 export default function Handles() {
-    const criteriaArray=["1.4.1", "1.4.3", "2.1.1","2.1.2", "2.4.3", "2.4.7","4.1.2"];
+    const criteriaArray=["1.3.1","1.3.3","1.4.3","1.4.4","2.1.1","2.1.2","2.4.3","2.4.7","2.5.2","2.5.3","3.2.1","3.2.4","4.1.1","4.1.2"];
     const pageHeader="Painikkeet";
     const [basicButtonActive, setBasicButtonActive] = useState(false);
     {/* koistettu esimerkki kriteereistä

@@ -10,6 +10,7 @@ const MenuItems = ({ items, depthLevel }) => {
     const [dropdown, setDropdown] = useState(false);
     const focusOnRef= useRef(null);
     const location = useLocation();
+    const itemLabel= items.title + "alavalikko" ;
 
 
     {/*esc koodi: https://stackoverflow.com/questions/37440408/how-to-detect-esc-key-press-in-react-and-how-to-handle-it*/}
@@ -49,6 +50,7 @@ const MenuItems = ({ items, depthLevel }) => {
                                     )}
                                 <div className="button-div">
                                 <button
+                                    aria-label={itemLabel}
                                     ref={focusOnRef}
                                     aria-expanded={dropdown ? 'true' : 'false'}
                                     onClick={() =>
@@ -62,8 +64,8 @@ const MenuItems = ({ items, depthLevel }) => {
                                             {dropdown
                                                 ?
 
-                                                <IoIosArrowUp aria-label="Sulje alavalikko painike"  color={"#2c84a4"}/>
-                                                : <IoIosArrowDown aria-label="Avaa alavalikko painike"/>
+                                                <IoIosArrowUp aria-hidden="true"  color={"#2c84a4"}/>
+                                                : <IoIosArrowDown aria-hidden="true" />
 
                                             }
                                         </div>
@@ -71,8 +73,8 @@ const MenuItems = ({ items, depthLevel }) => {
                                         <div>
                                             {dropdown
                                                 ?
-                                                <IoIosArrowUp aria-label="Sulje alavalikko painike" color={"#2c84a4"}/>
-                                                : <IoIosArrowDown aria-label="Avaa alavalikko painike" />
+                                                <IoIosArrowUp aria-hidden="true"   color={"#2c84a4"}/>
+                                                : <IoIosArrowDown  aria-hidden="true" />
 
                                             }
                                         </div>
