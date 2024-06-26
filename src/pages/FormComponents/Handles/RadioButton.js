@@ -3,7 +3,10 @@ import {Helmet} from "react-helmet-async";
 import {CriteriaList} from "../../../components/CriteriaList/CriteriaList";
 import React, {useState} from "react";
 import FocusableHeader from "../../../components/FocusableHeader";
-/** IN PROGRESS*/
+/** IN PROGRESS
+ TODO:
+    - Radiobutton is an input not a button, belongs under Inputfields
+ */
 export default function RadioButton() {
     const pageHeader="Radiopainike / Radiobutton ";
 
