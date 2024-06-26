@@ -2,7 +2,10 @@ import '../../../styles.css';
 import {Helmet} from "react-helmet-async";
 import FocusableHeader from "../../../components/FocusableHeader";
 import React from "react";
-/** IN PROGRESS*/
+/** IN PROGRESS
+ TODO:
+    - Checkbox is an input not a button, belongs under Inputfields
+ */
 export default function CheckBox() {
     const pageHeader="Valintaruutu";
     return(
