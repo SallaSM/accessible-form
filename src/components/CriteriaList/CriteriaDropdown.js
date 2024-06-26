@@ -1,10 +1,12 @@
 import React from "react";
 
+/**
+ * NOT USED
+ * Component for criterialist dropdown that contains all the content of wcag criteria info, but not used. The current way of using dropdown is in CriteriaListItem.js.
+ */
 const CriteriaDropdown =(props) => {
 
     return(
-
-
         <div className="criteria-info-box">
             <p aria-label={props.taso} className="criteriaLevelBox">{props.criteria.taso}</p>
             <p>{props.criteria.selite}</p>

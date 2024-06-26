@@ -3,6 +3,21 @@ import {Helmet} from "react-helmet-async";
 import {CriteriaList} from "../components/CriteriaList/CriteriaList";
 import FocusableHeader from "../components/FocusableHeader";
 
+/**
+ * Mainpage is a top level page in the website. It holds information the Helppokäyttöinen lomake -website
+   and information about  Web Content Accessibility Guidelines (WCAG)
+ * The page consists of accessible header <FocusableHeader> and text snippets <p>.
+ *
+ * Helmet-component: is used to manipulate the title of the website in single page application.
+ To change the title of the website when navigating to new page is required for accessibility.
+ *
+ TODO:
+    - Add next page buttons to pages.
+    - Fix text to be fetched from file or database, not hard coded.
+    - Add text editor and user role to write content.
+ */
+
+
 export default function MainPage() {
 const pageHeader="Etusivu";
 
@@ -12,7 +27,6 @@ const pageHeader="Etusivu";
                 <title>Etusivu - Helppokäyttöinen lomakesovellus</title>
                 <meta name="description" content="Helppokäyttöinen lomakesovellus-sivusto on luotu tiedottamaan saavutettavuudesta ja helppokäyttöisen lomakkeen rakentamisesta."/>
             </Helmet>
-
 
                 <div className="non-scroll-page-container">
                     <FocusableHeader header={pageHeader}/>

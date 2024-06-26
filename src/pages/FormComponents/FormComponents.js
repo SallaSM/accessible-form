@@ -3,6 +3,22 @@ import {Helmet} from "react-helmet-async";
 import FocusableHeader from "../../components/FocusableHeader";
 import {CriteriaList} from "../../components/CriteriaList/CriteriaList";
 
+/**
+ * FormComponents is a top level page in the website. It holds information overall about form components and
+   a criteria list that includes all criteria associated with digital forms.
+ * The page consists of accessible header <FocusableHeader>, text snippets <p> and a list of criteria <CriteriaList>.
+ *
+ * Helmet-component: is used to manipulate the title of the website in single page application.
+ To change the title of the website when navigating to new page is required for accessibility.
+ * CriteriaList-component: needs criteriaArray as prop, so it can filter the correct criteria to each page.
+ *
+ TODO:
+    - Name pages as ...Page for clarity.
+    - ASIDE-element doesn't stand right in DOM. Should be outside the main div. Accessibility issue.
+    - Fix text to be fetched from file or database, not hard coded.
+    - Add text editor and user role to write content.
+ */
+
 export default function FormComponents() {
     const pageHeader="Lomake-elementti"
     const criteriaArray=["1.1.1","1.3.1","1.3.2","1.3.3","1.3.4","1.3.5","1.4.1","1.4.3","1.4.4","1.4.10","1.4.11","1.4.12","1.4.13","2.1.1","2.1.2","2.2.1","2.4.3","2.4.6","2.4.7","2.5.1","2.5.2","2.5.3","3.2.1","3.2.2","3.2.4","3.3.1","3.3.4","4.1.1","4.1.2","4.1.3" ];

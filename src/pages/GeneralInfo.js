@@ -2,12 +2,22 @@ import '../styles.css';
 import {Helmet} from "react-helmet-async";
 import FocusableHeader from "../components/FocusableHeader";
 
+/**
+ * General info is a top level page in the website. It holds information overall about accessibility and
+ some accessibility requirements and practices.
+ * The page consists of accessible header <FocusableHeader>, table of contents and text snippets <p>.
+ *
+ * Helmet-component: is used to manipulate the title of the website in single page application.
+ To change the title of the website when navigating to new page is required for accessibility.
+ *
+ TODO:
+    - Name pages as ...Page for clarity.
+    - Fix text to be fetched from file or database, not hard coded.
+    - Add text editor and user role to write content.
+ */
+
 export default function GeneralInfo() {
     const pageHeader="Yleistä saavutettavuudesta";
-    {/* TODO:
-    1. Sisältö tiedostoon ja sieltä luku komponentti.
-    2. line brakes vai p
-    3. sisältöinfo box runko erilliseen komponenttiin*/}
     return(
 
         <>

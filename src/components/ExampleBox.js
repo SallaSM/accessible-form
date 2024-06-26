@@ -1,6 +1,10 @@
-import PrismCodeBlock from "./PrismCodeBlock";
-import CopyBlockComponent from "./CopyBlockComponent";
-
+/**
+ * ExampleBox is a frame for examples used in the pages.
+ *
+ * Props:
+ * - title: gets title via props.
+ * - example: Gets the example and sets it to the center of the example box.
+ */
 const ExampleBox =(props) => {
     return (
         <div className="example-content">
@@ -9,11 +13,9 @@ const ExampleBox =(props) => {
             </div>
             <div className="example-flex-box">
                 {props.example}
-
             </div>
         </div>
     )
 }
-
 
 export default ExampleBox;

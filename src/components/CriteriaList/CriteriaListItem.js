@@ -1,11 +1,21 @@
 import '../../styles.css';
 import React, {useCallback, useEffect, useRef, useState} from "react";
 import {IoIosArrowDown, IoIosArrowUp} from "react-icons/io";
-import CriteriaDropdown from "../CriteriaDropdown";
+
+/**
+ * CriteriaListItem gets props from CriteriaList and CriteriaFilter.
+ * Props are:
+     * - listIndex,
+     * - func (dropdown function),
+     * - listDropdown (is used to compare values to show dropdown),
+     * - div (used in dropdown to show criteria info)
+ * Dropdown action is explained in CriteriaList.js.
+ * CriteriaListItem is the criteriaitem <li> in criterialist <ul>.
+ * Criterialistitem reads information about wcag criteria that comes from wcag.json filtered through CriteriaFilter.
+ */
 
 const CriteriaListItem =(props) => {
-
-
+    {/*The esc-function offers possibility to close dropdown list by using Esc-key on keyboard. Function is added to dropdown list for accessibility purposes.*/}
     const escFunction = useCallback((event) => {
             if (event.key === "Escape") {
                 props.func(null)
@@ -19,73 +29,6 @@ const CriteriaListItem =(props) => {
         };
     }, [escFunction]);
 
-  {/*
-
-
-    const [dropdown, setDropdown] = useState(false);
-    const [dropdown, setDropdown] = useState(null);*/}
-
-
-
-    {/*     const handleDropdownClick = (index) => {
-        setDropdown(dropdown === index ? null : index);
-        console.log( index + " dropdown index= "+ dropdown + "   list item key " + indexx + "jeje")
-    };
-
-    dropdownin index numero pitäisi saada ylemmästä tasosta
-        nyt dopclickin indexi on tämän listakomponentin indexi
-        vertailu komponentin indexin ja klikattavan indexin välillä*/}
-
-    {/*   const escFunction = useCallback((event) => {
-            if (event.key === "Escape") {
-                setDropdown(false)
-            }},
-        []);
-
-    useEffect(() => {
-        document.addEventListener("keydown", escFunction, false);
-        return () => {
-            document.removeEventListener("keydown", escFunction, false);
-        };
-    }, [escFunction]);
-
-
-    useEffect(() => {
-        buttonRef.current.addEventListener('click', handleClick);
-        return () => {
-            buttonRef.current.removeEventListener('click', handleClick);
-        };
-    }, []);
-
-       const handleClick = useCallback((event) => {
-        const currentTarget = event.currentTarget.getAttribute("id")
-        if(event.currentTarget.getAttribute("id") !== items.index){
-            setDropdown(false);
-            console.log("eventcurrent" + currentTarget )
-        }},
-        []);
-     return(
-        <>
-
-    {items.map((criteria, index) => {
-        console.log(criteria.tunniste)
-        return( <>
-
-        <li>
-            <p>{criteria.tunniste}</p>
-
-        </li>
-
-</>)
-    })}
-            </>)
-
-            onClick={(e) =>
-              setDropdown((prev) => !prev)
-              }
- <div className="text-button-div"> </div>
-
-*/}
     return(
         <>
             {props.items.map((criteria) => {

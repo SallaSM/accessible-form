@@ -1,6 +1,11 @@
 import React from "react";
 import Prism from "prismjs";
-import "../prism.css";
+import "../../prism.css";
+
+/**
+ * PrismCodeBlock gets text (string) as prop and displays it as correctly highlighted code.
+ * PrismCodeBlock uses Prism component from prismjs for highlighting.
+ */
 
 class PrismCodeBlock extends React.Component {
     componentDidMount() {
