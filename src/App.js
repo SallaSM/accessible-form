@@ -10,7 +10,7 @@ import RadioButton from "./pages/FormComponents/Handles/RadioButton";
 import CheckBox from "./pages/FormComponents/Handles/CheckBox";
 import InputFields from "./pages/FormComponents/InputFields/InputFields";
 import Autocomplete from "./pages/FormComponents/InputFields/Autocomplete";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/MainNavigation/Navbar";
 import BasicButton from "./pages/FormComponents/Handles/BasicButton";
 import InputValidation from "./pages/FormComponents/InputFields/InputValidation";
 import ChangingView from "./pages/ ChangingView/ChangingView";
@@ -18,7 +18,12 @@ import Combobox from "./pages/FormComponents/InputFields/Combobox";
 import Breadcrumb from "./components/Breadcrumb";
 import ToggleButton from "./pages/FormComponents/Handles/ToggleButton";
 
-
+/** This class includes:
+ * - React Helmet provider for keeping site title up to date
+ * - Navigationbar by using Navbar.js component
+ * - Breadcrumb.js component
+ * - Router that uses paths from file SidebarData.js
+ * */
 
 function App({location}) {
     const shouldRedirect = true;
@@ -55,10 +60,10 @@ function App({location}) {
                                 <Route path="/lomake-elementti/painikkeet/radiopainike" element={<RadioButton/>}/>
                                 <Route path="/lomake-elementti/painikkeet/valintaruutu" element={<CheckBox/>}/>
                                 /*inputfields*/
-                                <Route path="/lomake-elementti/syottokentat" element={<InputFields/>}/>
-                                <Route path="/lomake-elementti/syottokentat/syotteen_validointi" element={<InputValidation/>}/>
-                                <Route path="/lomake-elementti/syottokentat/automaattinen_taydennys" element={<Autocomplete/>}/>
-                                <Route path="/lomake-elementti/syottokentat/pudotusvalikko" element={<Combobox/>}/>
+                                <Route path="/lomake-elementti/syotekentat" element={<InputFields/>}/>
+                                <Route path="/lomake-elementti/syotekentat/syotteen_validointi" element={<InputValidation/>}/>
+                                <Route path="/lomake-elementti/syotekentat/automaattinen_taydennys" element={<Autocomplete/>}/>
+                                <Route path="/lomake-elementti/syotekentat/pudotusvalikko" element={<Combobox/>}/>
                                 /*muuttuva näkymä*/
                                 <Route path="/muuttuva_nakyma" element={<ChangingView/>}/>
                             </Routes>

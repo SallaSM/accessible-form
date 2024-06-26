@@ -2,7 +2,7 @@
 ### [PROJECT IN PROGRESS]
 The Accessible form website is an accessible digital service that contains information on programming the components of an accessible digital form.
 
-Visit the [Accessible form website](https://sallasm.github.io/accessible-form/)
+Visit the [Accessible form website](https://sallasm.github.io/accessible-form/) (currenly in Finnish)
 
 ## Features
 - The website contains information about accessibility and form component pages.

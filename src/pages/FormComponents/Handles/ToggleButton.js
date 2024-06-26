@@ -4,10 +4,26 @@ import FocusableHeader from "../../../components/FocusableHeader";
 import ExampleBox from "../../../components/ExampleBox";
 import {FaArrowRight, FaCheckCircle, FaCircle, FaToggleOff, FaToggleOn} from "react-icons/fa";
 import React, {useState} from "react";
-import CopyableCodeBlock from "../../../components/CopyableCodeBlock";
+import CopyableCodeBlock from "../../../components/CodeBlock/CopyableCodeBlock";
 import {ImCheckboxChecked, ImCheckboxUnchecked} from "react-icons/im";
 import {CriteriaList} from "../../../components/CriteriaList/CriteriaList";
 import {LiaToggleOffSolid, LiaToggleOnSolid} from "react-icons/lia";
+
+/**
+ * ToggleButton is a component page in the website. It holds information about accessible toggle button.
+ * The page consists of accessible header <FocusableHeader>, text snippets <p>, component examples <ExampleBox>,
+   code examples <CopyableCodeBlock> and a list of criteria <CriteriaList>.
+ *
+ * Helmet-component: is used to manipulate the title of the website in single page application.
+   To change the title of the website when navigating to new page is required for accessibility.
+ * CriteriaList-component: needs criteriaArray as prop, so it can filter the correct criteria to each page.
+ *
+ * TODO:
+    - Name pages as ...Page for clarity.
+    - ASIDE-element doesn't stand right in DOM. Should be outside the main div. Accessibility issue.
+    - Fix text to be fetched from file or database, not hard coded.
+    - Add text editor and user role to write content.
+ */
 
 export default function ToggleButton() {
     const pageHeader="Valintapainike / Toggle Button"
@@ -28,7 +44,7 @@ export default function ToggleButton() {
                             Lomakkeessa valintapainikkeen käyttötarkoitus on yleensä valintojen merkkaus [valittu / ei valittu].
                         </p>
                         <p>Kun painikeelle eli &lt;button&gt;-elementille asetetaan aria-atribuutti aria-pressed, painikkeesta tulee valintapainike eli toggle button.
-                        Togglebutton voi sisältää näkyvää tekstiä, mutta teksti ei saa muutua aktivoinnin yhteydessä.</p>
+                        Toggle button voi sisältää näkyvää tekstiä, mutta teksti ei saa muutua aktivoinnin yhteydessä.</p>
 
                         <p>Seuraavaksi WCAG-kriteerien läpikäyntiä, joihin tulisi kiinnittää huomiota lomakkeen valintapainikkeita ohjelmoidessa.
                             Käydään läpi ainoastaan kriteerit, joiden kohdalla on erityistä huomioitavaa valintapainikekomponentin näkökulmasta.
@@ -56,15 +72,9 @@ export default function ToggleButton() {
                                                 setToggleButtonActive((prev) => !prev)}>
 
                                             {toggleButtonActive ?
-
                                                     <LiaToggleOnSolid />
-
-
                                                 :
-
                                                     <LiaToggleOffSolid  />
-
-
                                             }
                                         </button>
                                     </div>
@@ -121,7 +131,7 @@ export default function ToggleButton() {
                                                    `<p className={toggleButtonActive ? "not-hidden" : "hidden"}>Valittu</p>` }/>
                             */} </div>
                     </div>
-                    <aside >
+                    <aside aria-label="Kriteerilista" >
                         <CriteriaList
                             searchTerm={criteriaArray}
                             pageHeader={pageHeader}
